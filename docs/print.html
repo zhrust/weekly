@@ -84,7 +84,7 @@
 
     <nav id="sidebar" class="sidebar" aria-label="Table of contents">
         <div class="sidebar-scrollbox">
-            <ol class="chapter"><li class="chapter-item expanded "><a href="2023/index.html"><strong aria-hidden="true">1.</strong> 周刊2023</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2023/ARW342.html"><strong aria-hidden="true">1.1.</strong> ARW342</a></li><li class="chapter-item expanded "><a href="2023/RR23W1.html"><strong aria-hidden="true">1.2.</strong> RR23W1</a></li><li class="chapter-item expanded "><a href="2023/ARW341.html"><strong aria-hidden="true">1.3.</strong> ARW341</a></li></ol></li><li class="chapter-item expanded "><a href="abt/index.html"><strong aria-hidden="true">2.</strong> 有关</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="abt/gh-pages.html"><strong aria-hidden="true">2.1.</strong> gh-pages</a></li><li class="chapter-item expanded "><a href="abt/zhrust.html"><strong aria-hidden="true">2.2.</strong> zhrust</a></li></ol></li></ol>
+            <ol class="chapter"><li class="chapter-item expanded "><a href="2023/index.html"><strong aria-hidden="true">1.</strong> 周刊2023</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2023/ARW343.html"><strong aria-hidden="true">1.1.</strong> ARW343</a></li><li class="chapter-item expanded "><a href="2023/ARW342.html"><strong aria-hidden="true">1.2.</strong> ARW342</a></li><li class="chapter-item expanded "><a href="2023/RR23W1.html"><strong aria-hidden="true">1.3.</strong> RR23W1</a></li><li class="chapter-item expanded "><a href="2023/ARW341.html"><strong aria-hidden="true">1.4.</strong> ARW341</a></li></ol></li><li class="chapter-item expanded "><a href="abt/index.html"><strong aria-hidden="true">2.</strong> 有关</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="abt/gh-pages.html"><strong aria-hidden="true">2.1.</strong> gh-pages</a></li><li class="chapter-item expanded "><a href="abt/zhrust.html"><strong aria-hidden="true">2.2.</strong> zhrust</a></li></ol></li></ol>
         </div>
         <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
     </nav>
@@ -205,6 +205,226 @@
 <li>..</li>
 <li>221023 ZQ init.</li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="锈周刊343"><a class="header" href="#锈周刊343">锈周刊:343</a></h1>
+<p>原文: <a href="https://rust.libhunt.com/newsletter/343">Awesome Rust Weekly - Issue 343 | LibHunt</a></p>
+<p><a href="https://rust.libhunt.com/">Awrsome Rust</a></p>
+<ul>
+<li>230120 <a href="http://zoomquiet.io/">Zoom.Quiet</a>(大妈) 用时 13 分钟 完成格式转抄.</li>
+<li>230120 <a href="http://zoomquiet.io/">Zoom.Quiet</a>(大妈) 用时 37 分钟 完成快译</li>
+</ul>
+<hr />
+<h2 id="流行新闻文章嗯哼"><a class="header" href="#流行新闻文章嗯哼">流行新闻/文章/嗯哼...</a></h2>
+<blockquote>
+<p>Popular News and Articles</p>
+</blockquote>
+<ul>
+<li>
+<p><a href="https://security.googleblog.com/2023/01/supporting-use-of-rust-in-chromium.html">Chromium 项目已经支持使用 Rust</a></p>
+<ul>
+<li>security.googleblog.com</li>
+</ul>
+</li>
+<li>
+<p><a href="https://servo.org/blog/2023/01/16/servo-2023">Servo to Advance in 2023</a></p>
+<ul>
+<li>servo.org</li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=VMpSYJ_7aYM">C++ vs Rust: 哪个更快？ （内部 x86 程序集）</a></p>
+<ul>
+<li>www.youtube.com</li>
+</ul>
+</li>
+<li>
+<p><a href="https://bevyengine.org/news/scaling-bevy-development">扩展 Bevy 开发</a></p>
+<ul>
+<li>bevyengine.org</li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:</p>
+<p>还以为是一种全新的分布式组织规范呢,
+原来 Bevy 是 Rust 开发的一种游戏引擎,
+该项目作为开源项目, 总结了自己的协作心法...
+当然, 还是严格的组织纪律先...</p>
+<p>)</p>
+<ul>
+<li><a href="https://shnatsel.medium.com/how-to-avoid-bounds-checks-in-rust-without-unsafe-f65e618b4c1e">如何避免 Rust 中的边界检查（没有不安全！）</a>
+<ul>
+<li>shnatsel.medium.com</li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:</p>
+<p>其实 unsafe 并不一定就不安全,
+只是....唉这关键词甩锅的意思太强以至大家都不愿意用了...</p>
+<p>)</p>
+<ul>
+<li>
+<p><a href="https://epage.github.io/blog/2023/01/clap-v4-1">clap v4.1, 一个 Rust CLI 参数解析器</a></p>
+<ul>
+<li>epage.github.io</li>
+</ul>
+</li>
+<li>
+<p><a href="https://rauljordan.com/rust-concepts-i-wish-i-learned-earlier">我希望早点学到的 Rust 概念</a></p>
+<ul>
+<li>rauljordan.com</li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:</p>
+<p>10几条感叹, 都是官方文档从来没强调的概念问题...
+当然, 很多图书中都有说, 只是没有这么结合实际情况来囧过..</p>
+<p>)</p>
+<ul>
+<li>
+<p><a href="https://foundation.rust-lang.org/news/lars-bergstrom-elected-as-rust-foundation-board-of-directors-chair">Lars Bergstrom 被选为 Rust 基金会轮值主席</a></p>
+<ul>
+<li>foundation.rust-lang.org</li>
+</ul>
+</li>
+<li>
+<p><a href="https://blaz.is/blog/post/we-dont-need-a-stable-abi">我们不需要稳定的 ABI</a></p>
+<ul>
+<li>blaz.is</li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:</p>
+<p>WoW 这不就更加自在了?
+有了类型信息就足以进行折腾.</p>
+<p>)</p>
+<ul>
+<li><a href="https://thoughtbot.com/blog/axum-from-a-rails-perspective">Rails 开发人员写了一些 Rust: Axum 0.6 回顾</a>
+<ul>
+<li>thoughtbot.com</li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:</p>
+<p>也就是说 Rust 足以模拟任何框架的任何开发者体验?</p>
+<p>)</p>
+<hr />
+<h2 id="好物妙品"><a class="header" href="#好物妙品">好物/妙品/...</a></h2>
+<blockquote>
+<p>Trending packages and projects</p>
+</blockquote>
+<p>注意: <a href="https://www.libhunt.com/l/rust">最受欢迎的 Rust 库</a> 基于社交网络中提及数据;</p>
+<ul>
+<li><a href="https://www.libhunt.com/r/starkware-libs/cairo">cairo</a>
+<ul>
+<li>» Zkp</li>
+<li>» zero-knowledge-proofs</li>
+</ul>
+</li>
+</ul>
+<p>Cairo is the first Turing-complete language for creating provable programs for general computation.</p>
+<p>(<code>是也乎</code>:</p>
+<p>嗯哼? 基于 Rust 的图灵完备语言?
+专注实证程序?</p>
+<p>)</p>
+<ul>
+<li><a href="https://www.libhunt.com/r/accesskit">accesskit</a>
+<ul>
+<li>GUI</li>
+</ul>
+</li>
+</ul>
+<p>UI accessibility infrastructure across platforms and programming languages</p>
+<p>(<code>是也乎</code>:</p>
+<p>嗯哼, 现在但凡是个 GUI 框架, 都要支持所有平台上的运行,
+否则不好意思发布了...简直.</p>
+<p>)</p>
+<ul>
+<li><a href="https://www.libhunt.com/r/xilem">xilem</a>
+<ul>
+<li>GUI</li>
+</ul>
+</li>
+</ul>
+<p>An experimental Rust native UI framework</p>
+<p>(<code>是也乎</code>:</p>
+<p><a href="https://raphlinus.github.io/rust/gui/2022/05/07/ui-architecture.html">Xilem: an architecture for UI in Rust | Raph Levien’s blog</a></p>
+<p>一个想法的实验成果...
+GUI 的确需要从  OOP 中跳出来.</p>
+<p>当然已经有不少可以投入试用的框架了,比如
+<a href="https://github.com/DioxusLabs/dioxus/blob/master/notes/README/ZH_CN.md">dioxus/ZH_CN.md at master · DioxusLabs/dioxus</a></p>
+<p>)</p>
+<ul>
+<li><img src="https://avatars.githubusercontent.com/u/74606771?v=4&amp;s=160" alt="" /><a href="https://www.libhunt.com/r/y-crdt">y-crdt</a>
+<ul>
+<li>» CRDT</li>
+<li>» Rust</li>
+</ul>
+</li>
+</ul>
+<p>Rust port of Yjs</p>
+<ul>
+<li><img src="https://avatars.githubusercontent.com/u/101023307?v=4&amp;s=160" alt="" /><a href="https://www.libhunt.com/r/iroh">iroh</a>
+<ul>
+<li>» Cloud</li>
+<li>» Ipfs</li>
+</ul>
+</li>
+</ul>
+<p>The most efficient implementation of IPFS on any planet</p>
+<hr />
+<h2 id="dama"><a class="header" href="#dama">DAMA</a></h2>
+<blockquote>
+<p>❤️ Happy Pythonic ;-(<code>大妈私人无责任播报</code>)</p>
+</blockquote>
+<ul>
+<li><a href="https://zoomquiet.substack.com/">Zoom.Quiet’s Chaos42 | Substack</a>
+<ul>
+<li>古早:新闻组式写作</li>
+<li>欢迎订阅, 包含当前周刊</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="ps"><a class="header" href="#ps">PS:</a></h1>
+<ul>
+<li>首发: <a href="https://weekly.rs.101.so/2023/ARW343.html">Awesome Rust Weekly 343 ~锈周刊 ~汇集全球锈事儿 ;-)</a></li>
+<li>修订: <a href="https://github.com/zhrust/weekly/tree/main/docs/2023/ARW343.md">ARW343.md</a></li>
+</ul>
+<h2 id="pps"><a class="header" href="#pps">PPS:</a></h2>
+<p>不觉中<a href="https://weekly.pychina.org/">~ 蠎周刊 ~ 汇集全球蠎事儿 ;-)</a>快译已经到了第11个年头</p>
+<p>Rustaceans 世界当然也有相似周刊, 那就一起呗;
+问为什么:</p>
+<pre><code>[皱眉]每周新闻资讯 怎么能错过 
+看看有什么新东西 
+当有新的发现时：
+    what f**k 还能这样玩？ 还有这东西？
+    每周开彩蛋[吃瓜]
+</code></pre>
+<p><code>无法同意更多</code>...
+很多社区贡献看起来辛苦,
+其实受益最多的,
+就是主动承担者也.</p>
+<hr />
+<p>好文笔,感叹号年度配额: <strong>0/3</strong></p>
+<p>投稿/反馈邮箱:</p>
+<pre><code>askdama@googlegroups.com
+</code></pre>
+<p>(邮件列表地址, 
+当成正常邮件发送邮件就好, 不用注册, 不用翻越...)</p>
+<hr />
+<p>ZoomQuiet/<strong><a href="https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g">大妈</a></strong></p>
+<p>就是四处 <code>是也乎,(￣▽￣)</code> 的那个<a href="https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g">大妈</a>:</p>
+<pre><code class="language-python">
+公开社群: 蟒营 (订阅号: Mainium)
+历史吐糟: Chaos42 (订阅号 PythoniCamp)
+
+as 创始组织者:
+    CPyUG (mailling-list: python-cn@googlegroups.com)
+    PyChina (订阅号: PyChinaOrg)
+    本地社区: 
+        GDG珠海 (订阅号: GDG-ZhuHai)
+        TFUG珠海 (订阅号: ZH_TFUG)
+</code></pre>
+<hr />
 <div style="break-before: page; page-break-before: always;"></div><h1 id="锈周刊342"><a class="header" href="#锈周刊342">锈周刊:342</a></h1>
 <p>原文: <a href="https://rust.libhunt.com/newsletter/342">Awesome Rust Weekly - Issue 342 | LibHunt</a></p>
 <p><a href="https://rust.libhunt.com/">Awrsome Rust</a></p>
@@ -213,7 +433,7 @@
 <li>230113 <a href="http://zoomquiet.io/">Zoom.Quiet</a>(大妈) 用时 37 分钟 完成格式转抄.</li>
 </ul>
 <hr />
-<h2 id="流行新闻文章嗯哼"><a class="header" href="#流行新闻文章嗯哼">流行新闻/文章/嗯哼...</a></h2>
+<h2 id="流行新闻文章嗯哼-1"><a class="header" href="#流行新闻文章嗯哼-1">流行新闻/文章/嗯哼...</a></h2>
 <blockquote>
 <p>Popular News and Articles</p>
 </blockquote>
@@ -299,7 +519,7 @@
 <p>已经是对比 C++23 了</p>
 <p>)</p>
 <hr />
-<h2 id="好物妙品"><a class="header" href="#好物妙品">好物/妙品/...</a></h2>
+<h2 id="好物妙品-1"><a class="header" href="#好物妙品-1">好物/妙品/...</a></h2>
 <blockquote>
 <p>Trending packages and projects</p>
 </blockquote>
@@ -348,7 +568,7 @@
 </ul>
 <p>A Scalable, User-Friendly Source Control System.</p>
 <hr />
-<h2 id="dama"><a class="header" href="#dama">DAMA</a></h2>
+<h2 id="dama-1"><a class="header" href="#dama-1">DAMA</a></h2>
 <blockquote>
 <p>❤️ Happy Pythonic ;-(<code>大妈私人无责任播报</code>)</p>
 </blockquote>
@@ -361,12 +581,12 @@
 </li>
 </ul>
 <hr />
-<h1 id="ps"><a class="header" href="#ps">PS:</a></h1>
+<h1 id="ps-1"><a class="header" href="#ps-1">PS:</a></h1>
 <ul>
 <li>首发: <a href="https://weekly.rs.101.so/2023/ARW342.html">Awesome Rust Weekly 342 ~锈周刊 ~汇集全球锈事儿 ;-)</a></li>
 <li>修订: <a href="https://github.com/zhrust/weekly/tree/main/docs/2023/ARW342.md">ARW342.md</a></li>
 </ul>
-<h2 id="pps"><a class="header" href="#pps">PPS:</a></h2>
+<h2 id="pps-1"><a class="header" href="#pps-1">PPS:</a></h2>
 <p>不觉中<a href="https://weekly.pychina.org/">~ 蠎周刊 ~ 汇集全球蠎事儿 ;-)</a>快译已经到了第11个年头</p>
 <p>Rustaceans 世界当然也有相似周刊, 那就一起呗;
 问为什么:</p>
@@ -577,7 +797,7 @@ testapp v0.1.0
 <p>嗯哼? 这事儿 Fb 允许嘛?
 )</p>
 <hr />
-<h2 id="好物妙品-1"><a class="header" href="#好物妙品-1">好物/妙品/...</a></h2>
+<h2 id="好物妙品-2"><a class="header" href="#好物妙品-2">好物/妙品/...</a></h2>
 <blockquote>
 <p>projects</p>
 </blockquote>
@@ -683,7 +903,7 @@ testapp v0.1.0
 </li>
 </ul>
 <hr />
-<h2 id="dama-1"><a class="header" href="#dama-1">DAMA</a></h2>
+<h2 id="dama-2"><a class="header" href="#dama-2">DAMA</a></h2>
 <blockquote>
 <p>❤️ Happy Pythonic ;-(<code>大妈私人无责任播报</code>)</p>
 </blockquote>
@@ -696,12 +916,12 @@ testapp v0.1.0
 </li>
 </ul>
 <hr />
-<h1 id="ps-1"><a class="header" href="#ps-1">PS:</a></h1>
+<h1 id="ps-2"><a class="header" href="#ps-2">PS:</a></h1>
 <ul>
 <li>首发: <a href="https://weekly.rs.101.so/2023/RR23W1.html">Rust概览 1/2023 ~ 锈览上周主要 ;-)</a></li>
 <li>修订: <a href="https://github.com/zhrust/weekly/tree/main/docs/2023/RR23W1.md">RR23W1.md</a></li>
 </ul>
-<h2 id="pps-1"><a class="header" href="#pps-1">PPS:</a></h2>
+<h2 id="pps-2"><a class="header" href="#pps-2">PPS:</a></h2>
 <p>不觉中<a href="https://weekly.pychina.org/">~ 蠎周刊 ~ 汇集全球蠎事儿 ;-)</a>快译已经到了第11个年头</p>
 <p>Rustaceans 世界当然也有相似周刊, 那就一起呗;
 问为什么:</p>
@@ -745,7 +965,7 @@ as 创始组织者:
 <li>230106 <a href="http://zoomquiet.io/">Zoom.Quiet</a>(大妈) 用时 37 分钟 完成格式转抄.</li>
 </ul>
 <hr />
-<h2 id="流行新闻文章嗯哼-1"><a class="header" href="#流行新闻文章嗯哼-1">流行新闻/文章/嗯哼...</a></h2>
+<h2 id="流行新闻文章嗯哼-2"><a class="header" href="#流行新闻文章嗯哼-2">流行新闻/文章/嗯哼...</a></h2>
 <blockquote>
 <p>Popular News and Articles</p>
 </blockquote>
@@ -845,7 +1065,7 @@ as 创始组织者:
 </ul>
 <p><img src="https://rust.libhunt.com/images/story/000/324/835/thumb.png?1672452511" alt="" /></p>
 <hr />
-<h2 id="好物妙品-2"><a class="header" href="#好物妙品-2">好物/妙品/...</a></h2>
+<h2 id="好物妙品-3"><a class="header" href="#好物妙品-3">好物/妙品/...</a></h2>
 <blockquote>
 <p>Trending packages and projects</p>
 </blockquote>
@@ -898,7 +1118,7 @@ as 创始组织者:
 <p>虽然用的人少...</p>
 <p>)</p>
 <hr />
-<h2 id="dama-2"><a class="header" href="#dama-2">DAMA</a></h2>
+<h2 id="dama-3"><a class="header" href="#dama-3">DAMA</a></h2>
 <blockquote>
 <p>❤️ Happy Pythonic ;-(<code>大妈私人无责任播报</code>)</p>
 </blockquote>
@@ -911,12 +1131,12 @@ as 创始组织者:
 </li>
 </ul>
 <hr />
-<h1 id="ps-2"><a class="header" href="#ps-2">PS:</a></h1>
+<h1 id="ps-3"><a class="header" href="#ps-3">PS:</a></h1>
 <ul>
 <li>首发: <a href="https://weekly.rs.101.so/2023/ARW341.html">Awesome Rust Weekly 341 ~锈周刊 ~汇集全球锈事儿 ;-)</a></li>
 <li>修订: <a href="https://github.com/zhrust/weekly/tree/main/docs/2023/ARW341.md">ARW341.md</a></li>
 </ul>
-<h2 id="pps-2"><a class="header" href="#pps-2">PPS:</a></h2>
+<h2 id="pps-3"><a class="header" href="#pps-3">PPS:</a></h2>
 <p>不觉中<a href="https://weekly.pychina.org/">~ 蠎周刊 ~ 汇集全球蠎事儿 ;-)</a>快译已经到了第11个年头</p>
 <p>Rustaceans 世界当然也有相似周刊, 那就一起呗;
 问为什么:</p>
