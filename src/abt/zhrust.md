@@ -37,6 +37,14 @@ rust 相关中文社区比当年 Python 的多不少,
 ## refer.
 > 关键参考
 
+- [This Week in Rust](https://this-week-in-rust.org/)
+- [Awesome Rust Weekly - Archive | LibHunt](https://rust.libhunt.com/newsletter/archive)
+- [Rust weekly newsletter - discu.eu](https://discu.eu/weekly/rust/)
+    - [rust-analyzer](https://rust-analyzer.github.io/thisweek)
+- [The Rust Programming Language Blog](https://blog.rust-lang.org/inside-rust/index.html)
+- ...
+
+
 ## logging
 > 版本记要
 
