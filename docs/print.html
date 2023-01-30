@@ -84,7 +84,7 @@
 
     <nav id="sidebar" class="sidebar" aria-label="Table of contents">
         <div class="sidebar-scrollbox">
-            <ol class="chapter"><li class="chapter-item expanded "><a href="2023/index.html"><strong aria-hidden="true">1.</strong> 周刊2023</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2023/RR23W3.html"><strong aria-hidden="true">1.1.</strong> RR23W3</a></li><li class="chapter-item expanded "><a href="2023/ARW343.html"><strong aria-hidden="true">1.2.</strong> ARW343</a></li><li class="chapter-item expanded "><a href="2023/RR23W2.html"><strong aria-hidden="true">1.3.</strong> RR23W2</a></li><li class="chapter-item expanded "><a href="2023/ARW342.html"><strong aria-hidden="true">1.4.</strong> ARW342</a></li><li class="chapter-item expanded "><a href="2023/RR23W1.html"><strong aria-hidden="true">1.5.</strong> RR23W1</a></li><li class="chapter-item expanded "><a href="2023/ARW341.html"><strong aria-hidden="true">1.6.</strong> ARW341</a></li></ol></li><li class="chapter-item expanded "><a href="abt/index.html"><strong aria-hidden="true">2.</strong> 有关</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="abt/gh-pages.html"><strong aria-hidden="true">2.1.</strong> gh-pages</a></li><li class="chapter-item expanded "><a href="abt/zhrust.html"><strong aria-hidden="true">2.2.</strong> zhrust</a></li></ol></li></ol>
+            <ol class="chapter"><li class="chapter-item expanded "><a href="2023/index.html"><strong aria-hidden="true">1.</strong> 周刊2023</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2023/RR23W4.html"><strong aria-hidden="true">1.1.</strong> RR23W4</a></li><li class="chapter-item expanded "><a href="2023/RR23W3.html"><strong aria-hidden="true">1.2.</strong> RR23W3</a></li><li class="chapter-item expanded "><a href="2023/ARW343.html"><strong aria-hidden="true">1.3.</strong> ARW343</a></li><li class="chapter-item expanded "><a href="2023/RR23W2.html"><strong aria-hidden="true">1.4.</strong> RR23W2</a></li><li class="chapter-item expanded "><a href="2023/ARW342.html"><strong aria-hidden="true">1.5.</strong> ARW342</a></li><li class="chapter-item expanded "><a href="2023/RR23W1.html"><strong aria-hidden="true">1.6.</strong> RR23W1</a></li><li class="chapter-item expanded "><a href="2023/ARW341.html"><strong aria-hidden="true">1.7.</strong> ARW341</a></li></ol></li><li class="chapter-item expanded "><a href="abt/index.html"><strong aria-hidden="true">2.</strong> 有关</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="abt/gh-pages.html"><strong aria-hidden="true">2.1.</strong> gh-pages</a></li><li class="chapter-item expanded "><a href="abt/zhrust.html"><strong aria-hidden="true">2.2.</strong> zhrust</a></li></ol></li></ol>
         </div>
         <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
     </nav>
@@ -205,6 +205,394 @@
 <li>..</li>
 <li>221023 ZQ init.</li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="rust概览-42023"><a class="header" href="#rust概览-42023">Rust概览 4/2023</a></h1>
+<p>原文: <a href="https://discu.eu/weekly/rust/2023/4/">Rust recap for week 4/2023</a></p>
+<ul>
+<li>230130 <a href="http://zoomquiet.io/">Zoom.Quiet</a>(大妈) 用时 37 分钟 完成格式转抄.</li>
+<li>230130 <a href="http://zoomquiet.io/">Zoom.Quiet</a>(大妈) 用时 13 分钟 完成快译</li>
+</ul>
+<hr />
+<h2 id="文章嗯哼"><a class="header" href="#文章嗯哼">文章/嗯哼...</a></h2>
+<blockquote>
+<p>Articles</p>
+</blockquote>
+<ul>
+<li><a href="https://matklad.github.io/2023/01/26/rusts-ugly-syntax.html">Rust 的丑陋语法</a>
+<ul>
+<li><a href="https://discu.eu/q/https://matklad.github.io/2023/01/26/rusts-ugly-syntax.html">544 评论 in 3 讨论s</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:</p>
+<p>表达能力过剩?</p>
+<p>如何从:</p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>pub fn read&lt;P: AsRef&lt;Path&gt;&gt;(path: P) -&gt; io::Result&lt;Vec&lt;u8&gt;&gt; {
+  fn inner(path: &amp;Path) -&gt; io::Result&lt;Vec&lt;u8&gt;&gt; {
+    let mut file = File::open(path)?;
+    let mut bytes = Vec::new();
+    file.read_to_end(&amp;mut bytes)?;
+    Ok(bytes)
+  }
+  inner(path.as_ref())
+}
+<span class="boring">}
+</span></code></pre></pre>
+<p>变成:</p>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>pub fn read(path: Path) -&gt; Bytes {
+  let file = File::open(path);
+  let bytes = Bytes::new();
+  file.read_to_end(bytes);
+  bytes
+}
+<span class="boring">}
+</span></code></pre></pre>
+<p>)</p>
+<ul>
+<li><a href="https://advocacy.consumerreports.org/wp-content/uploads/2023/01/Memory-Safety-Convening-Report-1-1.pdf">Memory Safety Convening Report (消费者报告呼吁内存安全)</a>
+<ul>
+<li><a href="https://discu.eu/q/https://advocacy.consumerreports.org/wp-content/uploads/2023/01/Memory-Safety-Convening-Report-1-1.pdf">337 评论 in 3 讨论s</a></li>
+</ul>
+</li>
+<li><a href="https://blog.rust-lang.org/2023/01/26/Rust-1.67.0.html">发布 Rust 1.67.0</a>
+<ul>
+<li><a href="https://discu.eu/q/https://blog.rust-lang.org/2023/01/26/Rust-1.67.0.html">304 评论 in 4 讨论s</a></li>
+</ul>
+</li>
+<li><a href="https://matklad.github.io/2023/01/25/next-rust-compiler.html">Blog 文章: 下一代 Rust 编译器</a>
+<ul>
+<li><a href="https://discu.eu/q/https://matklad.github.io/2023/01/25/next-rust-compiler.html">271 评论 in 2 讨论s</a></li>
+</ul>
+</li>
+<li><a href="https://thenewstack.io/c-creator-bjarne-stroustrup-weighs-in-on-distributed-systems-type-safety-and-rust/">C++ 创建者 Bjarne Stroustrup 对分布式系统、类型安全和 Rust 发表看法 (2020)</a>
+<ul>
+<li><a href="https://discu.eu/q/https://thenewstack.io/c-creator-bjarne-stroustrup-weighs-in-on-distributed-systems-type-safety-and-rust/">246 评论 in 3 讨论s</a></li>
+</ul>
+</li>
+<li><a href="https://fathy.fr/carbonyl">Forking Chrome 以在终端中渲染</a>
+<ul>
+<li><a href="https://discu.eu/q/https://fathy.fr/carbonyl">221 评论 in 6 讨论s</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:
+神奇哪,直接在终端中完成所有绘制的浏览器,
+而且视频也一样播放...</p>
+<p>)</p>
+<ul>
+<li><a href="https://blog.rust-lang.org/2021/02/26/const-generics-mvp-beta.html">const 操作解决方法?</a>
+<ul>
+<li><a href="https://discu.eu/q/https://blog.rust-lang.org/2021/02/26/const-generics-mvp-beta.html">145 评论 in 2 讨论s</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:</p>
+<blockquote>
+<p>Const 泛型 MVP 测试版
+)</p>
+</blockquote>
+<ul>
+<li><a href="https://litchipi.github.io/infosec/2023/01/24/git-code-audit-viewed-as-rust-programmer.html">作为 Rust 程序员的 Git 源代码审计</a>
+<ul>
+<li><a href="https://discu.eu/q/https://litchipi.github.io/infosec/2023/01/24/git-code-audit-viewed-as-rust-programmer.html">126 评论 in 3 讨论s</a></li>
+</ul>
+</li>
+<li><a href="https://taylor.town/code-blocks">在 Rust &amp; Go 中使用 {Blocks} 获得乐趣和收益</a>
+<ul>
+<li><a href="https://discu.eu/q/https://taylor.town/code-blocks">95 评论 in 4 讨论s</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:</p>
+<p>这是用 {} 来模拟 ()</p>
+<p>)</p>
+<ul>
+<li>
+<p><a href="https://gist.github.com/YuriGor/5e0dc379a340e5d13b53c5501892ab14">用 Vec 而不是 HashMap?</a></p>
+<ul>
+<li><a href="https://discu.eu/q/https://gist.github.com/YuriGor/5e0dc379a340e5d13b53c5501892ab14">64 评论 in 1 讨论</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://orlp.net/blog/ordering-numbers/">数字排序, 有多难?</a></p>
+<ul>
+<li><a href="https://discu.eu/q/https://orlp.net/blog/ordering-numbers/">60 评论 in 4 讨论s</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:</p>
+<p>不是, 现在技术文章都需要  ChatGPT 来当证据了?</p>
+<p>最后还用了 Guido 老爹的 C 得代码来证明思路...</p>
+<p><a href="https://crates.io/crates/num-ord">num-ord</a> 作者的广告</p>
+<p>)</p>
+<ul>
+<li><a href="https://metalbear.co/blog/fun-with-macoss-sip/">玩转 macOS 的 SIP</a>
+<ul>
+<li><a href="https://discu.eu/q/https://metalbear.co/blog/fun-with-macoss-sip/">52 评论 in 3 讨论s</a></li>
+</ul>
+</li>
+<li><a href="https://steveklabnik.com/writing/too-many-words-about-rusts-function-syntax">Rust 函数的语法话太多了</a>
+<ul>
+<li><a href="https://discu.eu/q/https://steveklabnik.com/writing/too-many-words-about-rusts-function-syntax">52 评论 in 3 讨论s</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:</p>
+<p>看和谁比了, C++/JAVA 们对比, Rust 算可以了</p>
+<p>)</p>
+<ul>
+<li><a href="https://swatinem.de/blog/future-size/">如果嵌套太深，async fn 调用可能会导致令人惊讶的性能问题</a>
+<ul>
+<li><a href="https://discu.eu/q/https://swatinem.de/blog/future-size/">49 评论 in 2 讨论s</a></li>
+</ul>
+</li>
+<li><a href="https://store.steampowered.com/app/2220850/Combine_And_Conquer">我的多行星自动化游戏 Combine And Conquer 有另一个巨大的更新并且可以在 Steam 上使用</a>
+<ul>
+<li><a href="https://discu.eu/q/https://store.steampowered.com/app/2220850/Combine_And_Conquer">49 评论 in 3 讨论s</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="发布版本"><a class="header" href="#发布版本">发布/版本...</a></h2>
+<blockquote>
+<p>Releases</p>
+</blockquote>
+<ul>
+<li><a href="https://gstreamer.freedesktop.org/releases/1.22/">&quot;33% 的 GStreamer 提交现在都是 Rust 中&quot;，来自 1.22 发行说明</a>
+<ul>
+<li><a href="https://discu.eu/q/https://gstreamer.freedesktop.org/releases/1.22/">132 评论 in 2 讨论s</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:</p>
+<p>这个感叹是真叹.</p>
+<p>)</p>
+<ul>
+<li><a href="https://slint-ui.com/blog/slint-0.3.4-released.html">Slint 0.3.4 发布</a>
+<ul>
+<li><a href="https://discu.eu/q/https://slint-ui.com/blog/slint-0.3.4-released.html">35 评论 in 1 讨论</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/gfx-rs/wgpu/releases/tag/v0.15.0">wgpu 0.15 and naga 0.11 发布!</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/gfx-rs/wgpu/releases/tag/v0.15.0">8 评论 in 1 讨论</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/nomadiz/edma/pull/10">EDMA v0.1.0-beta.5 发布: 追加 <code>sled</code> 支持</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/nomadiz/edma/pull/10">2 评论 in 1 讨论</a></li>
+</ul>
+</li>
+<li><a href="https://crates.io/search?q=giga-segy">发布 SEG-Y 编写器/解析器包</a></li>
+<li><a href="https://argmin-rs.org/blog/version-v0-8-0/">argmin 0.8.0 and argmin-math 0.3.0 发布</a></li>
+</ul>
+<hr />
+<h2 id="好物妙品"><a class="header" href="#好物妙品">好物/妙品/...</a></h2>
+<blockquote>
+<p>projects</p>
+</blockquote>
+<ul>
+<li><a href="https://github.com/juspay/hyperswitch">hyperswitch: 一个开源金融交换机，使支付变得快速、可靠和负担得起</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/juspay/hyperswitch">116 评论 in 2 讨论s</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:</p>
+<p>支付领域绝对值得是 Rust 的绝对掌控领域.
+)</p>
+<ul>
+<li><a href="https://github.com/sger/RustBooks">按级别分组的 Rust 书籍</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/sger/RustBooks">54 评论 in 2 讨论s</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:</p>
+<p>有很多开源好书)</p>
+<ul>
+<li><a href="https://github.com/kenbyte/rbloom">用 Rust 编写了我的第一个开源库!</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/kenbyte/rbloom">44 评论 in 2 讨论s</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:</p>
+<p>从  Python 的 Bloom filter 模块重构过来.</p>
+<p>)</p>
+<ul>
+<li><a href="https://github.com/mTvare6/hello-world.rs">Hello-world.rs: 用 Rust 编写的内存安全、快速、可配置的 hello-world</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/mTvare6/hello-world.rs">24 评论 in 2 讨论s</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:</p>
+<p>谁说 Hallo-World 没什么可研究的?</p>
+<p>)</p>
+<ul>
+<li><a href="https://github.com/kurtbuilds/ormlite">Ormlite: Rust 中的 ORM，适合喜欢 SQL 的开发人员</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/kurtbuilds/ormlite">21 评论 in 2 讨论s</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/not-yet-awesome-rust/not-yet-awesome-rust">Not-yet-Awesome Rust</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/not-yet-awesome-rust/not-yet-awesome-rust">11 评论 in 1 讨论</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:</p>
+<p>创意不错
+)</p>
+<ul>
+<li><a href="https://github.com/ItsEthra/scotch">用于使用 Rust 创建 WASM 插件的库</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/ItsEthra/scotch">8 评论 in 1 讨论</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/sreedevk/deduplicator">sreedevk/deduplicator: 用于快速递归地过滤、排序和删除重复文件的 Rust 应用程序</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/sreedevk/deduplicator">5 评论 in 1 讨论</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:</p>
+<p>不过, 很多时候重复文件是用在不同工程中的,
+不能简单的删除了事儿...</p>
+<p>)</p>
+<ul>
+<li><a href="https://github.com/K-Adam/simple-interpreter">简单语言的 Interpreter ( 寻求反馈 )</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/K-Adam/simple-interpreter">5 评论 in 1 讨论</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/leptos-rs/leptos">leptos: 用 Rust 构建快速的 Web 应用程序</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/leptos-rs/leptos">2 评论 in 1 讨论</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎:</code></p>
+<p>为什么要在 Rust 代码中写 HTML 呢?</p>
+<p>)</p>
+<hr />
+<h2 id="视频"><a class="header" href="#视频">视频</a></h2>
+<blockquote>
+<p>Videos</p>
+</blockquote>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=NNU6cbG96M4">[C++] 不要对所有事物进行 constexpr  (2021)</a>
+<ul>
+<li><a href="https://discu.eu/q/https://www.youtube.com/watch?v=NNU6cbG96M4">139 评论 in 3 讨论s</a></li>
+</ul>
+</li>
+<li><a href="https://youtu.be/MWRPYBoCEaY">Rust 的巫术</a>
+<ul>
+<li><a href="https://discu.eu/q/https://youtu.be/MWRPYBoCEaY">54 评论 in 1 讨论</a></li>
+</ul>
+</li>
+<li><a href="https://youtu.be/GM9s_d4AkhI">Carp/鲤鱼 - 如果 Clojure 和 Rust 有了孩子</a>
+<ul>
+<li><a href="https://discu.eu/q/https://youtu.be/GM9s_d4AkhI">29 评论 in 3 讨论s</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:</p>
+<p>这个可以有;-)
+当然括号替代所有其它是免不了的...</p>
+<p>)</p>
+<ul>
+<li><a href="https://youtu.be/0RsLGM_7ODE">在 C++14/17/23 中打印元组（对比 Rust）</a>
+<ul>
+<li><a href="https://discu.eu/q/https://youtu.be/0RsLGM_7ODE">25 评论 in 1 讨论</a></li>
+</ul>
+</li>
+<li><a href="https://youtube.com/playlist?list=PLtrSb4XxIVbpZpV65kk73OoUcIrBzoSiO">在 Rust 中构建 2d 物理引擎的好资源?</a>
+<ul>
+<li><a href="https://discu.eu/q/https://youtube.com/playlist?list=PLtrSb4XxIVbpZpV65kk73OoUcIrBzoSiO">4 评论 in 1 讨论</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:</p>
+<p>以往3D 游戏引擎都是 C++ 的?
+现在开始了 Rust 重刷浪潮?</p>
+<p>)</p>
+<ul>
+<li><a href="https://youtu.be/1QI3cHVpqbs">我制作了一个教程，介绍如何在 Rust 游戏引擎 Bevy 中制作一个简单的平台游戏</a>
+<ul>
+<li><a href="https://discu.eu/q/https://youtu.be/1QI3cHVpqbs">4 评论 in 1 讨论</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎</code>:</p>
+<p>刚刚发布的框架就已经有社区教程了...</p>
+<p>)</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=LNcGzn7ZsNI">用 Godot 和 Rust 一周完成游戏制作</a>
+<ul>
+<li><a href="https://discu.eu/q/https://www.youtube.com/watch?v=LNcGzn7ZsNI">2 评论 in 1 讨论</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="dama"><a class="header" href="#dama">DAMA</a></h2>
+<blockquote>
+<p>❤️ Happy Pythonic ;-(<code>大妈私人无责任播报</code>)</p>
+</blockquote>
+<ul>
+<li><a href="https://zoomquiet.substack.com/">Zoom.Quiet’s Chaos42 | Substack</a>
+<ul>
+<li>古早:新闻组式写作</li>
+<li>欢迎订阅, 包含当前周刊</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="ps"><a class="header" href="#ps">PS:</a></h1>
+<ul>
+<li>首发: <a href="https://weekly.rs.101.so/2023/RR23W4.html">Rust概览 4/2023 ~ 锈览上周主要 ;-)</a></li>
+<li>修订: <a href="https://github.com/zhrust/weekly/tree/main/docs/2023/RR23W4.md">RR23W4.md</a></li>
+</ul>
+<h2 id="pps"><a class="header" href="#pps">PPS:</a></h2>
+<p>不觉中<a href="https://weekly.pychina.org/">~ 蠎周刊 ~ 汇集全球蠎事儿 ;-)</a>快译已经到了第11个年头</p>
+<p>Rustaceans 世界当然也有相似周刊, 那就一起呗;
+问为什么:</p>
+<pre><code>[皱眉]每周新闻资讯 怎么能错过 
+看看有什么新东西 
+当有新的发现时：
+    what f**k 还能这样玩？ 还有这东西？
+    每周开彩蛋[吃瓜]
+</code></pre>
+<p><code>无法同意更多</code>...
+很多社区贡献看起来辛苦,
+其实受益最多的,
+就是主动承担者也.</p>
+<hr />
+<p>好文笔,感叹号年度配额: <strong>0/3</strong></p>
+<p>投稿/反馈邮箱:</p>
+<pre><code>askdama@googlegroups.com
+</code></pre>
+<p>(邮件列表地址, 
+当成正常邮件发送邮件就好, 不用注册, 不用翻越...)</p>
+<hr />
+<p>ZoomQuiet/<strong><a href="https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g">大妈</a></strong></p>
+<p>就是四处 <code>是也乎,(￣▽￣)</code> 的那个<a href="https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g">大妈</a>:</p>
+<pre><code class="language-python">
+公开社群: 蟒营 (订阅号: Mainium)
+历史吐糟: Chaos42 (订阅号 PythoniCamp)
+
+as 创始组织者:
+    CPyUG (mailling-list: python-cn@googlegroups.com)
+    PyChina (订阅号: PyChinaOrg)
+    本地社区: 
+        GDG珠海 (订阅号: GDG-ZhuHai)
+        TFUG珠海 (订阅号: ZH_TFUG)
+</code></pre>
+<hr />
 <div style="break-before: page; page-break-before: always;"></div><h1 id="rust概览-32023"><a class="header" href="#rust概览-32023">Rust概览 3/2023</a></h1>
 <p>原文: <a href="https://discu.eu/weekly/rust/2023/3/">Rust recap for week 3/2023</a></p>
 <ul>
@@ -212,7 +600,7 @@
 <li>230124 <a href="http://zoomquiet.io/">Zoom.Quiet</a>(大妈) 用时 13 分钟 完成快译</li>
 </ul>
 <hr />
-<h2 id="文章嗯哼"><a class="header" href="#文章嗯哼">文章/嗯哼...</a></h2>
+<h2 id="文章嗯哼-1"><a class="header" href="#文章嗯哼-1">文章/嗯哼...</a></h2>
 <blockquote>
 <p>Articles</p>
 </blockquote>
@@ -337,7 +725,7 @@ a *cross* (b *cross* c *cross* d);
 <p>也许是时候放弃 JSON 用 toml 了?</p>
 <p>)</p>
 <hr />
-<h2 id="发布版本"><a class="header" href="#发布版本">发布/版本...</a></h2>
+<h2 id="发布版本-1"><a class="header" href="#发布版本-1">发布/版本...</a></h2>
 <blockquote>
 <p>Releases</p>
 </blockquote>
@@ -360,7 +748,7 @@ a *cross* (b *cross* c *cross* d);
 <li><a href="https://crates.io/crates/vplugin/">VPlugin v0.2.0 发布</a></li>
 </ul>
 <hr />
-<h2 id="好物妙品"><a class="header" href="#好物妙品">好物/妙品/...</a></h2>
+<h2 id="好物妙品-1"><a class="header" href="#好物妙品-1">好物/妙品/...</a></h2>
 <blockquote>
 <p>projects</p>
 </blockquote>
@@ -428,7 +816,7 @@ a *cross* (b *cross* c *cross* d);
 </li>
 </ul>
 <hr />
-<h2 id="视频"><a class="header" href="#视频">视频</a></h2>
+<h2 id="视频-1"><a class="header" href="#视频-1">视频</a></h2>
 <blockquote>
 <p>Videos</p>
 </blockquote>
@@ -484,7 +872,7 @@ a *cross* (b *cross* c *cross* d);
 <li><a href="https://youtu.be/pRPkd-v-z0E">Rust GameDev 社区很棒，我希望很快能贡献出更多的教程 ;P</a></li>
 </ul>
 <hr />
-<h2 id="dama"><a class="header" href="#dama">DAMA</a></h2>
+<h2 id="dama-1"><a class="header" href="#dama-1">DAMA</a></h2>
 <blockquote>
 <p>❤️ Happy Pythonic ;-(<code>大妈私人无责任播报</code>)</p>
 </blockquote>
@@ -497,12 +885,12 @@ a *cross* (b *cross* c *cross* d);
 </li>
 </ul>
 <hr />
-<h1 id="ps"><a class="header" href="#ps">PS:</a></h1>
+<h1 id="ps-1"><a class="header" href="#ps-1">PS:</a></h1>
 <ul>
 <li>首发: <a href="https://weekly.rs.101.so/2023/RR23W3.html">Rust概览 3/2023 ~ 锈览上周主要 ;-)</a></li>
 <li>修订: <a href="https://github.com/zhrust/weekly/tree/main/docs/2023/RR23W3.md">RR23W3.md</a></li>
 </ul>
-<h2 id="pps"><a class="header" href="#pps">PPS:</a></h2>
+<h2 id="pps-1"><a class="header" href="#pps-1">PPS:</a></h2>
 <p>不觉中<a href="https://weekly.pychina.org/">~ 蠎周刊 ~ 汇集全球蠎事儿 ;-)</a>快译已经到了第11个年头</p>
 <p>Rustaceans 世界当然也有相似周刊, 那就一起呗;
 问为什么:</p>
@@ -641,7 +1029,7 @@ as 创始组织者:
 <p>也就是说 Rust 足以模拟任何框架的任何开发者体验?</p>
 <p>)</p>
 <hr />
-<h2 id="好物妙品-1"><a class="header" href="#好物妙品-1">好物/妙品/...</a></h2>
+<h2 id="好物妙品-2"><a class="header" href="#好物妙品-2">好物/妙品/...</a></h2>
 <blockquote>
 <p>Trending packages and projects</p>
 </blockquote>
@@ -705,7 +1093,7 @@ GUI 的确需要从  OOP 中跳出来.</p>
 </ul>
 <p>The most efficient implementation of IPFS on any planet</p>
 <hr />
-<h2 id="dama-1"><a class="header" href="#dama-1">DAMA</a></h2>
+<h2 id="dama-2"><a class="header" href="#dama-2">DAMA</a></h2>
 <blockquote>
 <p>❤️ Happy Pythonic ;-(<code>大妈私人无责任播报</code>)</p>
 </blockquote>
@@ -718,12 +1106,12 @@ GUI 的确需要从  OOP 中跳出来.</p>
 </li>
 </ul>
 <hr />
-<h1 id="ps-1"><a class="header" href="#ps-1">PS:</a></h1>
+<h1 id="ps-2"><a class="header" href="#ps-2">PS:</a></h1>
 <ul>
 <li>首发: <a href="https://weekly.rs.101.so/2023/ARW343.html">Awesome Rust Weekly 343 ~锈周刊 ~汇集全球锈事儿 ;-)</a></li>
 <li>修订: <a href="https://github.com/zhrust/weekly/tree/main/docs/2023/ARW343.md">ARW343.md</a></li>
 </ul>
-<h2 id="pps-1"><a class="header" href="#pps-1">PPS:</a></h2>
+<h2 id="pps-2"><a class="header" href="#pps-2">PPS:</a></h2>
 <p>不觉中<a href="https://weekly.pychina.org/">~ 蠎周刊 ~ 汇集全球蠎事儿 ;-)</a>快译已经到了第11个年头</p>
 <p>Rustaceans 世界当然也有相似周刊, 那就一起呗;
 问为什么:</p>
@@ -766,7 +1154,7 @@ as 创始组织者:
 <li>230124 <a href="http://zoomquiet.io/">Zoom.Quiet</a>(大妈) 用时 13 分钟 完成快译</li>
 </ul>
 <hr />
-<h2 id="文章嗯哼-1"><a class="header" href="#文章嗯哼-1">文章/嗯哼...</a></h2>
+<h2 id="文章嗯哼-2"><a class="header" href="#文章嗯哼-2">文章/嗯哼...</a></h2>
 <blockquote>
 <p>Articles</p>
 </blockquote>
@@ -872,7 +1260,7 @@ as 创始组织者:
 </li>
 </ul>
 <hr />
-<h2 id="发布版本-1"><a class="header" href="#发布版本-1">发布/版本...</a></h2>
+<h2 id="发布版本-2"><a class="header" href="#发布版本-2">发布/版本...</a></h2>
 <blockquote>
 <p>Releases</p>
 </blockquote>
@@ -906,7 +1294,7 @@ as 创始组织者:
 <li><a href="https://github.com/extrawurst/cc-accounting">cc-accounting 发布: 简单的信用卡记账工具</a></li>
 </ul>
 <hr />
-<h2 id="好物妙品-2"><a class="header" href="#好物妙品-2">好物/妙品/...</a></h2>
+<h2 id="好物妙品-3"><a class="header" href="#好物妙品-3">好物/妙品/...</a></h2>
 <blockquote>
 <p>projects</p>
 </blockquote>
@@ -974,7 +1362,7 @@ as 创始组织者:
 </li>
 </ul>
 <hr />
-<h2 id="视频-1"><a class="header" href="#视频-1">视频</a></h2>
+<h2 id="视频-2"><a class="header" href="#视频-2">视频</a></h2>
 <blockquote>
 <p>Videos</p>
 </blockquote>
@@ -1008,7 +1396,7 @@ as 创始组织者:
 </li>
 </ul>
 <hr />
-<h2 id="dama-2"><a class="header" href="#dama-2">DAMA</a></h2>
+<h2 id="dama-3"><a class="header" href="#dama-3">DAMA</a></h2>
 <blockquote>
 <p>❤️ Happy Pythonic ;-(<code>大妈私人无责任播报</code>)</p>
 </blockquote>
@@ -1021,12 +1409,12 @@ as 创始组织者:
 </li>
 </ul>
 <hr />
-<h1 id="ps-2"><a class="header" href="#ps-2">PS:</a></h1>
+<h1 id="ps-3"><a class="header" href="#ps-3">PS:</a></h1>
 <ul>
 <li>首发: <a href="https://weekly.rs.101.so/2023/RR23W2.html">Rust概览 2/2023 ~ 锈览上周主要 ;-)</a></li>
 <li>修订: <a href="https://github.com/zhrust/weekly/tree/main/docs/2023/RR23W2.md">RR23W2.md</a></li>
 </ul>
-<h2 id="pps-2"><a class="header" href="#pps-2">PPS:</a></h2>
+<h2 id="pps-3"><a class="header" href="#pps-3">PPS:</a></h2>
 <p>不觉中<a href="https://weekly.pychina.org/">~ 蠎周刊 ~ 汇集全球蠎事儿 ;-)</a>快译已经到了第11个年头</p>
 <p>Rustaceans 世界当然也有相似周刊, 那就一起呗;
 问为什么:</p>
@@ -1156,7 +1544,7 @@ as 创始组织者:
 <p>已经是对比 C++23 了</p>
 <p>)</p>
 <hr />
-<h2 id="好物妙品-3"><a class="header" href="#好物妙品-3">好物/妙品/...</a></h2>
+<h2 id="好物妙品-4"><a class="header" href="#好物妙品-4">好物/妙品/...</a></h2>
 <blockquote>
 <p>Trending packages and projects</p>
 </blockquote>
@@ -1205,7 +1593,7 @@ as 创始组织者:
 </ul>
 <p>A Scalable, User-Friendly Source Control System.</p>
 <hr />
-<h2 id="dama-3"><a class="header" href="#dama-3">DAMA</a></h2>
+<h2 id="dama-4"><a class="header" href="#dama-4">DAMA</a></h2>
 <blockquote>
 <p>❤️ Happy Pythonic ;-(<code>大妈私人无责任播报</code>)</p>
 </blockquote>
@@ -1218,12 +1606,12 @@ as 创始组织者:
 </li>
 </ul>
 <hr />
-<h1 id="ps-3"><a class="header" href="#ps-3">PS:</a></h1>
+<h1 id="ps-4"><a class="header" href="#ps-4">PS:</a></h1>
 <ul>
 <li>首发: <a href="https://weekly.rs.101.so/2023/ARW342.html">Awesome Rust Weekly 342 ~锈周刊 ~汇集全球锈事儿 ;-)</a></li>
 <li>修订: <a href="https://github.com/zhrust/weekly/tree/main/docs/2023/ARW342.md">ARW342.md</a></li>
 </ul>
-<h2 id="pps-3"><a class="header" href="#pps-3">PPS:</a></h2>
+<h2 id="pps-4"><a class="header" href="#pps-4">PPS:</a></h2>
 <p>不觉中<a href="https://weekly.pychina.org/">~ 蠎周刊 ~ 汇集全球蠎事儿 ;-)</a>快译已经到了第11个年头</p>
 <p>Rustaceans 世界当然也有相似周刊, 那就一起呗;
 问为什么:</p>
@@ -1266,7 +1654,7 @@ as 创始组织者:
 <li>230113 <a href="http://zoomquiet.io/">Zoom.Quiet</a>(大妈) 用时 37 分钟 完成格式转抄.</li>
 </ul>
 <hr />
-<h2 id="文章嗯哼-2"><a class="header" href="#文章嗯哼-2">文章/嗯哼...</a></h2>
+<h2 id="文章嗯哼-3"><a class="header" href="#文章嗯哼-3">文章/嗯哼...</a></h2>
 <blockquote>
 <p>Articles</p>
 </blockquote>
@@ -1406,7 +1794,7 @@ testapp v0.1.0
 </li>
 </ul>
 <hr />
-<h2 id="发布版本-2"><a class="header" href="#发布版本-2">发布/版本...</a></h2>
+<h2 id="发布版本-3"><a class="header" href="#发布版本-3">发布/版本...</a></h2>
 <blockquote>
 <p>Releases</p>
 </blockquote>
@@ -1434,7 +1822,7 @@ testapp v0.1.0
 <p>嗯哼? 这事儿 Fb 允许嘛?
 )</p>
 <hr />
-<h2 id="好物妙品-4"><a class="header" href="#好物妙品-4">好物/妙品/...</a></h2>
+<h2 id="好物妙品-5"><a class="header" href="#好物妙品-5">好物/妙品/...</a></h2>
 <blockquote>
 <p>projects</p>
 </blockquote>
@@ -1524,7 +1912,7 @@ testapp v0.1.0
 <p>正如大家期待的 Rust 首先在 WASM 领域持续发力
 )</p>
 <hr />
-<h2 id="视频-2"><a class="header" href="#视频-2">视频</a></h2>
+<h2 id="视频-3"><a class="header" href="#视频-3">视频</a></h2>
 <blockquote>
 <p>Videos</p>
 </blockquote>
@@ -1540,7 +1928,7 @@ testapp v0.1.0
 </li>
 </ul>
 <hr />
-<h2 id="dama-4"><a class="header" href="#dama-4">DAMA</a></h2>
+<h2 id="dama-5"><a class="header" href="#dama-5">DAMA</a></h2>
 <blockquote>
 <p>❤️ Happy Pythonic ;-(<code>大妈私人无责任播报</code>)</p>
 </blockquote>
@@ -1553,12 +1941,12 @@ testapp v0.1.0
 </li>
 </ul>
 <hr />
-<h1 id="ps-4"><a class="header" href="#ps-4">PS:</a></h1>
+<h1 id="ps-5"><a class="header" href="#ps-5">PS:</a></h1>
 <ul>
 <li>首发: <a href="https://weekly.rs.101.so/2023/RR23W1.html">Rust概览 1/2023 ~ 锈览上周主要 ;-)</a></li>
 <li>修订: <a href="https://github.com/zhrust/weekly/tree/main/docs/2023/RR23W1.md">RR23W1.md</a></li>
 </ul>
-<h2 id="pps-4"><a class="header" href="#pps-4">PPS:</a></h2>
+<h2 id="pps-5"><a class="header" href="#pps-5">PPS:</a></h2>
 <p>不觉中<a href="https://weekly.pychina.org/">~ 蠎周刊 ~ 汇集全球蠎事儿 ;-)</a>快译已经到了第11个年头</p>
 <p>Rustaceans 世界当然也有相似周刊, 那就一起呗;
 问为什么:</p>
@@ -1702,7 +2090,7 @@ as 创始组织者:
 </ul>
 <p><img src="https://rust.libhunt.com/images/story/000/324/835/thumb.png?1672452511" alt="" /></p>
 <hr />
-<h2 id="好物妙品-5"><a class="header" href="#好物妙品-5">好物/妙品/...</a></h2>
+<h2 id="好物妙品-6"><a class="header" href="#好物妙品-6">好物/妙品/...</a></h2>
 <blockquote>
 <p>Trending packages and projects</p>
 </blockquote>
@@ -1755,7 +2143,7 @@ as 创始组织者:
 <p>虽然用的人少...</p>
 <p>)</p>
 <hr />
-<h2 id="dama-5"><a class="header" href="#dama-5">DAMA</a></h2>
+<h2 id="dama-6"><a class="header" href="#dama-6">DAMA</a></h2>
 <blockquote>
 <p>❤️ Happy Pythonic ;-(<code>大妈私人无责任播报</code>)</p>
 </blockquote>
@@ -1768,12 +2156,12 @@ as 创始组织者:
 </li>
 </ul>
 <hr />
-<h1 id="ps-5"><a class="header" href="#ps-5">PS:</a></h1>
+<h1 id="ps-6"><a class="header" href="#ps-6">PS:</a></h1>
 <ul>
 <li>首发: <a href="https://weekly.rs.101.so/2023/ARW341.html">Awesome Rust Weekly 341 ~锈周刊 ~汇集全球锈事儿 ;-)</a></li>
 <li>修订: <a href="https://github.com/zhrust/weekly/tree/main/docs/2023/ARW341.md">ARW341.md</a></li>
 </ul>
-<h2 id="pps-5"><a class="header" href="#pps-5">PPS:</a></h2>
+<h2 id="pps-6"><a class="header" href="#pps-6">PPS:</a></h2>
 <p>不觉中<a href="https://weekly.pychina.org/">~ 蠎周刊 ~ 汇集全球蠎事儿 ;-)</a>快译已经到了第11个年头</p>
 <p>Rustaceans 世界当然也有相似周刊, 那就一起呗;
 问为什么:</p>
