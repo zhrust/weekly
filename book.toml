@@ -11,3 +11,22 @@ base_url = "weekly.rs.101.so"
 
 [build]
 build-dir = "docs"
+
+
+[output.html]
+#mathjax-support = true
+#site-url = "/mdBook/"
+git-repository-url = "https://github.com/zhrust/weekly/tree/main/src"
+#edit-url-template = "https://github.com/rust-lang/mdBook/edit/master/guide/{path}"
+
+[output.html.playground]
+line-numbers = true
+
+[output.html.search]
+limit-results = 20
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 2
+boost-paragraph = 1
+expand = true
+heading-split-level = 2
