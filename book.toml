@@ -30,3 +30,8 @@ boost-hierarchy = 2
 boost-paragraph = 1
 expand = true
 heading-split-level = 2
+
+# book.toml
+#   230220 ++ cognitive-engineering-lab/aquascope
+#   : Interactive visualizations of Rust at compile-time and run-time https://github.com/cognitive-engineering-lab/aquascope
+[preprocessor.aquascope]
