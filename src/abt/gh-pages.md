@@ -17,6 +17,10 @@
 ## trace
 > 具体推进
 
+- 230220 根据 [cognitive\-engineering\-lab/aquascope: Interactive visualizations of Rust at compile\-time and run\-time](https://github.com/cognitive-engineering-lab/aquascope)
+    - 追加了代码引用时的就地内存可视化分析
+
+
 ## refer.
 > 关键参考
 
