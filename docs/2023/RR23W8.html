@@ -1,0 +1,600 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+
+<head>
+    <!-- Book generated using mdBook -->
+    <meta charset="UTF-8">
+    <title>RR23W8 - Weekly for China Rustaceans</title>
+
+
+    <!-- Custom HTML head -->
+    
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="每周一下午,快译海外技术周刊,配套大妈吐糟,精选推荐又一周锈世界可秀之事儿...">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="icon" href="../favicon.svg">
+    <link rel="shortcut icon" href="../favicon.png">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/chrome.css">
+    <link rel="stylesheet" href="../css/print.css" media="print">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../fonts/fonts.css">
+
+    <!-- Highlight.js Stylesheets -->
+    <link rel="stylesheet" href="../highlight.css">
+    <link rel="stylesheet" href="../tomorrow-night.css">
+    <link rel="stylesheet" href="../ayu-highlight.css">
+
+    <!-- Custom theme stylesheets -->
+
+
+</head>
+
+<body>
+    <!-- Provide site root to javascript -->
+    <script type="text/javascript">
+        var path_to_root = "../";
+        var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+    </script>
+
+    <!-- Work around some values being stored in localStorage wrapped in quotes -->
+    <script type="text/javascript">
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+            if (theme.startsWith('"') && theme.endsWith('"')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+            if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    </script>
+
+    <!-- Set the theme before any content is loaded, prevents flash -->
+    <script type="text/javascript">
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch (e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        var html = document.querySelector('html');
+        html.classList.remove('no-js')
+        html.classList.remove('light')
+        html.classList.add(theme);
+        html.classList.add('js');
+    </script>
+
+    <!-- Hide / unhide sidebar before it is displayed -->
+    <script type="text/javascript">
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth >= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch (e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add("sidebar-" + sidebar);
+    </script>
+
+    <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <div class="sidebar-scrollbox">
+            <ol class="chapter"><li class="chapter-item expanded "><a href="../2023/index.html"><strong aria-hidden="true">1.</strong> 周刊2023</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../2023/RR23W8.html" class="active"><strong aria-hidden="true">1.1.</strong> RR23W8</a></li><li class="chapter-item expanded "><a href="../2023/RR23W7.html"><strong aria-hidden="true">1.2.</strong> RR23W7</a></li><li class="chapter-item expanded "><a href="../2023/RR23W6.html"><strong aria-hidden="true">1.3.</strong> RR23W6</a></li><li class="chapter-item expanded "><a href="../2023/RR23W5.html"><strong aria-hidden="true">1.4.</strong> RR23W5</a></li><li class="chapter-item expanded "><a href="../2023/RR23W4.html"><strong aria-hidden="true">1.5.</strong> RR23W4</a></li><li class="chapter-item expanded "><a href="../2023/RR23W3.html"><strong aria-hidden="true">1.6.</strong> RR23W3</a></li><li class="chapter-item expanded "><a href="../2023/ARW343.html"><strong aria-hidden="true">1.7.</strong> ARW343</a></li><li class="chapter-item expanded "><a href="../2023/RR23W2.html"><strong aria-hidden="true">1.8.</strong> RR23W2</a></li><li class="chapter-item expanded "><a href="../2023/ARW342.html"><strong aria-hidden="true">1.9.</strong> ARW342</a></li><li class="chapter-item expanded "><a href="../2023/RR23W1.html"><strong aria-hidden="true">1.10.</strong> RR23W1</a></li><li class="chapter-item expanded "><a href="../2023/ARW341.html"><strong aria-hidden="true">1.11.</strong> ARW341</a></li></ol></li><li class="chapter-item expanded "><a href="../abt/index.html"><strong aria-hidden="true">2.</strong> 有关</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../abt/gh-pages.html"><strong aria-hidden="true">2.1.</strong> gh-pages</a></li><li class="chapter-item expanded "><a href="../abt/zhrust.html"><strong aria-hidden="true">2.2.</strong> zhrust</a></li></ol></li></ol>
+        </div>
+        <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+    </nav>
+
+    <div id="page-wrapper" class="page-wrapper">
+
+        <div class="page">
+                        <div id="menu-bar-hover-placeholder"></div>
+            <div id="menu-bar" class="menu-bar sticky bordered">
+                <div class="left-buttons">
+                    <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents"
+                        aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <button id="theme-toggle" class="icon-button" type="button" title="Change theme"
+                        aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                        <i class="fa fa-paint-brush"></i>
+                    </button>
+                    <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                        <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                        <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button>
+                        </li>
+                    </ul>
+                    <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)"
+                        aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S"
+                        aria-controls="searchbar">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
+                <h1 class="menu-title">Weekly for China Rustaceans</h1>
+
+                <div class="right-buttons">
+                    <a href="../print.html" title="Print this book" aria-label="Print this book">
+                        <i id="print-button" class="fa fa-print"></i>
+                    </a>
+                    <a href="https://github.com/zhrust/weekly/tree/main/src" title="Git repository" aria-label="Git repository">
+                        <i id="git-repository-button" class="fa fa-github"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div id="search-wrapper" class="hidden">
+                <form id="searchbar-outer" class="searchbar-outer">
+                    <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..."
+                        aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                </form>
+                <div id="searchresults-outer" class="searchresults-outer hidden">
+                    <div id="searchresults-header" class="searchresults-header"></div>
+                    <ul id="searchresults">
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+            <script type="text/javascript">
+                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                Array.from(document.querySelectorAll('#sidebar a')).forEach(function (link) {
+                    link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                });
+            </script>
+
+            <div id="content" class="content">
+                <!-- Page table of contents -->
+                <div class="sidetoc">
+                    <nav class="pagetoc"></nav>
+                </div>
+                <main>
+                    <h1 id="rust概览-82023"><a class="header" href="#rust概览-82023">Rust概览 8/2023</a></h1>
+<p>原文: <a href="https://discu.eu/weekly/rust/2023/8/">Rust recap for week 8/2023</a></p>
+<ul>
+<li>230227 <a href="http://zoomquiet.io/">Zoom.Quiet</a>(大妈) 用时 37 分钟 完成格式转抄.</li>
+<li>230227 <a href="http://zoomquiet.io/">Zoom.Quiet</a>(大妈) 用时 13 分钟 完成快译</li>
+</ul>
+<hr />
+<h2 id="文章嗯哼"><a class="header" href="#文章嗯哼">文章/嗯哼...</a></h2>
+<blockquote>
+<p>Articles</p>
+</blockquote>
+<ul>
+<li><a href="https://blog.rust-lang.org/inside-rust/2023/02/23/keyword-generics-progress-report-feb-2023.html">关键字泛型进展报告：2023 年 2 月 | Inside Rust Blog</a>
+<ul>
+<li><a href="https://discu.eu/q/https://blog.rust-lang.org/inside-rust/2023/02/23/keyword-generics-progress-report-feb-2023.html">305 评论 in 1 讨论</a></li>
+</ul>
+</li>
+<li><a href="https://bitfieldconsulting.com/golang/rust-vs-go">Rust vs. Go in 2023</a>
+<ul>
+<li><a href="https://discu.eu/q/https://bitfieldconsulting.com/golang/rust-vs-go">275 评论 in 3 讨论s</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎:</code></p>
+<p>何时 Docker 用 Rust 重写后, Golang 可能也将用 Rust 重写...</p>
+<p>)</p>
+<ul>
+<li><a href="https://arxiv.org/abs/2302.05331">C-rusted: C 中 Rust 的优点，没有缺点</a>
+<ul>
+<li><a href="https://discu.eu/q/https://arxiv.org/abs/2302.05331">234 评论 in 4 讨论s</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎:</code></p>
+<p>这就更加玄幻了, rusty-c ?</p>
+<p>)</p>
+<ul>
+<li><a href="https://developers.slashdot.org/story/23/02/26/0543203/gcc-gets-a-new-frontend-for-rust">GCC 获得了 Rust 的新前端</a>
+<ul>
+<li><a href="https://discu.eu/q/https://developers.slashdot.org/story/23/02/26/0543203/gcc-gets-a-new-frontend-for-rust">154 评论 in 1 讨论</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎:</code></p>
+<p>就比较玄幻...</p>
+<p>)</p>
+<ul>
+<li><a href="https://www.ambient.run/post/introducing-ambient">介绍 Ambient 0.1: 用于构建高性能多人游戏和 3D 应用程序的运行时，由 Rust、WebAssembly 和 WebGPU 提供支持</a>
+<ul>
+<li><a href="https://discu.eu/q/https://www.ambient.run/post/introducing-ambient">138 评论 in 6 讨论s</a></li>
+</ul>
+</li>
+<li><a href="https://saru-tora.github.io/anansi/">Anansi 0.13.2, 一个简单的全栈网络框架</a>
+<ul>
+<li><a href="https://discu.eu/q/https://saru-tora.github.io/anansi/">72 评论 in 11 讨论s</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/rust-lang/regex/discussions/960">正则表达式 ceate 是您程序中的瓶颈吗？ 如果是这样，你能分享细节吗？?</a>
+<ul>
+<li><a href="">67 评论 in 1 讨论</a></li>
+</ul>
+</li>
+<li><a href="https://dioxuslabs.com/blog/release-030/">发布 Dioxus 0.3: HotReloading、自动格式化、LiveView、WGPU 渲染器、多窗口应用程序</a>
+<ul>
+<li><a href="https://discu.eu/q/https://dioxuslabs.com/blog/release-030/">64 评论 in 2 讨论s</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎:</code></p>
+<p>叕一个平替 Flutter 的工程, 这个也没到 1.0;
+类似高星项目有:</p>
+<ul>
+<li>59.5k⭐️<a href="https://github.com/tauri-apps/tauri">tauri-apps/tauri: Build smaller, faster, and more secure desktop applications with a web frontend.</a> ~ 多语言支持</li>
+<li>18.2k⭐️<a href="https://github.com/iced-rs/iced/network/members">iced-rs/iced: A cross-platform GUI library for Rust, inspired by Elm</a> ~ 类似 Elm 的框架</li>
+<li>13.6k⭐️<a href="https://github.com/emilk/egui">emilk/egui: egui: an easy-to-use immediate mode GUI in Rust that runs on both web and native</a> ~ 页游引擎,平替 Dear ImGui</li>
+<li>5.8k⭐️<a href="https://github.com/slint-ui/slint">slint-ui/slint: Slint is a toolkit to efficiently develop fluid graphical user interfaces for any display: embedded devices and desktop applications. We support multiple programming languages, such as Rust, C++, or JavaScript.</a> ~ 能跑在 STM32|Pico/RP2040 低功耗嵌入系统中...</li>
+<li>3.7k⭐️<a href="https://github.com/redox-os/orbtk">redox-os/orbtk: The Rust UI-Toolkit.</a> ~ 全平台纯 Rust 框架</li>
+<li></li>
+</ul>
+<p>)</p>
+<ul>
+<li><a href="https://gcc.gnu.org/onlinedocs/gcc/Zero-Length.html">想知道我的项目是否可以移植到 Rust</a>
+<ul>
+<li><a href="">58 评论 in 2 讨论s</a></li>
+</ul>
+</li>
+<li><a href="https://arxiv.org/pdf/2301.02308.pdf">高级类型系统的可用性：以 Rust 为例</a>
+<ul>
+<li><a href="https://discu.eu/q/https://arxiv.org/pdf/2301.02308.pdf">45 评论 in 1 讨论</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎:</code></p>
+<p>CS 论文...</p>
+<p>)</p>
+<ul>
+<li><a href="https://blog.rust-lang.org/inside-rust/2023/02/22/governance-reform-rfc.html">RFC 改革治理公告 | Inside Rust Blog</a>
+<ul>
+<li><a href="https://discu.eu/q/https://blog.rust-lang.org/inside-rust/2023/02/22/governance-reform-rfc.html">45 评论 in 1 讨论</a></li>
+</ul>
+</li>
+<li><a href="https://doc.rust-lang.org/book/ch08-03-hash-maps.html">Rust 编程书 ch8，清单 8-25/所有权问题.</a>
+<ul>
+<li><a href="https://discu.eu/q/https://doc.rust-lang.org/book/ch08-03-hash-maps.html">31 评论 in 3 讨论s</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎:</code></p>
+<p>永远的 FAQ ...</p>
+<p>)</p>
+<ul>
+<li><a href="https://samsartor.com/guis-1/">GUI 中的无状态</a>
+<ul>
+<li><a href="https://discu.eu/q/https://samsartor.com/guis-1/">26 评论 in 1 讨论</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎:</code></p>
+<p><img src="https://ipic.zoomquiet.top/2023-02-27-zshot%202023-02-27%2012.13.30.jpg" alt="GUIs" /></p>
+<p>对 GUI 开发的 Rusty 思考</p>
+<p>)</p>
+<ul>
+<li><a href="https://users.rust-lang.org/t/whats-everyone-working-on-this-week-8-2023/89699?u=droidlogician">大伙儿都在做什么? (8/2023)?</a>
+<ul>
+<li><a href="https://discu.eu/q/https://users.rust-lang.org/t/whats-everyone-working-on-this-week-8-2023/89699?u=droidlogician">23 评论 in 1 讨论</a></li>
+</ul>
+</li>
+<li><a href="https://jackson.dev/post/rust-coreutils-dd/">Rust Coreutils: 修复 Low-Hanging 性能果实</a>
+<ul>
+<li><a href="https://discu.eu/q/https://jackson.dev/post/rust-coreutils-dd/">23 评论 in 1 讨论</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="发布版本"><a class="header" href="#发布版本">发布/版本...</a></h2>
+<blockquote>
+<p>Releases</p>
+</blockquote>
+<ul>
+<li><a href="https://github.com/GyulyVGC/sniffnet/releases/tag/v1.1.1">Sniffnet v1.1.1 已经发布</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/GyulyVGC/sniffnet/releases/tag/v1.1.1">14 评论 in 1 讨论</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/PrivateRookie/ws-tool">Announcement: ws-tool 0.7.0 发布 🎉🎉🎉</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/PrivateRookie/ws-tool">10 评论 in 3 讨论s</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎:</code></p>
+<p>叕一个 websocket client/server </p>
+<p>)</p>
+<ul>
+<li><a href="https://hexdocs.pm/ex_git/ExGit.html">我发布了一个轻量级的 rust wrapped git 客户端.</a></li>
+<li><a href="https://github.com/ddotta/awesome-polars/releases/tag/2023-02-24">👉 新的 Awesome Polars 发布！ 🚀 #Polars 有什么新内容？ 让我们找出来!</a></li>
+<li>...</li>
+</ul>
+<hr />
+<h2 id="好物妙品"><a class="header" href="#好物妙品">好物/妙品/...</a></h2>
+<blockquote>
+<p>projects</p>
+</blockquote>
+<ul>
+<li><a href="https://github.com/fereidani/rclite">RcLite: Arc<T> and Rc<T> 内存效率高达 100%</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/fereidani/rclite">66 评论 in 1 讨论</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎:</code></p>
+<p>叕一个逼宫作品, 先独立发布, 大家用的好了, 看官方是否合并到编译器中...</p>
+<p>)</p>
+<ul>
+<li><a href="https://github.com/matt-kimball/allocscope">allocscope - 内存跟踪工具</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/matt-kimball/allocscope">49 评论 in 2 讨论s</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/pintariching/railwind">Railwind: 用 Rust 重写的 Tailwind 编译器</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/pintariching/railwind">47 评论 in 2 讨论s</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/RibirX/Ribir">新开源项目启动！！！ 声明式、基于组合的跨平台 GUI</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/RibirX/Ribir">39 评论 in 1 讨论</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎:</code></p>
+<p>基于 wasm 平替 Flutter ...</p>
+<p>)</p>
+<ul>
+<li><a href="https://github.com/jdxcode/rtx/">rtx: 运行时执行器（asdf rust 克隆）</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/jdxcode/rtx/">34 评论 in 1 讨论</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎:</code></p>
+<p>前提是网络够力,硬盘够大,
+否则, rtx 很容易将整个儿互联网安装进来...</p>
+<p>)</p>
+<ul>
+<li><a href="https://github.com/typst/ecow">Ecow: 紧凑的写时克隆向量和字符串.</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/typst/ecow">29 评论 in 1 讨论</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/LazyVim/LazyVim">为 LazyVim 添加 Rust</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/LazyVim/LazyVim">25 评论 in 1 讨论</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎:</code></p>
+<p><img src="https://ipic.zoomquiet.top/2023-02-27-zshot%202023-02-27%2012.02.38.jpg" alt="LazyVim" /></p>
+<p>懒人版 Vim IDE, 
+通过预先调教好的无数插件, 让 Vim 用起来和高端付费版 IDE 们一样...</p>
+<p>)</p>
+<ul>
+<li><a href="https://github.com/saidofficial/makurust">试图在 Rust 中创建 Markdown 到 HTML 转换器!</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/saidofficial/makurust">16 评论 in 1 讨论</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/FractalFir/tmf">TMF: 提高 3D 网格压缩高达 76%</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/FractalFir/tmf">15 评论 in 1 讨论</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/hydro-project/rust-sitter">Rust-sitter: 在 Rust 代码中定义整个 tree-sitter 语法</a>
+<ul>
+<li><a href="https://discu.eu/q/https://github.com/hydro-project/rust-sitter">14 评论 in 1 讨论</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="视频"><a class="header" href="#视频">视频</a></h2>
+<blockquote>
+<p>Videos</p>
+</blockquote>
+<ul>
+<li><a href="https://youtu.be/dFkGNe4oaKk">氧化你的生活</a>
+<ul>
+<li><a href="https://discu.eu/q/https://youtu.be/dFkGNe4oaKk">45 评论 in 1 讨论</a></li>
+</ul>
+</li>
+</ul>
+<p>(<code>是也乎:</code></p>
+<p>蟹化你的人生...一系列用 Rust 重写的日常工具:</p>
+<ul>
+<li>工具:
+<ul>
+<li>cargo install exa     ~ 平替 tree</li>
+<li>cargo install du-dust ~ 平替 du</li>
+<li>cargo install bat     ~ 平替 cat</li>
+<li>cargo install zellij  ~ 平替 screen/tmux/...</li>
+<li>cargo install mprocs  ~ 平替 Supervisor</li>
+<li>cargo install ripgrep ~ 平替 grep</li>
+<li>cargo install gitui   ~ 平替 tig/... 各种 git 仓库观察器,已经用很久了,赞的</li>
+</ul>
+</li>
+<li>开发:
+<ul>
+<li>cargo install irust   ~ 平替 iPython</li>
+<li>cargo install evcxr_jypter   ~ Jupyter 的 Rust 内核</li>
+<li>cargo install bacon   ~ 平替 RA/rust-analyzer 终端版</li>
+<li>cargo install cargo-info</li>
+</ul>
+</li>
+<li>应用:
+<ul>
+<li>argo install ncspot   ~ Spotify 终端播放器</li>
+<li>cargo install porsmo  ~ 终端蕃茄钟</li>
+<li>cargo install speedtest-rs ~ 网速测试机</li>
+<li>cargo install wiki-tui ~ 终端版 Wikipedia</li>
+<li>cargo install rtx-cli ~ 平替 Conda </li>
+</ul>
+</li>
+</ul>
+<p>)</p>
+<ul>
+<li><a href="https://youtu.be/pTMvh6VzDls">Rust 和 RAII 内存管理 - Computerphile</a>
+<ul>
+<li><a href="https://discu.eu/q/https://youtu.be/pTMvh6VzDls">20 评论 in 1 讨论</a></li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=YIrjXFgL3MI">我是如何让 Game Jam 失败的（使用 godot-rust，至少我学会了如何编译成 emscripten）)</a>
+<ul>
+<li><a href="https://discu.eu/q/https://www.youtube.com/watch?v=YIrjXFgL3MI">15 评论 in 2 讨论s</a></li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=_ccDqRTx-JU">具有泛型和零大小类型的无误用 API</a>
+<ul>
+<li><a href="https://discu.eu/q/https://www.youtube.com/watch?v=_ccDqRTx-JU">4 评论 in 1 讨论</a></li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=1XCeYsOC-Qc">探索 fltk-rs 的声明式 UI</a>
+<ul>
+<li><a href="https://discu.eu/q/https://www.youtube.com/watch?v=1XCeYsOC-Qc">2 评论 in 1 讨论</a></li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=YxG7PhZ3fb4">用 Rayon 加速你的 Rust 代码</a></li>
+</ul>
+<p>(<code>是也乎:</code></p>
+<p>真,一键加速...</p>
+<p>)</p>
+<ul>
+<li><a href="https://youtu.be/ILslZgEBlAo">我在使用 bevy 和 rust 编写的游戏中添加了一个新的制作系统。. (sources in comments)</a> (sources in 评论)</li>
+</ul>
+<hr />
+<h2 id="dama"><a class="header" href="#dama">DAMA</a></h2>
+<blockquote>
+<p>❤️ Happy Pythonic ;-(<code>大妈私人无责任播报</code>)</p>
+</blockquote>
+<ul>
+<li><a href="https://zoomquiet.substack.com/">Zoom.Quiet’s Chaos42 | Substack</a>
+<ul>
+<li>古早:新闻组式写作</li>
+<li>欢迎订阅, 包含当前周刊</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="ps"><a class="header" href="#ps">PS:</a></h1>
+<ul>
+<li>首发: <a href="https://weekly.rs.101.so/2023/RR23W8.html">Rust概览 8/2023 ~ 锈览上周主要 ;-)</a></li>
+<li>修订: <a href="https://github.com/zhrust/weekly/tree/main/docs/2023/RR23W8.md">RR23W8.md</a></li>
+</ul>
+<h2 id="pps"><a class="header" href="#pps">PPS:</a></h2>
+<p>不觉中<a href="https://weekly.pychina.org/">~ 蠎周刊 ~ 汇集全球蠎事儿 ;-)</a>快译已经到了第11个年头</p>
+<p>Rustaceans 世界当然也有相似周刊, 那就一起呗;
+问为什么:</p>
+<pre><code>[皱眉]每周新闻资讯 怎么能错过 
+看看有什么新东西 
+当有新的发现时：
+    what f**k 还能这样玩？ 还有这东西？
+    每周开彩蛋[吃瓜]
+</code></pre>
+<p><code>无法同意更多</code>...
+很多社区贡献看起来辛苦,
+其实受益最多的,
+就是主动承担者也.</p>
+<hr />
+<p>好文笔,感叹号年度配额: <strong>0/3</strong></p>
+<p>投稿/反馈邮箱:</p>
+<pre><code>askdama@googlegroups.com
+</code></pre>
+<p>(邮件列表地址, 
+当成正常邮件发送邮件就好, 不用注册, 不用翻越...)</p>
+<hr />
+<p>ZoomQuiet/<strong><a href="https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g">大妈</a></strong></p>
+<p>就是四处 <code>是也乎,(￣▽￣)</code> 的那个<a href="https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g">大妈</a>:</p>
+<pre><code class="language-python">
+公开社群: 蟒营 (订阅号: Mainium)
+历史吐糟: Chaos42 (订阅号 PythoniCamp)
+
+as 创始组织者:
+    CPyUG (mailling-list: python-cn@googlegroups.com)
+    PyChina (订阅号: PyChinaOrg)
+    本地社区: 
+        GDG珠海 (订阅号: GDG-ZhuHai)
+        TFUG珠海 (订阅号: ZH_TFUG)
+</code></pre>
+<hr />
+
+                    <div id="giscus-container"></div>
+                </main>
+
+                <nav class="nav-wrapper" aria-label="Page navigation">
+                    <!-- Mobile navigation buttons -->
+                    <a rel="prev" href="../2023/index.html" class="mobile-nav-chapters previous"
+                        title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../2023/RR23W7.html" class="mobile-nav-chapters next"
+                        title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+
+                    <div style="clear: both"></div>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            <a rel="prev" href="../2023/index.html" class="nav-chapters previous" title="Previous chapter"
+                aria-label="Previous chapter" aria-keyshortcuts="Left">
+                <i class="fa fa-angle-left"></i>
+            </a>
+
+            <a rel="next" href="../2023/RR23W7.html" class="nav-chapters next" title="Next chapter"
+                aria-label="Next chapter" aria-keyshortcuts="Right">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </nav>
+
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        window.playground_copyable = true;
+    </script>
+
+
+    <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        var pagePath = "2023/RR23W8.md"
+    </script>
+
+
+    <!-- Custom JS scripts -->
+
+    <hr />
+
+    <p style="text-align:center">
+
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="知识共享许可协议"
+                style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+        本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可;-)
+
+    </p>
+    <hr />
+
+    <script src="https://utteranc.es/client.js" repo="zhrust/comments" issue-term="pathname" label="✨💬✨"
+        theme="github-light" crossorigin="anonymous" async>
+        </script>
+
+</body>
+
+</html>

@@ -1,9 +1,10 @@
 [book]
+title = "Weekly for China Rustaceans"
+description = "每周一下午,快译海外技术周刊,配套大妈吐糟,精选推荐又一周锈世界可秀之事儿..."
 authors = ["ZoomQuiet"]
-language = "en"
+#language = "en"
 multilingual = false
 src = "src"
-title = "Weekly for China Rustaceans"
 base_url = "weekly.rs.101.so"
 
 # Enables the `mdbook-template` preprocessor
@@ -13,14 +14,24 @@ base_url = "weekly.rs.101.so"
 build-dir = "docs"
 
 
+[preprocessor.rss]
+files-glob = "src/2023/*.md"
+url-base = "https://weekly.rs.101.so/"
+
 [output.html]
 #mathjax-support = true
 #site-url = "/mdBook/"
 git-repository-url = "https://github.com/zhrust/weekly/tree/main/src"
 #edit-url-template = "https://github.com/rust-lang/mdBook/edit/master/guide/{path}"
 
-[output.html.playground]
+
+[output.html.playpen]
 line-numbers = true
+#editable = true
+#editor = "ace"
+
+#[output.html.fold]
+#enable = true
 
 [output.html.search]
 limit-results = 20
@@ -35,3 +46,6 @@ heading-split-level = 2
 #   230220 ++ cognitive-engineering-lab/aquascope
 #   : Interactive visualizations of Rust at compile-time and run-time https://github.com/cognitive-engineering-lab/aquascope
 #[preprocessor.aquascope]
+
+[rust]
+edition = "2021"

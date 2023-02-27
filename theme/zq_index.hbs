@@ -52,27 +52,28 @@
 
     {{#if mathjax_support}}
     <!-- MathJax -->
-    <script async type="text/javascript"
+    <script async
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     {{/if}}
-
 </head>
 
 <body>
     <!-- Provide site root to javascript -->
-    <script type="text/javascript">
+    <script>
         var path_to_root = "{{ path_to_root }}";
         var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "{{ preferred_dark_theme }}" : "{{ default_theme }}";
     </script>
 
     <!-- Work around some values being stored in localStorage wrapped in quotes -->
-    <script type="text/javascript">
+    <script>
         try {
             var theme = localStorage.getItem('mdbook-theme');
             var sidebar = localStorage.getItem('mdbook-sidebar');
+
             if (theme.startsWith('"') && theme.endsWith('"')) {
                 localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
             }
+
             if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
                 localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
             }
@@ -80,7 +81,7 @@
     </script>
 
     <!-- Set the theme before any content is loaded, prevents flash -->
-    <script type="text/javascript">
+    <script>
         var theme;
         try { theme = localStorage.getItem('mdbook-theme'); } catch (e) { }
         if (theme === null || theme === undefined) { theme = default_theme; }
@@ -92,7 +93,7 @@
     </script>
 
     <!-- Hide / unhide sidebar before it is displayed -->
-    <script type="text/javascript">
+    <script>
         var html = document.querySelector('html');
         var sidebar = 'hidden';
         if (document.body.clientWidth >= 1080) {
@@ -183,7 +184,7 @@
             {{/if}}
 
             <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-            <script type="text/javascript">
+            <script>
                 document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                 document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                 Array.from(document.querySelectorAll('#sidebar a')).forEach(function (link) {
@@ -192,13 +193,8 @@
             </script>
 
             <div id="content" class="content">
-                <!-- Page table of contents -->
-                <div class="sidetoc">
-                    <nav class="pagetoc"></nav>
-                </div>
                 <main>
                     {{{ content }}}
-                    <div id="giscus-container"></div>
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
@@ -240,16 +236,19 @@
 
     </div>
 
-    {{#if livereload}}
+    {{#if live_reload_endpoint}}
     <!-- Livereload script (if served using the cli tool) -->
-    <script type="text/javascript">
-        var socket = new WebSocket("{{{livereload}}}");
+    <script>
+        const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+        const wsAddress = wsProtocol + "//" + location.host + "/" + "{{{live_reload_endpoint}}}";
+        const socket = new WebSocket(wsAddress);
         socket.onmessage = function (event) {
             if (event.data === "reload") {
                 socket.close();
                 location.reload();
             }
         };
+
         window.onbeforeunload = function () {
             socket.close();
         }
@@ -258,8 +257,9 @@
 
     {{#if google_analytics}}
     <!-- Google Analytics Tag -->
-    <script type="text/javascript">
+    <script>
         var localAddrs = ["localhost", "127.0.0.1", ""];
+
         // make sure we don't activate google analytics if the developer is
         // inspecting the book locally...
         if (localAddrs.indexOf(document.location.hostname) === -1) {
@@ -269,6 +269,7 @@
                 }, i[r].l = 1 * new Date(); a = s.createElement(o),
                     m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
             })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
             ga('create', '{{google_analytics}}', 'auto');
             ga('send', 'pageview');
         }
@@ -276,47 +277,43 @@
     {{/if}}
 
     {{#if playground_line_numbers}}
-    <script type="text/javascript">
+    <script>
         window.playground_line_numbers = true;
     </script>
     {{/if}}
 
     {{#if playground_copyable}}
-    <script type="text/javascript">
+    <script>
         window.playground_copyable = true;
     </script>
     {{/if}}
 
     {{#if playground_js}}
-    <script src="{{ path_to_root }}ace.js" type="text/javascript" charset="utf-8"></script>
-    <script src="{{ path_to_root }}editor.js" type="text/javascript" charset="utf-8"></script>
-    <script src="{{ path_to_root }}mode-rust.js" type="text/javascript" charset="utf-8"></script>
-    <script src="{{ path_to_root }}theme-dawn.js" type="text/javascript" charset="utf-8"></script>
-    <script src="{{ path_to_root }}theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+    <script src="{{ path_to_root }}ace.js" charset="utf-8"></script>
+    <script src="{{ path_to_root }}editor.js" charset="utf-8"></script>
+    <script src="{{ path_to_root }}mode-rust.js" charset="utf-8"></script>
+    <script src="{{ path_to_root }}theme-dawn.js" charset="utf-8"></script>
+    <script src="{{ path_to_root }}theme-tomorrow_night.js" charset="utf-8"></script>
     {{/if}}
 
     {{#if search_js}}
-    <script src="{{ path_to_root }}elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="{{ path_to_root }}mark.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="{{ path_to_root }}searcher.js" type="text/javascript" charset="utf-8"></script>
+    <script src="{{ path_to_root }}elasticlunr.min.js" charset="utf-8"></script>
+    <script src="{{ path_to_root }}mark.min.js" charset="utf-8"></script>
+    <script src="{{ path_to_root }}searcher.js" charset="utf-8"></script>
     {{/if}}
 
-    <script src="{{ path_to_root }}clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="{{ path_to_root }}highlight.js" type="text/javascript" charset="utf-8"></script>
-    <script src="{{ path_to_root }}book.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript" charset="utf-8">
-        var pagePath = "{{ path }}"
-    </script>
-
+    <script src="{{ path_to_root }}clipboard.min.js" charset="utf-8"></script>
+    <script src="{{ path_to_root }}highlight.js" charset="utf-8"></script>
+    <script src="{{ path_to_root }}book.js" charset="utf-8"></script>
 
     <!-- Custom JS scripts -->
     {{#each additional_js}}
-    <script type="text/javascript" src="{{ ../path_to_root }}{{this}}"></script>
+    <script src="{{ ../path_to_root }}{{this}}"></script>
     {{/each}}
 
     {{#if is_print}}
     {{#if mathjax_support}}
-    <script type="text/javascript">
+    <script>
         window.addEventListener('load', function () {
             MathJax.Hub.Register.StartupHook('End', function () {
                 window.setTimeout(window.print, 100);
@@ -324,13 +321,14 @@
         });
     </script>
     {{else}}
-    <script type="text/javascript">
+    <script>
         window.addEventListener('load', function () {
             window.setTimeout(window.print, 100);
         });
     </script>
     {{/if}}
     {{/if}}
+
     <hr />
 
     <p style="text-align:center">
@@ -341,10 +339,10 @@
 
     </p>
     <hr />
-
     <script src="https://utteranc.es/client.js" repo="zhrust/comments" issue-term="pathname" label="✨💬✨"
         theme="github-light" crossorigin="anonymous" async>
         </script>
+
 
 </body>
 
