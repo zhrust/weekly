@@ -14,9 +14,13 @@ base_url = "weekly.rs.101.so"
 build-dir = "docs"
 
 
-[preprocessor.rss]
-files-glob = "src/2023/*.md"
-url-base = "https://weekly.rs.101.so/"
+#[preprocessor.rss]
+#files-glob = "src/2023/*.md"
+#url-base = "https://weekly.rs.101.so/"
+
+[rss4mdbook]
+url-base = "https://weekly.rs.101.so"
+#files-glob = "src/2023/*.md"
 
 [output.html]
 #mathjax-support = true
