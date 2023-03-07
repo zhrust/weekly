@@ -22,7 +22,8 @@ echo "###::run@" `date +"%Y/%m/%d %H:%M:%S"` #>> $LOGF
 pwd 
 $MDBOOK build
 cp -fv $CNAME $DOC
-ls $DOC/rss.xml
+
+ls -la $DOC/rss.xml
 $RSS4BOOK gen
 ls -la $DOC/rss.xml
 
