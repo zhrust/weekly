@@ -7,6 +7,7 @@ VER="pub.sh {v23.1.6} auto mdbook and git upd"
 DATE=`date "+%y%m%d"`
 
 MDBOOK="$(which mdbook)"
+RSS4BOOK="$(which rss4mdbook)"
 GIT="$(which git)"
 #==================================================================== abt. path
 ROOT="/Users/zoomq/Exercism/_sites/weekly"
@@ -21,7 +22,9 @@ echo "###::run@" `date +"%Y/%m/%d %H:%M:%S"` #>> $LOGF
 pwd 
 $MDBOOK build
 cp -fv $CNAME $DOC
-ls $DOC
+ls $DOC/rss.xml
+$RSS4BOOK gen
+ls $DOC/rss.xml
 
 NOW=`date "+%y%m%d %H:%M:%S"`
 git upd "re-build by mdbook AT{$NOW}"

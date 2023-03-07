@@ -17,3 +17,16 @@
     + [gh-pages](./abt/gh-pages.md)
     + [zhrust](./abt/zhrust.md)
 
+
+# [RSS](rss.xml)
+
+---
+
+```
+           _~^~∽~_
+       \/ /  O ^  \ ()
+         '_   ∧   _'
+         / '--#--' <
+
+...act by ferris-actor v0.2.4 (built on 23.0303.201916)
+```
