@@ -16,8 +16,9 @@
 - [有关](./abt/README.md)
     + [zhrust](./abt/zhrust.md)
     + [gh-pages](./abt/gh-pages.md)
-    + [RSS](rss.xml)
 
+
+# [/rss.xml](/rss.xml)
 
 ---
 
