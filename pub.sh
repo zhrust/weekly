@@ -24,7 +24,7 @@ $MDBOOK build
 cp -fv $CNAME $DOC
 
 ls -la $DOC/rss.xml
-$RSS4BOOK gen
+$RSS4BOOK gen /Users/zoomq/Exercism/_sites/weekly/book.toml
 ls -la $DOC/rss.xml
 
 NOW=`date "+%y%m%d %H:%M:%S"`

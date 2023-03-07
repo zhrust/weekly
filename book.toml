@@ -12,8 +12,11 @@ base_url = "weekly.rs.101.so"
 
 [build]
 build-dir = "docs"
+
 [rss4mdbook]
 url-base = "https://weekly.rs.101.so"
+rss_title = "锈周刊 -> Weekly :: China<Rustaceans>"
+rss_desc = "~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 <Rust recap for week> 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿..."
 
 
 #[preprocessor.rss]
