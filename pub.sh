@@ -24,7 +24,7 @@ $MDBOOK build
 cp -fv $CNAME $DOC
 ls $DOC/rss.xml
 $RSS4BOOK gen
-ls $DOC/rss.xml
+ls -la $DOC/rss.xml
 
 NOW=`date "+%y%m%d %H:%M:%S"`
 git upd "re-build by mdbook AT{$NOW}"
