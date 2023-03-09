@@ -24,16 +24,16 @@ rss_desc = "~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 <Rust re
 #url-base = "https://weekly.rs.101.so/"
 
 [output.html]
+no-section-label = true
 #mathjax-support = true
 #site-url = "/mdBook/"
 git-repository-url = "https://github.com/zhrust/weekly/tree/main/src"
 #edit-url-template = "https://github.com/rust-lang/mdBook/edit/master/guide/{path}"
 
-
-[output.html.playpen]
+[output.html.playground]
+editable = true
 line-numbers = true
-#editable = true
-#editor = "ace"
+#copy-js = true
 
 [output.html.print]
 enable = false
