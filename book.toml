@@ -35,6 +35,8 @@ line-numbers = true
 #editable = true
 #editor = "ace"
 
+[output.html.print]
+enable = false
 #[output.html.fold]
 #enable = true
 
