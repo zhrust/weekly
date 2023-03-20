@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR23W11.md</title><link>https://weekly.rs.101.so//2023/RR23W11</link><pubDate>Mon, 20 Mar 2023 11:42:13 +0800</pubDate><content:encoded><![CDATA[# Rust概览 11/2023
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR23W11.md</title><link>https://weekly.rs.101.so//2023/RR23W11</link><pubDate>Mon, 20 Mar 2023 11:45:09 +0800</pubDate><content:encoded><![CDATA[# Rust概览 11/2023
 
 原文: [Rust recap for week 11/2023](https://discu.eu/weekly/rust/2023/11/)
 
@@ -324,18 +324,15 @@ Bevy 非常活跃, 毕竟是游戏领域基础设施,
 - [Zoom\.Quiet’s Chaos42 \| Substack](https://zoomquiet.substack.com/)
     + 古早:新闻组式写作
     + 欢迎订阅, 包含当前周刊
-- [42.zoomquiet.top](https://42.zoomquiet.top/)
-    + 古早:周刊式分享
-    + ...类似湾区日报
-- [LDS❤️💀🤖](LDS42.PODCAST.XYZ)
-    + 播客:小宇宙
-    + 收集各种嗯哼...
 - [LDS❤️💀🤖](LDS42.PODCAST.XYZ)
     + 播客:小宇宙
     + 收集各种嗯哼...
 - [Chaos42 - YouTube](https://www.youtube.com/watch?v=fPQ6piLqMXE&list=PLToFpvpg6EgRo6naYOp-BX4So-DxOCne8&index=1)
     + VLog
     + 恢复各种嗯哼...
+- [42.zoomquiet.top](https://42.zoomquiet.top/)
+    + 古早:周刊式分享
+    + ...类似湾区日报
 
 
 ```
