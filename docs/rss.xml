@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR23W11.md</title><link>https://weekly.rs.101.so//2023/RR23W11</link><pubDate>Mon, 20 Mar 2023 11:45:09 +0800</pubDate><content:encoded><![CDATA[# Rust概览 11/2023
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR23W11.md</title><link>https://weekly.rs.101.so//2023/RR23W11</link><pubDate>Mon, 20 Mar 2023 12:12:21 +0800</pubDate><content:encoded><![CDATA[# Rust概览 11/2023
 
 原文: [Rust recap for week 11/2023](https://discu.eu/weekly/rust/2023/11/)
 
@@ -12,7 +12,7 @@
 ## 文章/嗯哼...
 > Articles
 
-- [Switching From C++ to Rust](https://laplab.me/posts/switching-from-cpp-to-rust/)
+- [从 C++ 切换到 Rust](https://laplab.me/posts/switching-from-cpp-to-rust/)
     - [327 评论 in 3 讨论s](https://discu.eu/q/https://laplab.me/posts/switching-from-cpp-to-rust/)
 
 (`是也乎:`
@@ -23,7 +23,7 @@
 )
 
 
-- [Zed – A high-performance, multiplayer code editor written in Rust. Now in public beta](https://zed.dev/blog/beta)
+- [Zed – 用 Rust 编写的高性能多人代码编辑器, 现在处于公开测试阶段](https://zed.dev/blog/beta)
     - [254 评论 in 2 讨论s](https://discu.eu/q/https://zed.dev/blog/beta)
 
 (`是也乎:`
@@ -32,7 +32,7 @@
 
 )
 
-- [Must move types by Niko Matsakis](https://smallcultfollowing.com/babysteps/blog/2023/03/16/must-move-types/)
+- [必须移动类型 by Niko Matsakis](https://smallcultfollowing.com/babysteps/blog/2023/03/16/must-move-types/)
     - [119 评论 in 2 讨论s](https://discu.eu/q/https://smallcultfollowing.com/babysteps/blog/2023/03/16/must-move-types/)
 
 (`是也乎:`
@@ -43,11 +43,11 @@
 )
 
 
-- [Rust's Two Kinds of 'Assert' Make for Better Code](https://tratt.net/laurie/blog/2023/rusts_two_kinds_of_assert_make_for_better_code.html)
+- [Rust 的两种“断言”有助于编写更好的代码](https://tratt.net/laurie/blog/2023/rusts_two_kinds_of_assert_make_for_better_code.html)
     - [77 评论 in 5 讨论s](https://discu.eu/q/https://tratt.net/laurie/blog/2023/rusts_two_kinds_of_assert_make_for_better_code.html)
-- [To async trait or just to trait](http://smallcultfollowing.com/babysteps/blog/2023/03/12/to-async-trait-or-just-to-trait/)
+- [async trait 或许只是 trait](http://smallcultfollowing.com/babysteps/blog/2023/03/12/to-async-trait-or-just-to-trait/)
     - [58 评论 in 1 讨论](https://discu.eu/q/http://smallcultfollowing.com/babysteps/blog/2023/03/12/to-async-trait-or-just-to-trait/)
-- [Emitting Safer Rust with C2Rust](https://immunant.com/blog/2023/03/lifting/)
+- [用 C2Rust 搞出更安全的 Rust](https://immunant.com/blog/2023/03/lifting/)
     - [56 评论 in 2 讨论s](https://discu.eu/q/https://immunant.com/blog/2023/03/lifting/)
 
 (`是也乎`:
@@ -60,11 +60,11 @@
 
 )
 
-- [Const as an auto trait](https://without.boats/blog/const-as-an-auto-trait/)
+- [Const 作为自动 trait](https://without.boats/blog/const-as-an-auto-trait/)
     - [54 评论 in 1 讨论](https://discu.eu/q/https://without.boats/blog/const-as-an-auto-trait/)
-- [Through what process does the Vec<T> struct obtain the methods from \[T\], in particular get() and get_mut() ?](https://doc.rust-lang.org/std/index.html)
+- [Vec<T> 结构通过什么过程从 [T] 获取方法，特别是 get() 和 get_mut() ?](https://doc.rust-lang.org/std/index.html)
     - [53 评论 in 6 讨论s](https://discu.eu/q/https://doc.rust-lang.org/std/index.html)
-- [How Climatiq uses Rust and WebAssembly to achieve latencies as low as 30ms](https://www.gustavwengel.dk/how-we-keep-the-climatiq-api-fast)
+- [Climatiq 如何使用 Rust 和 WebAssembly 实现低至 30 毫秒的延迟](https://www.gustavwengel.dk/how-we-keep-the-climatiq-api-fast)
     - [43 评论 in 2 讨论s](https://discu.eu/q/https://www.gustavwengel.dk/how-we-keep-the-climatiq-api-fast)
 
 (`是也乎`:
@@ -76,7 +76,7 @@
 
 )
 
-- [Klint: Compile-time Detection of Atomic Context Violations for Kernel Rust Code](https://www.memorysafety.org/blog/gary-guo-klint-rust-tools/)
+- [Klint: 编译时检测内核 Rust 代码的原子上下文冲突](https://www.memorysafety.org/blog/gary-guo-klint-rust-tools/)
     - [39 评论 in 2 讨论s](https://discu.eu/q/https://www.memorysafety.org/blog/gary-guo-klint-rust-tools/)
 
 (`是也乎:`
@@ -86,7 +86,7 @@
 
 )
 
-- [Resources for writing good proc-macros?](https://rust-lang.github.io/api-guidelines/checklist.html)
+- [编写好 proc-macros 的资源?](https://rust-lang.github.io/api-guidelines/checklist.html)
     - [37 评论 in 3 讨论s](https://discu.eu/q/https://rust-lang.github.io/api-guidelines/checklist.html)
 
 (`是也乎:`
@@ -97,9 +97,9 @@
 
 )
 
-- [Why does Rc::from_box clone the contents of the Box?](https://doc.rust-lang.org/src/alloc/rc.rs.html#1429)
+- [为什么 Rc::from_box 会克隆 Box 的内容?](https://doc.rust-lang.org/src/alloc/rc.rs.html#1429)
     - [36 评论 in 3 讨论s](https://discu.eu/q/https://doc.rust-lang.org/src/alloc/rc.rs.html%231429)
-- [I built a startup in Rust, I would do it again](https://cloak.software/blog/i-built-startup-in-rust/)
+- [用 Rust 建立了一家初创公司, 我愿再来一次](https://cloak.software/blog/i-built-startup-in-rust/)
     - [33 评论 in 2 讨论s](https://discu.eu/q/https://cloak.software/blog/i-built-startup-in-rust/)
 
 (`是也乎`:
@@ -114,7 +114,7 @@
 
 )
 
-- [The birth of a package manager \[written in Rust :)\]](https://ochagavia.nl/blog/the-birth-of-a-package-manager/)
+- [包管理器的诞生 [用 Rust 编写 :)]](https://ochagavia.nl/blog/the-birth-of-a-package-manager/)
     - [30 评论 in 2 讨论s](https://discu.eu/q/https://ochagavia.nl/blog/the-birth-of-a-package-manager/)
 
 (`是也乎:`
@@ -126,7 +126,7 @@
 
 )
 
-- [Verse programming language: The Verse Calculus: a Core Calculus for Functional Logic Programming (Functional Logic language developed by Epic Games).-- Thought some of you here might find it interesting!](https://simon.peytonjones.org/assets/pdfs/verse-March23.pdf)
+- [Verse 编程语言：The Verse Calculus：函数逻辑编程的核心演算（由 Epic Games 开发的函数逻辑语言）-- 你们中的一些人可能会觉得这就有趣!](https://simon.peytonjones.org/assets/pdfs/verse-March23.pdf)
     - [25 评论 in 3 讨论s](https://discu.eu/q/https://simon.peytonjones.org/assets/pdfs/verse-March23.pdf)
 
 
@@ -134,7 +134,7 @@
 ## 发布/版本...
 > Releases
 
-- https://github.com/dtolnay/syn/releases/tag/2.0.0
+- [syn v2.0.0 发布](https://github.com/dtolnay/syn/releases/tag/2.0.0)
     - [53 评论 in 1 讨论](https://discu.eu/q/https://github.com/dtolnay/syn/releases/tag/2.0.0)
 
 (`是也乎:`
@@ -143,7 +143,7 @@
 
 )
 
-- [Initial release of `git-dive`, a `git-blame` replacement](https://crates.io/crates/git-dive)
+- [`git-dive`,  `git-blame` 替代初始版本](https://crates.io/crates/git-dive)
     - [10 评论 in 2 讨论s](https://discu.eu/q/https://crates.io/crates/git-dive)
 
 
@@ -153,7 +153,7 @@
 > projects
 
 
-- [Erdtree v1.4.1 - the love child of `tree` and `du`, now with support for a configuration file to override defaults and more](https://github.com/solidiquis/erdtree)
+- [Erdtree v1.4.1 - `tree` 和 `du` 的爱子, 现在支持配置文件来覆盖默认值等](https://github.com/solidiquis/erdtree)
     - [259 评论 in 8 讨论s](https://discu.eu/q/https://github.com/solidiquis/erdtree)
 
 (`是也乎:`
@@ -166,7 +166,7 @@ et 这个指令很萌, 只是为什么一直没有 ASCII 的选项?
 )
 
 
-- [Mountpoint – file client for S3 written in Rust, from AWS](https://github.com/awslabs/mountpoint-s3)
+- [Mountpoint – 来自 AWS 的用 Rust 编写的 S3 文件客户端](https://github.com/awslabs/mountpoint-s3)
     - [104 评论 in 2 讨论s](https://discu.eu/q/https://github.com/awslabs/mountpoint-s3)
 
 (`是也乎:`
@@ -175,9 +175,9 @@ et 这个指令很萌, 只是为什么一直没有 ASCII 的选项?
 
 )
 
-- [Arbitrary code execution during compilation – rust](https://github.com/eleijonmarck/do-not-compile-this-code)
+- [编译期间任意代码执行 – rust](https://github.com/eleijonmarck/do-not-compile-this-code)
     - [51 评论 in 1 讨论](https://discu.eu/q/https://github.com/eleijonmarck/do-not-compile-this-code)
-- [Llama.rs – Rust port of llama.cpp for fast LLaMA inference on CPU](https://github.com/setzer22/llama-rs)
+- [Llama.rs – llama.cpp 的 Rust 端口，用于在 CPU 上进行快速的 LLaMA 推理](https://github.com/setzer22/llama-rs)
     - [43 评论 in 4 讨论s](https://discu.eu/q/https://github.com/setzer22/llama-rs)
 
 (`是也乎:`
@@ -186,7 +186,7 @@ et 这个指令很萌, 只是为什么一直没有 ASCII 的选项?
 
 )
 
-- [Some questions from a noob Rustacean](https://github.com/jedisct1/libsodium)
+- [菜鸟Rustacean的一些问题](https://github.com/jedisct1/libsodium)
     - [31 评论 in 3 讨论s](https://discu.eu/q/https://github.com/jedisct1/libsodium)
 
 (`是也乎`:
@@ -200,7 +200,7 @@ et 这个指令很萌, 只是为什么一直没有 ASCII 的选项?
 )
 
 
-- [Polars: Fast DataFrames in Rust, Python and Node.js](https://github.com/pola-rs/polars)
+- [Polars: Rust, Python 和 Node.js 的 DataFrames](https://github.com/pola-rs/polars)
     - [23 评论 in 2 讨论s](https://discu.eu/q/https://github.com/pola-rs/polars)
 
 (`是也乎:`
@@ -210,7 +210,7 @@ et 这个指令很萌, 只是为什么一直没有 ASCII 的选项?
 )
 
 
-- [gerb: a new greenfield FOSS graphical font editor / IDE](https://github.com/epilys/gerb#readme)
+- [gerb: 全新的 FOSS 图形字体编辑器/IDE](https://github.com/epilys/gerb#readme)
     - [21 评论 in 1 讨论](https://discu.eu/q/https://github.com/epilys/gerb%23readme)
 
 
@@ -225,7 +225,7 @@ GPT 们应该有简化的办法...
 
 )
 
-- [Pure Rust CPU and OpenCL implementation of LLaMA language model](https://github.com/Noeda/rllama/)
+- [LLaMA 语言模型的纯 Rust CPU 和 OpenCL 实现](https://github.com/Noeda/rllama/)
     - [16 评论 in 1 讨论](https://discu.eu/q/https://github.com/Noeda/rllama/)
 
 (`是也乎:`
@@ -236,7 +236,7 @@ AI 带路党经典方向: 让 AI 运行更舒服
 )
 
 
-- [A C/C++ build tool](https://github.com/Dr-42/builder_cpp)
+- [A C/C++ 构建工具](https://github.com/Dr-42/builder_cpp)
     - [11 评论 in 2 讨论s](https://discu.eu/q/https://github.com/Dr-42/builder_cpp)
 
 (`是也乎:`
@@ -246,7 +246,7 @@ AI 带路党经典方向: 让 AI 运行更舒服
 )
 
 
-- [`boilermates` – How to multiple declare structs with common fields, common functionality and simple interconvertability (*I can't believe it's not inheritance!*)](https://crates.io/crates/boilermates)
+- [`boilermates` – 如何使用公共字段、公共功能和简单的互转换性来多重声明结构（*我不敢相信这不是继承！*）](https://crates.io/crates/boilermates)
     - [10 评论 in 1 讨论](https://discu.eu/q/https://crates.io/crates/boilermates)
 
 
@@ -261,7 +261,7 @@ OOP 又不是万灵药在发明 OOP 之前, 宏 才是魔法师
 ## 视频
 > Videos
 
-- [I built a multiplayer game engine in Rust (Ask me anything)](https://youtu.be/RYOAJqTpP5o)
+- [我用 Rust 构建了一个多人游戏引擎 (Ask me anything)](https://youtu.be/RYOAJqTpP5o)
     - [70 评论 in 2 讨论s](https://discu.eu/q/https://youtu.be/RYOAJqTpP5o)
 
 (`是也乎:`
@@ -270,7 +270,7 @@ OOP 又不是万灵药在发明 OOP 之前, 宏 才是魔法师
 
 )
 
-- [Faster than Rust and C++: the PERFECT hash table](https://youtu.be/DMQ_HcNSOAI)
+- [比 Rust 和 C++ 更快：完美的哈希表](https://youtu.be/DMQ_HcNSOAI)
     - [62 评论 in 1 讨论](https://discu.eu/q/https://youtu.be/DMQ_HcNSOAI)
 
 (`是也乎`:
@@ -284,7 +284,7 @@ hashbrown 比 std::collections 的效能要高...
 
 )
 
-- [Bye WebSockets! Boost Web Comms with Rust and WebTransport](https://www.youtube.com/watch?ab_channel=SecurityUnion&v=dztIToTf8Yc)
+- [再见 WebSocket！ 使用 Rust 和 WebTransport 促进 Web 通信](https://www.youtube.com/watch?ab_channel=SecurityUnion&v=dztIToTf8Yc)
     - [18 评论 in 1 讨论](https://discu.eu/q/https://www.youtube.com/watch?ab_channel=SecurityUnion&v=dztIToTf8Yc)
 
 (`是也乎:`
@@ -302,11 +302,11 @@ hashbrown 比 std::collections 的效能要高...
 
 )
 
-- [Want to learn how to make games with the Rust programming language, the Bevy Game Engine, and Entity Component System (ECS) Architecture? Now's a great time to jump in with this Bevy 0.10 Beginner Tutorial Series!](https://youtube.com/watch?feature=share&v=TQt-v_bFdao)
+- [想学习如何使用 Rust 编程语言、Bevy 游戏引擎和实体组件系统 (ECS) 架构制作游戏吗？ 现在是开始学习这个 Bevy 0.10 初学者教程系列的好时机!](https://youtube.com/watch?feature=share&v=TQt-v_bFdao)
     - [10 评论 in 2 讨论s](https://discu.eu/q/https://youtube.com/watch?feature=share&v=TQt-v_bFdao)
-- [Learn Bevy 0.10 Beginner Tutorial - EP6 - Spawning Enemies over Time, and Bevy Events!](https://youtube.com/watch?feature=share&v=GOl-kacs8TQ)
+- [学习 Bevy 0.10 初学者教程 - EP6 - 随着时间的推移生成敌人，以及 Bevy 事件!](https://youtube.com/watch?feature=share&v=GOl-kacs8TQ)
     - [4 评论 in 1 讨论](https://discu.eu/q/https://youtube.com/watch?feature=share&v=GOl-kacs8TQ)
-- [Learn Bevy 0.10 - EP4 - Enemy Movement, Collisions, Sound Effects, Despa...](https://youtube.com/watch?feature=share&v=4TjEo-gDgAg)
+- [Learn Bevy 0.10 - EP4 - 敌人移动、碰撞、音效、...](https://youtube.com/watch?feature=share&v=4TjEo-gDgAg)
     - [2 评论 in 1 讨论](https://discu.eu/q/https://youtube.com/watch?feature=share&v=4TjEo-gDgAg)
 
 (`是也乎`:
