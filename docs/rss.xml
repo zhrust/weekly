@@ -1,4 +1,139 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR23W14.md</title><link>https://weekly.rs.101.so//2023/RR23W14</link><pubDate>Mon, 10 Apr 2023 11:50:06 +0800</pubDate><content:encoded><![CDATA[# Rust概览 14/2023
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>NN5077.md</title><link>https://weekly.rs.101.so//dama/2023/NN5077</link><pubDate>Thu, 13 Apr 2023 09:24:30 +0800</pubDate><content:encoded><![CDATA[# [周看]NN 5077
+> 每周值得瞅瞅的...
+
+-----------------------------------------
+## Weekly
+> 定期领域消息
+
+- [RR23W14 - 锈周刊 -> Weekly :: China<Rustaceans>](https://discu.eu/q/https://developer.chrome.com/blog/webgpu-release/)
+- [蠎周刊(PyCoder)572 ~蠎周刊 ~汇集全球蠎事儿 ;-)](https://weekly.pychina.org/issue/issue-572.html)
+
+-----------------------------------------
+## Digging
+> 那种忍不住就想跳的坑...
+
+
+- [Learning to Code with R using ChatGPT | Exploring Baseball Data with R](https://baseballwithr.wordpress.com/2023/04/03/learning-to-code-with-r-using-chatgpt/) .. 这应该是一种全新的自学姿势了, 不但完成了学习,还能积累专用提示语仓库,并获得一本原创教材;-)
+- [ChatGPT应用开发小记 · BMPI](https://www.bmpi.dev/dev/chatgpt-development-notes/my-gpt-reader/ "ChatGPT应用开发小记 · BMPI") .. 这一个真正原创完备的个人 GPT 原创作品,这位是一直在高速学习和折腾, 这次有了 GPT 是真的一人抵一个团队了; 那么问题来了, 假设开发技术不在是阻碍, 你想开发什么服务呢?
+    - [我用我的10万条微信聊天记录和 280 篇博客文章，做了我自己的数字克隆AI](https://mp.weixin.qq.com/s/08ksIMZRVAwL1CQpO2sC7A) 这是另外一个方向, 将自己注入到 AI 中,变成最懂/像自己的助理, 非常像减配版 BlackMirror 中的 AI 管家了...
+    - 当然, 前提是你有规格化条理性长期记录一切的习惯...
+- [Futurepedia - The Largest AI Tools Directory | Home](https://www.futurepedia.io/) .. 再次推荐,持续增长的 GPT 相关武器库, 又或是创业点子仓库..
+- [How Ahrefs Saved US$400M in 3 Years by NOT Going to the Cloud | by Efim Mirochnik | Mar, 2023 | Ahrefs](https://tech.ahrefs.com/how-ahrefs-saved-us-400m-in-3-years-by-not-going-to-the-cloud-8939dd930af8) ...完全脱云三年节省4亿$, 所以,大公司裁员才有真正知道如何运营 IDC 的人才流出?
+- ...
+
+
+
+-----------------------------------------
+## Reading
+> 值得收藏, 反复读或是吐糟的..
+
+- [出版书的成本与利润：从出版商的角度分析](https://www.thebookseller.com/comment/the-profits-from-publishing-a-publishers-perspective) .. 所以,基本上除非找到了畅销书密码, 否则都是人望的积累而已...
+- [软件工程师辞职后如何靠全职内容创作谋生：实例分析](https://blog.pragmaticengineer.com/how-to-become-a-full-time-creator/) .. 坐言起行,其实在软件行业最大的收获还是 PSPi 个体项目过程管理习惯, 可以独立完成各种尝试
+- [ChatGPT 是做什么的？ 它为什么能做到？ — 四季刊](https://sijikan.com/blog/chatgpt/) ... 再次推荐,对 GPT 们怯魅最佳文章;-)
+- [When Will AI Take Your Job? - by Tomas Pueyo](https://unchartedterritories.tomaspueyo.com/p/when-will-ai-take-your-job) ... AI 何时将替代你? 一次严肃的分析
+- [The Full Circle on Developer Productivity with Steve Yegge](https://newsletter.pragmaticengineer.com/p/steve-yegge) .. 30多年的软件行业经历, 有很多值得参考的心法...
+- ...
+
+
+
+
+-----------------------------------------
+## Logging
+> Video 以及 Podcast...
+
+- [Gource \- a software version control visualization tool](https://gource.io/)
+    - 叕一个项目代码行为可视化工具, 和以往类似 codewarm 不同, 这是一种类似生物进化树的动画...
+- ...
+
+-----------------------------------------
+## MurMur
+> 其它呢喃...
+
+- [Foliate — A simple and modern eBook viewer for Linux desktops](https://johnfactotum.github.io/foliate/) .. 说是体验最好的电子书阅读器, 只支持 Linux ...
+    - [WSL | Windows安装与使用Foliate阅读器](https://mp.weixin.qq.com/s/KOjyiZQHA8v9cS0euBTfgQ) ...嗯嗯嗯
+- [42share: 一键分享你与GPT的对话](https://42share.io/ "42share: 一键分享你与GPT的对话") ... 这真的是另类 zhihu 了...
+- [SEIKEI University Repository: Image Strategy of Nogizaka46 : How Do Young People Perceive It?](http://54.64.109.41/dspace/handle/10928/865) .. 成蹊大学正经论文, 乃木坂46的形象战略：年轻人是如何看待它的? 这种研究方法可以应用在各种社会现象中哪...
+- [吴 军：ChatGPT不算新技术革命，带不来什么新机会](https://mp.weixin.qq.com/s/I9cljLZOyMcUCVbQTAVRfQ) .. 前计算机专家,现知名作家说当年自己两天就能写出类似效果的代码来..这就尴尬了, 像极了某些大师呢;
+- [Bitcoin 白皮书的 PDF 版本在每个较新版的 macOS 里都能找到，是一个测试用的 PDF 文件](https://waxy.org/2023/04/the-bitcoin-whitepaper-is-hidden-in-every-modern-copy-of-macos/) ... 所以, 就有人说 中本聪 其实就是 Jobs 了...
+- [Claude in Slack | Anthropic](https://slackbot.anthropic.com/slack/install) .. 虽然已是 仝元年, 但是跑马圈地的行为一直没变
+- ...
+
+-----------------------------------------
+## DAMA
+> ❤️ Happy Pythonic ;-(`大妈私人无责任播报`)
+
+
+
+- [Zoom\.Quiet’s Chaos42 \| Substack](https://zoomquiet.substack.com/)
+    + 古早:新闻组式写作
+    + 欢迎订阅, 包含当前周刊
+- [LDS❤️💀🤖](LDS42.PODCAST.XYZ)
+    + 播客:小宇宙
+    + 收集各种嗯哼...
+- [Chaos42 - YouTube](https://www.youtube.com/watch?v=fPQ6piLqMXE&list=PLToFpvpg6EgRo6naYOp-BX4So-DxOCne8&index=1)
+    + VLog
+    + 恢复各种嗯哼...
+
+
+
+
+```
+        _~∽*-~_
+    \) /  → ♡  \ ()
+      '_   ⌄   _'
+      | '--+--' <
+
+...act by ferris-actor v0.2.4 (built on 23.0303.201916)
+```
+
+-----------------------------------------
+# PS:
+
+标题中时间戳使用工具 nnera - crates.io: Rust Package Registry 自动生成,
+
+这叕是一个程序猿才有的梗...
+
+
+-------------
+
+好文笔,感叹号年度配额: **2/3**
+
+投稿/反馈邮箱:
+
+    askdama@googlegroups.com
+
+(邮件列表地址, 
+当成正常邮件发送邮件就好, 不用注册, 不用翻越...)
+
+
+-------------
+
+ZoomQuiet/**[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g)**
+
+就是四处 `是也乎,(￣▽￣)` 的那个[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g):
+
+
+
+```python
+
+公开社群: 蟒营 (订阅号: Mainium)
+历史吐糟: Chaos42 (订阅号 PythoniCamp)
+
+as 创始组织者:
+    CPyUG (mailling-list: python-cn@googlegroups.com)
+    PyChina (订阅号: PyChinaOrg)
+    本地社区: 
+        GDG珠海 (订阅号: GDG-ZhuHai)
+        TFUG珠海 (订阅号: ZH_TFUG)
+```
+
+-------------
+
+
+
+
+
+]]></content:encoded></item><item><title>RR23W14.md</title><link>https://weekly.rs.101.so//2023/RR23W14</link><pubDate>Mon, 10 Apr 2023 11:50:06 +0800</pubDate><content:encoded><![CDATA[# Rust概览 14/2023
 
 原文: [Rust recap for week 14/2023](https://discu.eu/weekly/rust/2023/14/)
 
@@ -339,133 +474,6 @@ as 创始组织者:
 ```
 
 -------------
-]]></content:encoded></item><item><title>NN5077.md</title><link>https://weekly.rs.101.so//dama/2023/NN5077</link><pubDate>Mon, 10 Apr 2023 10:22:40 +0800</pubDate><content:encoded><![CDATA[# [周看]NN 5077
-> 每周值得瞅瞅的...
-
------------------------------------------
-## Weekly
-> 定期领域消息
-
-- ...
-- ...
-
------------------------------------------
-## Digging
-> 那种忍不住就想跳的坑...
-
-
-- [Learning to Code with R using ChatGPT | Exploring Baseball Data with R](https://baseballwithr.wordpress.com/2023/04/03/learning-to-code-with-r-using-chatgpt/) .. 这应该是一种全新的自学姿势了, 不但完成了学习,还能积累专用提示语仓库,并获得一本原创教材;-)
-- [ChatGPT应用开发小记 · BMPI](https://www.bmpi.dev/dev/chatgpt-development-notes/my-gpt-reader/ "ChatGPT应用开发小记 · BMPI") .. 这一个真正原创完备的个人 GPT 原创作品,这位是一直在高速学习和折腾, 这次有了 GPT 是真的一人抵一个团队了; 那么问题来了, 假设开发技术不在是阻碍, 你想开发什么服务呢?
-    - [我用我的10万条微信聊天记录和 280 篇博客文章，做了我自己的数字克隆AI](https://mp.weixin.qq.com/s/08ksIMZRVAwL1CQpO2sC7A) 这是另外一个方向, 将自己注入到 AI 中,变成最懂/像自己的助理, 非常像减配版 BlackMirror 中的 AI 管家了...
-    - 当然, 前提是你有规格化条理性长期记录一切的习惯...
-- [Futurepedia - The Largest AI Tools Directory | Home](https://www.futurepedia.io/) .. 再次推荐,持续增长的 GPT 相关武器库, 又或是创业点子仓库..
-- ...
-
-
-
------------------------------------------
-## Reading
-> 值得收藏, 反复读或是吐糟的..
-
-- [出版书的成本与利润：从出版商的角度分析](https://www.thebookseller.com/comment/the-profits-from-publishing-a-publishers-perspective) .. 所以,基本上除非找到了畅销书密码, 否则都是人望的积累而已...
-- [软件工程师辞职后如何靠全职内容创作谋生：实例分析](https://blog.pragmaticengineer.com/how-to-become-a-full-time-creator/) .. 坐言起行,其实在软件行业最大的收获还是 PSPi 个体项目过程管理习惯, 可以独立完成各种尝试
-- [ChatGPT 是做什么的？ 它为什么能做到？ — 四季刊](https://sijikan.com/blog/chatgpt/) ... 再次推荐,对 GPT 们怯魅最佳文章;-)
-- ...
-
-
-
-
------------------------------------------
-## Logging
-> Video 以及 Podcast...
-
-- [Gource \- a software version control visualization tool](https://gource.io/)
-    - 叕一个项目代码行为可视化工具, 和以往类似 codewarm 不同, 这是一种类似生物进化树的动画...
-- ...
-
------------------------------------------
-## MurMur
-> 其它呢喃...
-
-- [Foliate — A simple and modern eBook viewer for Linux desktops](https://johnfactotum.github.io/foliate/) .. 说是体验最好的电子书阅读器, 只支持 Linux ...
-    - [WSL | Windows安装与使用Foliate阅读器](https://mp.weixin.qq.com/s/KOjyiZQHA8v9cS0euBTfgQ) ...嗯嗯嗯
-- [42share: 一键分享你与GPT的对话](https://42share.io/ "42share: 一键分享你与GPT的对话") ... 这真的是另类 zhihu 了...
-
------------------------------------------
-## DAMA
-> ❤️ Happy Pythonic ;-(`大妈私人无责任播报`)
-
-
-
-- [Zoom\.Quiet’s Chaos42 \| Substack](https://zoomquiet.substack.com/)
-    + 古早:新闻组式写作
-    + 欢迎订阅, 包含当前周刊
-- [LDS❤️💀🤖](LDS42.PODCAST.XYZ)
-    + 播客:小宇宙
-    + 收集各种嗯哼...
-- [Chaos42 - YouTube](https://www.youtube.com/watch?v=fPQ6piLqMXE&list=PLToFpvpg6EgRo6naYOp-BX4So-DxOCne8&index=1)
-    + VLog
-    + 恢复各种嗯哼...
-
-
-
-
-```
-        _~∽*-~_
-    \) /  → ♡  \ ()
-      '_   ⌄   _'
-      | '--+--' <
-
-...act by ferris-actor v0.2.4 (built on 23.0303.201916)
-```
-
------------------------------------------
-# PS:
-
-标题中时间戳使用工具 nnera - crates.io: Rust Package Registry 自动生成,
-
-这叕是一个程序猿才有的梗...
-
-
--------------
-
-好文笔,感叹号年度配额: **2/3**
-
-投稿/反馈邮箱:
-
-    askdama@googlegroups.com
-
-(邮件列表地址, 
-当成正常邮件发送邮件就好, 不用注册, 不用翻越...)
-
-
--------------
-
-ZoomQuiet/**[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g)**
-
-就是四处 `是也乎,(￣▽￣)` 的那个[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g):
-
-
-
-```python
-
-公开社群: 蟒营 (订阅号: Mainium)
-历史吐糟: Chaos42 (订阅号 PythoniCamp)
-
-as 创始组织者:
-    CPyUG (mailling-list: python-cn@googlegroups.com)
-    PyChina (订阅号: PyChinaOrg)
-    本地社区: 
-        GDG珠海 (订阅号: GDG-ZhuHai)
-        TFUG珠海 (订阅号: ZH_TFUG)
-```
-
--------------
-
-
-
-
-
 ]]></content:encoded></item><item><title>NN5070.md</title><link>https://weekly.rs.101.so//dama/2023/NN5070</link><pubDate>Fri, 07 Apr 2023 11:43:01 +0800</pubDate><content:encoded><![CDATA[# [周看]NN 5070
 > 每周值得瞅瞅的...
 
