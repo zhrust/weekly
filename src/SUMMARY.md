@@ -23,6 +23,7 @@
     + [zhrust](./abt/zhrust.md)
     + [gh-pages](./abt/gh-pages.md)
 - [周看:2023>](./dama/README.md)
+    + [NN5084](./dama/2023/NN5084.md)
     + [NN5077](./dama/2023/NN5077.md)
     + [NN5070](./dama/2023/NN5070.md)
     + [NN5064](./dama/2023/NN5064.md)
