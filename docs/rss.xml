@@ -1,4 +1,121 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR23W16.md</title><link>https://weekly.rs.101.so//2023/RR23W16</link><pubDate>Mon, 24 Apr 2023 11:00:38 +0800</pubDate><content:encoded><![CDATA[# Rust概览 16/2023
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>NN5091.md</title><link>https://weekly.rs.101.so//dama/2023/NN5091</link><pubDate>Mon, 24 Apr 2023 17:43:02 +0800</pubDate><content:encoded><![CDATA[# [周看]NN 5091
+> 每周值得瞅瞅的...
+
+-----------------------------------------
+## Weekly
+> 定期领域消息
+
+- [RR23W16 - 锈周刊 -> Weekly :: China<Rustaceans>](https://weekly.rs.101.so/2023/RR23W16.html#pps)
+- ...
+
+-----------------------------------------
+## Digging
+> 那种忍不住就想跳的坑...
+
+
+
+
+
+-----------------------------------------
+## Reading
+> 值得收藏, 反复读或是吐糟的..
+
+- [What do internal engineering tools look like? - by Justin](https://technically.substack.com/p/what-do-internal-engineering-tools) .. 如何构建内部工具? 这方向的故事太多了, 最关键的和你的用户坐在一起...
+- [与柏拉图讨论GPT：我们兜兜转转两千多年，不就是为了回到雅典？](https://mp.weixin.qq.com/s/6otudrh1ElSSETmgdkFSsQ) ... 和 奇绩 分析的思路相同, 回到历史中找到规律...所以, GPT 之后, 拼的真的是 DNA 了...
+
+
+
+-----------------------------------------
+## Logging
+> Video 以及 Podcast...
+
+
+-----------------------------------------
+## MurMur
+> 其它呢喃...
+
+- [到社区大学去讲课，让我成为一个更好的软件工程师：对不太懂技术的电脑用户更有同理心，对自己语言沟通能力的培养](https://timozander.de/blog/why-you-should-teach/)
+    - 本质上就是跳出当前黑话领域, 逼你重新思考掌握的知识是什么...
+    - 不过, 在中国这是非法行为哪...
+
+-----------------------------------------
+## DAMA
+> ❤️ Happy Pythonic ;-(`大妈私人无责任播报`)
+
+
+
+- [Zoom\.Quiet’s Chaos42 \| Substack](https://zoomquiet.substack.com/)
+    + 古早:新闻组式写作
+    + 欢迎订阅, 包含当前周刊
+- [LDS❤️💀🤖](LDS42.PODCAST.XYZ)
+    + 播客:小宇宙
+    + 收集各种嗯哼...
+- [Chaos42 - YouTube](https://www.youtube.com/watch?v=fPQ6piLqMXE&list=PLToFpvpg6EgRo6naYOp-BX4So-DxOCne8&index=1)
+    + VLog
+    + 恢复各种嗯哼...
+
+
+
+
+
+```
+     _~-+~~_
+ () /  ♡ ◶  \ ()
+   '_   ♢   _'
+   \ '--.--' |
+
+...act by ferris-actor v0.2.4 (built on 23.0303.201916)
+```
+
+
+-----------------------------------------
+# PS:
+
+标题中时间戳使用工具 nnera - crates.io: Rust Package Registry 自动生成,
+
+这叕是一个程序猿才有的梗...
+
+
+-------------
+
+好文笔,感叹号年度配额: **2/3**
+
+投稿/反馈邮箱:
+
+    askdama@googlegroups.com
+
+(邮件列表地址, 
+当成正常邮件发送邮件就好, 不用注册, 不用翻越...)
+
+
+-------------
+
+ZoomQuiet/**[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g)**
+
+就是四处 `是也乎,(￣▽￣)` 的那个[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g):
+
+
+
+```python
+
+公开社群: 蟒营 (订阅号: Mainium)
+历史吐糟: Chaos42 (订阅号 PythoniCamp)
+
+as 创始组织者:
+    CPyUG (mailling-list: python-cn@googlegroups.com)
+    PyChina (订阅号: PyChinaOrg)
+    本地社区: 
+        GDG珠海 (订阅号: GDG-ZhuHai)
+        TFUG珠海 (订阅号: ZH_TFUG)
+```
+
+-------------
+
+
+
+
+
+]]></content:encoded></item><item><title>RR23W16.md</title><link>https://weekly.rs.101.so//2023/RR23W16</link><pubDate>Mon, 24 Apr 2023 11:00:38 +0800</pubDate><content:encoded><![CDATA[# Rust概览 16/2023
 
 原文: [Rust recap for week 16/2023](https://discu.eu/weekly/rust/2023/16/)
 
@@ -344,41 +461,63 @@ as 创始组织者:
 ```
 
 -------------
-]]></content:encoded></item><item><title>NN5091.md</title><link>https://weekly.rs.101.so//dama/2023/NN5091</link><pubDate>Sun, 23 Apr 2023 11:50:42 +0800</pubDate><content:encoded><![CDATA[# [周看]NN 5091
+]]></content:encoded></item><item><title>NN5084.md</title><link>https://weekly.rs.101.so//dama/2023/NN5084</link><pubDate>Thu, 20 Apr 2023 15:42:49 +0800</pubDate><content:encoded><![CDATA[# [周看]NN 5084
 > 每周值得瞅瞅的...
 
 -----------------------------------------
 ## Weekly
 > 定期领域消息
 
-- ...
-- ...
+- [RR23W15 - 锈周刊 -> Weekly :: China<Rustaceans>](https://weekly.rs.101.so/2023/RR23W15.html#%E6%96%87%E7%AB%A0%E5%97%AF%E5%93%BC)
+- [蠎周刊(PyCoder)573 ~蠎周刊 ~汇集全球蠎事儿 ;-)](https://weekly.pychina.org/issue/issue-573.html)
 
 -----------------------------------------
 ## Digging
 > 那种忍不住就想跳的坑...
 
+[Startup Playbook](https://playbook.samaltman.com/) 
+.. playbook 其实是[尤指美式橄榄球的] 攻略手册 ,又或是可以采用的别人的成功的战术..实话,不像家庭, 创业这方面, 成功的团队各自有各自的奇迹,失败的团队却有着相似的原因; 可问题在并不是你避免了所有失败团队的问题就可以成功, 这之间并无直接关系;
+..文章内部推荐的: [How to Raise Money](http://paulgraham.com/fr.html) 可以看到真正高人的习惯...坚持上世纪网站风格和架构, 但是, 每一篇文章都有海量的引用和解读...为什么? 无它, 成功人士的思考; 所以, 想创业成功? 先成功再伪装成创业比较容易成功;
 
 
+[Don’t start a business until people are asking you to | Derek Sivers](https://sive.rs/asking) ..直击灵魂了...当前, 就算是这样开始的创业也不一定成功哈;
 
+
+[Write a First Person Game in 2KB With Rust :: grantsh](https://grantshandy.github.io/posts/raycasting/) .. 用 Rust 复刻DOS时代伪3D游戏, 可以看到基础几何变换后,如何在2D 中,利用透视原理, 完成3D 影像的流畅输出...
+
+[永不消逝的存储 – 博の朝日堂](https://gao.bo/asahi/it/11363) ...5年前的自我宣言, 道理很简单, 但是, 真的要逐一落实, 等于单人完成了企业级的永久信息服务构建;
+
+
+[提示工程指南 | Prompt Engineering Guide](https://www.promptingguide.ai/zh) 可以衍生出什么? 看看 Rustacean 的脑洞: [用 ChatGPT 打造最强 Rust 辅助学习“魔法”系统 - AlexZhang](https://alexzhang-5109.xlog.app/yong-ChatGPT-da-zao-zui-qiang-Rust-fu-zhu-xue-xi--mo-fa--xi-tong) ... 直接将尝试出来的有效提示语压缩为程序猿更加习惯的 CLI 指令集...
 
 -----------------------------------------
 ## Reading
 > 值得收藏, 反复读或是吐糟的..
 
-- [What do internal engineering tools look like? - by Justin](https://technically.substack.com/p/what-do-internal-engineering-tools) .. 如何构建内部工具? 这方向的故事太多了, 最关键的和你的用户坐在一起...
-- [与柏拉图讨论GPT：我们兜兜转转两千多年，不就是为了回到雅典？](https://mp.weixin.qq.com/s/6otudrh1ElSSETmgdkFSsQ) ... 和 奇绩 分析的思路相同, 回到历史中找到规律...所以, GPT 之后, 拼的真的是 DNA 了...
-
-
+- [Re: \[IT\] C2 Complexity Syndrome-Apache Mail Archives](https://lists.apache.org/thread/rh5v0qpsox6h1r5f4pmco4mh5p4bq447)
+    - Good ideas & bad code build communities, the other three combinations do not.
+    - 呵, 深得共同体之三昧了...
+    - One must still have chaos in oneself to be able to give birth to a dancing star.
+    - 所以, 程序猿都是资深段子手
+- [Lessons from 6 software rewrite stories | by Herb Caudill | Medium](https://medium.com/@herbcaudill/lessons-from-6-software-rewrite-stories-635e4c8f7c22) .. 6个有关重写的故事, 大半都和 Joel 相关, 简直了, 这是一个单人重塑软件行业文化走向的故事...当然, 最终的教训还是, 技术并不是关键, 关键是市场是什么, 你得认清或是构建出来...
+- [What you give up when moving into engineering management \- Stack Overflow Blog \-\-\- 进入工程管理时你放弃了什么](https://stackoverflow.blog/2022/02/23/what-you-give-up-when-moving-into-engineering-management/) ...扎心了, 老铁...
 
 -----------------------------------------
 ## Logging
 > Video 以及 Podcast...
 
 
+- [brooks\-builds/full\-stack\-todo\-rust\-course: wip \- we are building this out now in prep for the real course](https://github.com/brooks-builds/full-stack-todo-rust-course) .. 叕一个精心设计的 Rust 领域课程
+- [Claude in Slack \| Anthropic](https://www.anthropic.com/claude-in-slack) ... 效果炸裂, 响应灵敏...
+- ...
+
 -----------------------------------------
 ## MurMur
 > 其它呢喃...
+
+[‘Overemployed’ Hustlers Exploit ChatGPT To Take On Even More Full-Time Jobs --- “过度就业”者利用 ChatGPT 从事更多全职工作](https://www.vice.com/en/article/v7begx/overemployed-hustlers-exploit-chatgpt-to-take-on-even-more-full-time-jobs) ... 将 GPT 视为劳动力...前提是你刚好在对应行业中...
+
+
 
 
 
@@ -402,15 +541,15 @@ as 创始组织者:
 
 
 
+
 ```
-     _~-+~~_
- () /  ♡ ◶  \ ()
-   '_   ♢   _'
-   \ '--.--' |
+          _~`*∽~_
+      \) /  O *  \ \/
+        '_   𝟂   _'
+        \ '--∽--' )
 
 ...act by ferris-actor v0.2.4 (built on 23.0303.201916)
 ```
-
 
 -----------------------------------------
 # PS:
@@ -459,41 +598,219 @@ as 创始组织者:
 
 
 
-]]></content:encoded></item><item><title>NN5118.md</title><link>https://weekly.rs.101.so//dama/2023/NN5118</link><pubDate>Sun, 23 Apr 2023 11:47:53 +0800</pubDate><content:encoded><![CDATA[# [周看]NN 5004
-> 每周值得瞅瞅的...
+]]></content:encoded></item><item><title>RR23W15.md</title><link>https://weekly.rs.101.so//2023/RR23W15</link><pubDate>Mon, 17 Apr 2023 09:55:11 +0800</pubDate><content:encoded><![CDATA[# Rust概览 15/2023
 
------------------------------------------
-## Weekly
-> 定期领域消息
-
-- ...
-- ...
-
------------------------------------------
-## Digging
-> 那种忍不住就想跳的坑...
+原文: [Rust recap for week 15/2023](https://discu.eu/weekly/rust/2023/15/)
 
 
+- 230417 [Zoom.Quiet](http://zoomquiet.io/)(大妈) 用时 17 分钟 完成格式转抄
+- 230417 [Zoom.Quiet](http://zoomquiet.io/)(大妈) 用时 42 分钟 完成快译
 
 
 
 -----------------------------------------
-## Reading
-> 值得收藏, 反复读或是吐糟的..
+## 文章/嗯哼...
+> Articles
 
 
+- [Rust 如何在 Web 开发中取得快速进步](https://www.arewewebyet.org/)
+    - [740 评注 in 9 讨论s](https://discu.eu/q/https://www.arewewebyet.org/)
+
+
+(`是也乎:`
+
+以 WASM 为交付物的超现代 web 应用开发桟...
+基于开源图书: [Rust and WebAssembly](https://rustwasm.github.io/docs/book/introduction.html)
+
+
+)
+
+- [在 WhatsApp 部署关键透明度](https://engineering.fb.com/2023/04/13/security/whatsapp-key-transparency/)
+    - [299 评注 in 5 讨论s](https://discu.eu/q/https://engineering.fb.com/2023/04/13/security/whatsapp-key-transparency/)
+- [关于商标政策草案的说明 | Inside Rust Blog](https://blog.rust-lang.org/inside-rust/2023/04/12/trademark-policy-draft-feedback.html)
+    - [244 评注 in 3 讨论s](https://discu.eu/q/https://blog.rust-lang.org/inside-rust/2023/04/12/trademark-policy-draft-feedback.html)
+- [Masonry 0.1 发布，以及我对 Rust UI 的愿景](https://poignardazur.github.io/2023/02/02/masonry-01-and-my-vision-for-rust-ui/)
+    - [208 评注 in 3 讨论s](https://discu.eu/q/https://poignardazur.github.io/2023/02/02/masonry-01-and-my-vision-for-rust-ui/)
+
+
+- [我的 Rust 项目已被选为 GitHub 加速器计划，我将全职工作!](https://github.com/GyulyVGC/sniffnet/discussions/133)
+    - [157 评注 in 5 讨论s](https://discu.eu/q/https://github.com/GyulyVGC/sniffnet/discussions/133)
+
+(`是也乎:`
+
+
+也就是说, GitHub 已经整体变成 M$ 的类似 YC 机构,
+嘦发现成长良好的开源项目, 就可以进行投资加速爆款.
+
+)
+
+
+
+- [Elixir 和 Rust 是一个很好的组合](https://fly.io/phoenix-files/elixir-and-rust-is-a-good-mix/)
+    - [156 评注 in 2 讨论s](https://discu.eu/q/https://fly.io/phoenix-files/elixir-and-rust-is-a-good-mix/)
+
+(`是也乎:`
+
+![Elixir](https://ipic.zoomquiet.top/2023-04-17-zshot%202023-04-17%2009.36.46.jpg)
+
+嗯哼? Python 被移情别恋了?
+
+)
+
+
+- [Supabase Edge Runtime - 用 Rust 构建](https://supabase.com/blog/edge-runtime-self-hosted-deno-functions)
+    - [98 评注 in 1 讨论](https://discu.eu/q/https://supabase.com/blog/edge-runtime-self-hosted-deno-functions)
+- [用 Rust 编写 2KB 的第一人称游戏](https://grantshandy.github.io/posts/raycasting/)
+    - [62 评注 in 4 讨论s](https://discu.eu/q/https://grantshandy.github.io/posts/raycasting/)
+
+(`是也乎:`
+
+之前推荐过, 用 Rust 复刻 DOS 时代, 
+划时代的伪3D 第一视角游戏...
+
+)
+
+
+- [可选的 If 表达式](https://animaomnium.github.io/optional-if-expressions/)
+    - [55 评注 in 2 讨论s](https://discu.eu/q/https://animaomnium.github.io/optional-if-expressions/)
+- [用 Explorer 在 Elixir 中处理数据，Rust 的强大功能，R 的优雅](https://news.livebook.dev/data-wrangling-in-elixir-with-explorer-the-power-of-rust-the-elegance-of-r---launch-week-1---day-5-1xqwCI)
+    - [53 评注 in 1 讨论](https://discu.eu/q/https://news.livebook.dev/data-wrangling-in-elixir-with-explorer-the-power-of-rust-the-elegance-of-r---launch-week-1---day-5-1xqwCI)
+
+(`是也乎:`
+
+Elixir/R ... Rust 玩的越来越奔放了...
+
+)
+
+- [学习 wgpu 的其他来源](https://sotrh.github.io/learn-wgpu/)
+    - [44 评注 in 7 讨论s](https://discu.eu/q/https://sotrh.github.io/learn-wgpu/)
+
+(`是也乎:`
+
+WebGPU 支持实现, 立即就来了...
+而且 [介绍 \| 学习 wgpu](https://jinleili.github.io/learn-wgpu-zh/)
+有中文版本.
+
+)
+
+- [C# vs Rust vs Go。 Kubernetes 中的性能基准测试](https://medium.com/@shyamsundarb/c-vs-rust-vs-go-a-performance-benchmarking-in-kubernetes-c303b67b84b5)
+    - [41 评注 in 2 讨论s](https://discu.eu/q/https://medium.com/%40shyamsundarb/c-vs-rust-vs-go-a-performance-benchmarking-in-kubernetes-c303b67b84b5)
+- [rust学习资源推荐](https://realpython.com/)
+    - [40 评注 in 4 讨论s](https://discu.eu/q/https://realpython.com/)
+
+(`是也乎:`
+
+嗯哼? 真蟒 准备进入 Rust 教育了?
+
+)
+
+- [合理引导](https://matklad.github.io/2023/04/13/reasonable-bootstrap.html)
+    - [36 评注 in 2 讨论s](https://discu.eu/q/https://matklad.github.io/2023/04/13/reasonable-bootstrap.html)
+- [重构模式](https://www.catmonad.xyz/blog/nibbles_02.html)
+    - [34 评注 in 2 讨论s](https://discu.eu/q/https://www.catmonad.xyz/blog/nibbles_02.html)
 
 
 
 
 -----------------------------------------
-## Logging
-> Video 以及 Podcast...
+## 发布/版本...
+> Releases
+
+
+- [刚刚发布了一个用于编译时检查切片的库!](https://crates.io/crates/static-slicing)
+    - [23 评注 in 1 讨论](https://discu.eu/q/https://crates.io/crates/static-slicing)
+- [Lariv v0.2.0 发布！ 现在它比 dashmap 快得多，并且带有迭代器.](https://crates.io/crates/lariv)
+    - [20 评注 in 1 讨论](https://discu.eu/q/https://crates.io/crates/lariv)
+- [Logos 0.13 re发布leased](https://github.com/maciejhirsz/logos/releases/tag/v0.13)
+    - [18 评注 in 1 讨论](https://discu.eu/q/https://github.com/maciejhirsz/logos/releases/tag/v0.13)
+- [Palette 0.7.0 发布 (a color crate): OkHsl、OkHsv、OkHwb、更快的 sRGB、更好的投射等等](https://ogeon.github.io/2023/04/10/palette-0.7.0.html)
+    - [17 评注 in 1 讨论](https://discu.eu/q/https://ogeon.github.io/2023/04/10/palette-0.7.0.html)
+- [Ascii 转 svg 工具 svgbob v0.7.0 刚刚发布，支持按四分之一间隔绘制圆弧](https://github.com/ivanceras/svgbob/blob/master/Changelog.md)
+    - [4 评注 in 1 讨论](https://discu.eu/q/https://github.com/ivanceras/svgbob/blob/master/Changelog.md)
+
+(`是也乎:`
+
+![svgbob](https://ipic.zoomquiet.top/2023-04-17-zshot%202023-04-17%2009.22.22.jpg)
+
+淦...原来 ASCII-art 可以展现那么复杂的图哪...
+
+
+)
+
+- [sweep-bptree 0.3 发布](https://crates.io/crates/sweep-bptree)
+
+
 
 
 -----------------------------------------
-## MurMur
-> 其它呢喃...
+## 好物/妙品/...
+> projects
+
+
+- [我们必须在 Rust 商标政策之前更改我们的名称吗?](https://github.com/rustdesk/rustdesk)
+    - [266 评注 in 7 讨论s](https://discu.eu/q/https://github.com/rustdesk/rustdesk)
+
+(`是也乎:`
+
+应该不必吧, Rust 本身是个自然单词无法注册为商标的?
+
+)
+
+- [已为 hyper 发布了 CVE, 拒绝服务可能](https://github.com/advisories/GHSA-f8vr-r385-rh5r)
+    - [120 评注 in 1 讨论](https://discu.eu/q/https://github.com/advisories/GHSA-f8vr-r385-rh5r)
+- [Rust, RR, Neovim: 完美的调试组合](https://github.com/vlopes11/rrust.nvim)
+    - [97 评注 in 1 讨论](https://discu.eu/q/https://github.com/vlopes11/rrust.nvim)
+
+(`是也乎:`
+
+Vim 社区一直在进行各种魔法构造...
+
+)
+
+- [宣布 serde 的位码格式](https://crates.io/crates/bitcode/)
+    - [51 评注 in 1 讨论](https://discu.eu/q/https://crates.io/crates/bitcode/)
+
+(`是也乎:`
+
+Rust 生态中最大的优势, 可能就是无论哪儿来的 crate 至少能安心引用,
+不可能引发各种内存安全问题...
+
+
+)
+
+- [New crate: html - Rust 的类型化 html 构造函数](https://github.com/yoshuawuyts/html)
+    - [46 评注 in 1 讨论](https://discu.eu/q/https://github.com/yoshuawuyts/html)
+
+(`是也乎:`
+
+赚到了, 这个 crate 的名字简直太幸运了...
+
+)
+
+
+- [logos: 创建快得离谱的词法分析器](https://github.com/maciejhirsz/logos)
+    - [43 评注 in 1 讨论](https://discu.eu/q/https://github.com/maciejhirsz/logos)
+- [jxl-oxide: JPEG XL 解码器的纯 Rust 实现](https://github.com/tirr-c/jxl-oxide)
+    - [38 评注 in 1 讨论](https://discu.eu/q/https://github.com/tirr-c/jxl-oxide)
+- [介绍`overloaded_literals`：通过编译时验证（无需样板）将文字转换为您想要的数据类型](https://crates.io/crates/overloaded_literals/)
+    - [22 评注 in 1 讨论](https://discu.eu/q/https://crates.io/crates/overloaded_literals/)
+- [Blitz - 便携性解决方案](https://github.com/dasshiva/blitz)
+    - [18 评注 in 1 讨论](https://discu.eu/q/https://github.com/dasshiva/blitz)
+- [chess: 我的第一个真正语言的程序](https://github.com/bgkillas/chess)
+    - [11 评注 in 1 讨论](https://discu.eu/q/https://github.com/bgkillas/chess)
+
+
+
+-----------------------------------------
+## 视频
+> Videos
+
+- [Rust Axum 完整课程 - Web 开发](https://www.youtube.com/watch?v=XZtlD_m59sM)
+    - [47 评注 in 2 讨论s](https://discu.eu/q/https://www.youtube.com/watch?v=XZtlD_m59sM)
+- [Axum 简介:  17 小时课程](https://youtube.com/playlist?list=PLrmY5pVcnuE-_CP7XZ_44HN-mDrLQV4nS)
+    - [10 评注 in 1 讨论](https://discu.eu/q/https://youtube.com/playlist?list=PLrmY5pVcnuE-_CP7XZ_44HN-mDrLQV4nS)
+- [u/Dhghomon (David MacLeod) EdgeDB 上使用 Rust 客户端](https://www.youtube.com/watch?v=anyjYUzen8E)
+
 
 
 
@@ -516,12 +833,11 @@ as 创始组织者:
 
 
 
-
 ```
-       _~^*∽~_
-   \/ /  ◶ ?  \ \/
-     '_   ⌐   _'
-     \ '-----' \
+          _~-~`~_
+      () /  > =  \ (/
+        '_   ▽   _'
+        ( '--.--' |
 
 ...act by ferris-actor v0.2.4 (built on 23.0303.201916)
 ```
@@ -530,10 +846,26 @@ as 创始组织者:
 -----------------------------------------
 # PS:
 
-标题中时间戳使用工具 nnera - crates.io: Rust Package Registry 自动生成,
+- 首发: [Rust概览 15/2023 ~ 锈览上周主要 ;-)](https://weekly.rs.101.so/2023/RR23W15.html)
+- 修订: [RR23W15.md](https://github.com/zhrust/weekly/tree/main/docs/2023/RR23W15.md)
 
-这叕是一个程序猿才有的梗...
 
+## PPS:
+不觉中[~ 蠎周刊 ~ 汇集全球蠎事儿 ;-)](https://weekly.pychina.org/)快译已经到了第11个年头
+
+Rustaceans 世界当然也有相似周刊, 那就一起呗;
+问为什么:
+
+    [皱眉]每周新闻资讯 怎么能错过 
+    看看有什么新东西 
+    当有新的发现时：
+        what f**k 还能这样玩？ 还有这东西？
+        每周开彩蛋[吃瓜]
+
+`无法同意更多`...
+很多社区贡献看起来辛苦,
+其实受益最多的,
+就是主动承担者也.
 
 -------------
 
@@ -569,123 +901,4 @@ as 创始组织者:
 ```
 
 -------------
-
-
-
-
-
-]]></content:encoded></item><item><title>NN5111.md</title><link>https://weekly.rs.101.so//dama/2023/NN5111</link><pubDate>Sun, 23 Apr 2023 11:47:42 +0800</pubDate><content:encoded><![CDATA[# [周看]NN 5004
-> 每周值得瞅瞅的...
-
------------------------------------------
-## Weekly
-> 定期领域消息
-
-- ...
-- ...
-
------------------------------------------
-## Digging
-> 那种忍不住就想跳的坑...
-
-
-
-
-
------------------------------------------
-## Reading
-> 值得收藏, 反复读或是吐糟的..
-
-
-
-
-
------------------------------------------
-## Logging
-> Video 以及 Podcast...
-
-
------------------------------------------
-## MurMur
-> 其它呢喃...
-
-
-
------------------------------------------
-## DAMA
-> ❤️ Happy Pythonic ;-(`大妈私人无责任播报`)
-
-
-
-- [Zoom\.Quiet’s Chaos42 \| Substack](https://zoomquiet.substack.com/)
-    + 古早:新闻组式写作
-    + 欢迎订阅, 包含当前周刊
-- [LDS❤️💀🤖](LDS42.PODCAST.XYZ)
-    + 播客:小宇宙
-    + 收集各种嗯哼...
-- [Chaos42 - YouTube](https://www.youtube.com/watch?v=fPQ6piLqMXE&list=PLToFpvpg6EgRo6naYOp-BX4So-DxOCne8&index=1)
-    + VLog
-    + 恢复各种嗯哼...
-
-
-
-
-
-```
-       _~^*∽~_
-   \/ /  ◶ ?  \ \/
-     '_   ⌐   _'
-     \ '-----' \
-
-...act by ferris-actor v0.2.4 (built on 23.0303.201916)
-```
-
-
------------------------------------------
-# PS:
-
-标题中时间戳使用工具 nnera - crates.io: Rust Package Registry 自动生成,
-
-这叕是一个程序猿才有的梗...
-
-
--------------
-
-好文笔,感叹号年度配额: **2/3**
-
-投稿/反馈邮箱:
-
-    askdama@googlegroups.com
-
-(邮件列表地址, 
-当成正常邮件发送邮件就好, 不用注册, 不用翻越...)
-
-
--------------
-
-ZoomQuiet/**[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g)**
-
-就是四处 `是也乎,(￣▽￣)` 的那个[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g):
-
-
-
-```python
-
-公开社群: 蟒营 (订阅号: Mainium)
-历史吐糟: Chaos42 (订阅号 PythoniCamp)
-
-as 创始组织者:
-    CPyUG (mailling-list: python-cn@googlegroups.com)
-    PyChina (订阅号: PyChinaOrg)
-    本地社区: 
-        GDG珠海 (订阅号: GDG-ZhuHai)
-        TFUG珠海 (订阅号: ZH_TFUG)
-```
-
--------------
-
-
-
-
-
 ]]></content:encoded></item></channel></rss>
