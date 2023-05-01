@@ -1,0 +1,16 @@
+  [2m2023-05-01 16:11:40.131[0m [34mDEBUG[0m [1;34mrss4mdbook::inv::gen[0m[34m: [34m
+ /Users/zoomq/Exercism/_sites/weekly/src/2023/RR23W17.md ~ /Users/zoomq/Exercism/_sites/weekly/src[0m
+    [2;3mat[0m src/inv/gen.rs:234 [2;3mon[0m main ThreadId(1)
+
+  [2m2023-05-01 16:11:40.132[0m [34mDEBUG[0m [1;34mrss4mdbook::inv::gen[0m[34m: [34m
+ /Users/zoomq/Exercism/_sites/weekly/src/dama/2023/NN5098.md ~ /Users/zoomq/Exercism/_sites/weekly/src[0m
+    [2;3mat[0m src/inv/gen.rs:234 [2;3mon[0m main ThreadId(1)
+
+  [2m2023-05-01 16:11:40.132[0m [34mDEBUG[0m [1;34mrss4mdbook::inv::gen[0m[34m: [34m
+ /Users/zoomq/Exercism/_sites/weekly/src/dama/2023/NN5091.md ~ /Users/zoomq/Exercism/_sites/weekly/src[0m
+    [2;3mat[0m src/inv/gen.rs:234 [2;3mon[0m main ThreadId(1)
+
+  [2m2023-05-01 16:11:40.132[0m [34mDEBUG[0m [1;34mrss4mdbook::inv::gen[0m[34m: [34m
+ /Users/zoomq/Exercism/_sites/weekly/src/2023/RR23W16.md ~ /Users/zoomq/Exercism/_sites/weekly/src[0m
+    [2;3mat[0m src/inv/gen.rs:234 [2;3mon[0m main ThreadId(1)
+
