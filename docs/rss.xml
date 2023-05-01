@@ -1,4 +1,118 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR23W17.md</title><link>https://weekly.rs.101.so//2023/RR23W17</link><pubDate>Mon, 01 May 2023 16:11:27 +0800</pubDate><content:encoded><![CDATA[# Rust概览 17/2023
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>NN5098.md</title><link>https://weekly.rs.101.so//dama/2023/NN5098</link><pubDate>Mon, 01 May 2023 16:21:27 +0800</pubDate><content:encoded><![CDATA[# [周看]NN 5098
+> 每周值得瞅瞅的...
+
+-----------------------------------------
+## Weekly
+> 定期领域消息
+
+- [RR23W17 - 锈周刊 -> Weekly :: China<Rustaceans>](https://discu.eu/q/https://www.theregister.com/2023/04/27/microsoft_windows_rust/)
+- ...
+
+-----------------------------------------
+## Digging
+> 那种忍不住就想跳的坑...
+
+
+- [Gamers 50-Plus Are a Growing Force in the Tech Market](https://www.aarp.org/research/topics/technology/info-2023/2023-gamers-50-plus.html) ... 因为全球老年化趋势? 所以....大字游戏一定会流行嘛?
+
+
+-----------------------------------------
+## Reading
+> 值得收藏, 反复读或是吐糟的..
+
+
+- [The Full Circle on Developer Productivity with Steve Yegge --- 与 Steve Yegge 探讨开发人员生产力的完整循环](https://newsletter.pragmaticengineer.com/p/steve-yegge) ... 每个月都值得读一下, 以免忘记初心
+- `ʕ•ᴥ•ʔ Bear` 系统作者的文章: [My product is my garden | ᕕ( ᐛ )ᕗ Herman's blog](https://herman.bearblog.dev/my-product-is-my-garden/)
+
+-----------------------------------------
+## Logging
+> Video 以及 Podcast...
+
+
+-----------------------------------------
+## MurMur
+> 其它呢喃...
+
+
+
+-----------------------------------------
+## DAMA
+> ❤️ Happy Pythonic ;-(`大妈私人无责任播报`)
+
+
+
+- [Zoom\.Quiet’s Chaos42 \| Substack](https://zoomquiet.substack.com/)
+    + 古早:新闻组式写作
+    + 欢迎订阅, 包含当前周刊
+- [LDS❤️💀🤖](LDS42.PODCAST.XYZ)
+    + 播客:小宇宙
+    + 收集各种嗯哼...
+- [Chaos42 - YouTube](https://www.youtube.com/watch?v=fPQ6piLqMXE&list=PLToFpvpg6EgRo6naYOp-BX4So-DxOCne8&index=1)
+    + VLog
+    + 恢复各种嗯哼...
+
+
+
+
+
+
+```
+          _~∽|-~_
+      \) /  ◶ ♡  \ ()
+        '_   V   _'
+        \ '--∽--' |
+
+...act by ferris-actor v0.2.4 (built on 23.0303.201916)
+```
+
+-----------------------------------------
+# PS:
+
+标题中时间戳使用工具 nnera - crates.io: Rust Package Registry 自动生成,
+
+这叕是一个程序猿才有的梗...
+
+
+-------------
+
+好文笔,感叹号年度配额: **2/3**
+
+投稿/反馈邮箱:
+
+    askdama@googlegroups.com
+
+(邮件列表地址, 
+当成正常邮件发送邮件就好, 不用注册, 不用翻越...)
+
+
+-------------
+
+ZoomQuiet/**[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g)**
+
+就是四处 `是也乎,(￣▽￣)` 的那个[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g):
+
+
+
+```python
+
+公开社群: 蟒营 (订阅号: Mainium)
+历史吐糟: Chaos42 (订阅号 PythoniCamp)
+
+as 创始组织者:
+    CPyUG (mailling-list: python-cn@googlegroups.com)
+    PyChina (订阅号: PyChinaOrg)
+    本地社区: 
+        GDG珠海 (订阅号: GDG-ZhuHai)
+        TFUG珠海 (订阅号: ZH_TFUG)
+```
+
+-------------
+
+
+
+
+
+]]></content:encoded></item><item><title>RR23W17.md</title><link>https://weekly.rs.101.so//2023/RR23W17</link><pubDate>Mon, 01 May 2023 16:20:11 +0800</pubDate><content:encoded><![CDATA[# Rust概览 17/2023
 
 原文: [Rust recap for week 17/2023](https://discu.eu/weekly/rust/2023/17/)
 
@@ -20,6 +134,24 @@
 (`是也乎:`
 
 自家的 C# 以及 F# 都没这待遇...
+
+当然, 问一下 GPT 曰:
+微软最近宣布使用Rust语言来重写Windows系统内核,这个决定主要有以下几个好处:
+
+1. 安全性:Rust语言天生具有内存安全特性,可以在编译期间确保不存在常见的内存问题,如缓冲区溢出、悬空指针等。这可以大大提高Windows内核的安全性。
+2. 并发性:Rust语言内置了异步和并发特性,使用不需要第三方库支持。这为开发高性能的并发Windows内核提供了很好的语言保障。
+3. 性能:Rust可以产生和C/C++相当甚至更好的执行性能,这对Windows内核的性能要求是非常关键的。
+4. 可维护性:Rust语言作为一门现代语言,在语法和语义上都更加清晰易懂,这可以显著提高内核代码的可读性和可维护性。
+
+对其他操作系统的影响:
+
+1. 安全竞争:其他操作系统如Linux和macOS的内核现在主要使用C语言开发,安全性相对较弱。使用Rust重写Windows内核可能会在安全性方面取得领先,形成压力和竞争。
+2. 学习借鉴:Rust语言和内存安全技术被证明在系统级开发中有很好的应用,其他操作系统的开发者可能会学习和借鉴。未来Linux和macOS的某些组件也可能会使用Rust进行重写或开发。
+3. 生态影响:Rust被用于这样大规模的系统级项目,无疑会增强开发者对其在操作系统和嵌入式开发领域的信心,这可能会带动整个Rust生态圈的发展。
+
+> 所以,总体来说,微软使用Rust重写Windows内核,不仅可以显著提高Windows本身的安全性、性能和可维护性,也可能会对其他操作系统产生一定的影响与竞争压力,并促进Rust语言在系统级和嵌入式开发领域的发展。这是一个涉及广泛而深远的决定。
+
+可以说, 有些专家已经反复分析过了..就一起看看进展.
 
 )
 
@@ -373,120 +505,6 @@ as 创始组织者:
 ```
 
 -------------
-]]></content:encoded></item><item><title>NN5098.md</title><link>https://weekly.rs.101.so//dama/2023/NN5098</link><pubDate>Sat, 29 Apr 2023 12:10:49 +0800</pubDate><content:encoded><![CDATA[# [周看]NN 5098
-> 每周值得瞅瞅的...
-
------------------------------------------
-## Weekly
-> 定期领域消息
-
-- ...
-- ...
-
------------------------------------------
-## Digging
-> 那种忍不住就想跳的坑...
-
-
-
-
-
------------------------------------------
-## Reading
-> 值得收藏, 反复读或是吐糟的..
-
-
-- [The Full Circle on Developer Productivity with Steve Yegge --- 与 Steve Yegge 探讨开发人员生产力的完整循环](https://newsletter.pragmaticengineer.com/p/steve-yegge) ... 每个月都值得读一下, 以免忘记初心
-
-
------------------------------------------
-## Logging
-> Video 以及 Podcast...
-
-
------------------------------------------
-## MurMur
-> 其它呢喃...
-
-
-
------------------------------------------
-## DAMA
-> ❤️ Happy Pythonic ;-(`大妈私人无责任播报`)
-
-
-
-- [Zoom\.Quiet’s Chaos42 \| Substack](https://zoomquiet.substack.com/)
-    + 古早:新闻组式写作
-    + 欢迎订阅, 包含当前周刊
-- [LDS❤️💀🤖](LDS42.PODCAST.XYZ)
-    + 播客:小宇宙
-    + 收集各种嗯哼...
-- [Chaos42 - YouTube](https://www.youtube.com/watch?v=fPQ6piLqMXE&list=PLToFpvpg6EgRo6naYOp-BX4So-DxOCne8&index=1)
-    + VLog
-    + 恢复各种嗯哼...
-
-
-
-
-
-
-```
-          _~∽|-~_
-      \) /  ◶ ♡  \ ()
-        '_   V   _'
-        \ '--∽--' |
-
-...act by ferris-actor v0.2.4 (built on 23.0303.201916)
-```
-
------------------------------------------
-# PS:
-
-标题中时间戳使用工具 nnera - crates.io: Rust Package Registry 自动生成,
-
-这叕是一个程序猿才有的梗...
-
-
--------------
-
-好文笔,感叹号年度配额: **2/3**
-
-投稿/反馈邮箱:
-
-    askdama@googlegroups.com
-
-(邮件列表地址, 
-当成正常邮件发送邮件就好, 不用注册, 不用翻越...)
-
-
--------------
-
-ZoomQuiet/**[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g)**
-
-就是四处 `是也乎,(￣▽￣)` 的那个[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g):
-
-
-
-```python
-
-公开社群: 蟒营 (订阅号: Mainium)
-历史吐糟: Chaos42 (订阅号 PythoniCamp)
-
-as 创始组织者:
-    CPyUG (mailling-list: python-cn@googlegroups.com)
-    PyChina (订阅号: PyChinaOrg)
-    本地社区: 
-        GDG珠海 (订阅号: GDG-ZhuHai)
-        TFUG珠海 (订阅号: ZH_TFUG)
-```
-
--------------
-
-
-
-
-
 ]]></content:encoded></item><item><title>NN5091.md</title><link>https://weekly.rs.101.so//dama/2023/NN5091</link><pubDate>Fri, 28 Apr 2023 21:50:59 +0800</pubDate><content:encoded><![CDATA[# [周看]NN 5091
 > 每周值得瞅瞅的...
 
