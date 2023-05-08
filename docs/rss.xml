@@ -1,4 +1,297 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>NN5098.md</title><link>https://weekly.rs.101.so//dama/2023/NN5098</link><pubDate>Fri, 05 May 2023 09:30:52 +0800</pubDate><content:encoded><![CDATA[# [周看]NN 5098
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR23W18.md</title><link>https://weekly.rs.101.so//2023/RR23W18</link><pubDate>Mon, 08 May 2023 10:44:51 +0800</pubDate><content:encoded><![CDATA[# Rust概览 18/2023
+
+原文: [Rust recap for week 18/2023](https://discu.eu/weekly/rust/2023/18/)
+
+
+- 230508 [Zoom.Quiet](http://zoomquiet.io/)(大妈) 用时 17 分钟 完成格式转抄
+- 230508 [Zoom.Quiet](http://zoomquiet.io/)(大妈) 用时 42 分钟 完成快译
+
+
+
+-----------------------------------------
+## 文章/嗯哼...
+> Articles
+
+
+- [我得谈谈 WebGPU](https://cohost.org/mcc/post/1406157-i-want-to-talk-about-webgpu)
+    + [472 评注 in 5 讨论s](https://discu.eu/q/https://cohost.org/mcc/post/1406157-i-want-to-talk-about-webgpu)
+- [在 2023 年稳定 traits 中的 async fn](https://blog.rust-lang.org/inside-rust/2023/05/03/stabilizing-async-fn-in-trait.html)
+    + [152 评注 in 3 讨论s](https://discu.eu/q/https://blog.rust-lang.org/inside-rust/2023/05/03/stabilizing-async-fn-in-trait.html)
+- [Mojo：Python 超集，LLVM 创建者对 Rust 和 Python 的爱子](https://docs.modular.com/mojo/)
+    + [147 评注 in 2 讨论s](https://discu.eu/q/https://docs.modular.com/mojo/)
+
+(`是也乎:`
+
+在 GPT 们的帮助下,
+新语言创建和推广的节奏进一步加速了...
+当然, 最终 AI 们将统一自己的语言,
+俺猜是 汇编...
+
+)
+
+- [Rust like Enums in Java Rust 就像 Java 中的枚举](https://openjdk.org/jeps/405)
+    - [84 评注 in 1 讨论](https://discu.eu/q/https://openjdk.org/jeps/405)
+
+(`是也乎:`
+
+JAVA 才是成熟的工业开发语言, 真正的百变星君...
+
+)
+
+- [Rust 的镜像：编译时反射报告](https://soasis.org/posts/a-mirror-for-rust-a-plan-for-generic-compile-time-introspection-in-rust/)
+    + [64 评注 in 3 讨论s](https://discu.eu/q/https://soasis.org/posts/a-mirror-for-rust-a-plan-for-generic-compile-time-introspection-in-rust/)
+- [Iterator, Generator 迭代器、生成器](https://without.boats/blog/iterator-generator/)
+    - [48 评注 in 1 讨论](https://discu.eu/q/https://without.boats/blog/iterator-generator/)
+- [FAAS 在 WASM、WASI 和 Rust 中的应用](https://eli.thegreenplace.net/2023/faas-in-go-with-wasm-wasi-and-rust/)
+    + [45 评注 in 1 讨论](https://discu.eu/q/https://eli.thegreenplace.net/2023/faas-in-go-with-wasm-wasi-and-rust/)
+
+(`是也乎`:
+
+> FAAS (Function as a Service) 
+
+![wasm](https://eli.thegreenplace.net/images/2023/wasm-faas.png)
+
+当前这个 FaaS 是 go 开发的...
+
+)
+
+- [全职使用 Dioxus](https://dioxuslabs.com/blog/going-fulltime/)
+  - [44 评注 in 1 讨论](https://discu.eu/q/https://dioxuslabs.com/blog/going-fulltime/)
+
+(`是也乎:`
+
+![Dioxus](https://ipic.zoomquiet.top/2023-05-08-zshot%202023-05-08%2010.35.12.jpg)
+
+屌克撒斯...叕一个目标是全屏幕通用 GUI 框架....
+目前文档还一般, 可以等待 1.0 
+
+)
+
+- [Cargo 事后分析](https://blog.rust-lang.org/inside-rust/2023/05/01/cargo-postmortem.html)
+    - [42 评注 in 2 讨论s](https://discu.eu/q/https://blog.rust-lang.org/inside-rust/2023/05/01/cargo-postmortem.html)
+- [使用 Eytzinger 布局、无分支代码和内存预取在 Rust 中进行更快的二进制搜索](https://www.bazhenov.me/posts/faster-binary-search-in-rust/)
+    + [39 评注 in 2 讨论s](https://discu.eu/q/https://www.bazhenov.me/posts/faster-binary-search-in-rust/)
+- [Flattening ASTs （和其他编译器数据结构）](https://www.cs.cornell.edu/~asampson/blog/flattening.html)
+    + [33 评注 in 3 讨论s](https://discu.eu/q/https://www.cs.cornell.edu/~asampson/blog/flattening.html)
+- [git-cliff 正在 MIT 和 Apache 2.0 下重新授权](https://github.com/orhun/git-cliff/issues/165)
+    + [31 评注 in 1 讨论](https://discu.eu/q/https://github.com/orhun/git-cliff/issues/165)
+- [最流行的 Rust 搜索引擎 Meilisearch, Cloud 正式发布](https://www.producthunt.com/posts/meilisearch-cloud)
+    + [26 评注 in 1 讨论](https://discu.eu/q/https://www.producthunt.com/posts/meilisearch-cloud)
+- [召集 Unsafe 的 Rust 专家: 寻找访谈研究参与者](https://cmu.ca1.qualtrics.com/jfe/form/SV_eaE73MZ8126LsVw)
+    + [24 评注 in 1 讨论](https://discu.eu/q/https://cmu.ca1.qualtrics.com/jfe/form/SV_eaE73MZ8126LsVw)
+
+(`是也乎:`
+Unsafe 不是不安全,
+就像老婆饼中没有老婆一样...
+
+)
+
+- [Tauri v1.3 — NSIS 安装程序、安全审计和外部 API 访问](https://tauri.app/blog/2023/05/03/tauri-1-3/)
+    + [24 评注 in 1 讨论](https://discu.eu/q/https://tauri.app/blog/2023/05/03/tauri-1-3/)
+
+
+
+-----------------------------------------
+## 发布/版本...
+> Releases
+
+
+- [Thetawave 0.1.0 发布：一款开源太空射击游戏，使用 Rust 制作。在 itch.io 上试试吧！](https://metalmancy.itch.io/thetawave)
+    + [41 评注 in 3 讨论s](https://discu.eu/q/https://metalmancy.itch.io/thetawave)
+- [grid v0.10.0 发布](https://github.com/becheran/grid/releases/tag/v0.10.0)
+    + [2 评注 in 1 讨论](https://discu.eu/q/https://github.com/becheran/grid/releases/tag/v0.10.0)
+- [显示 HN：Logss – 测试版。一个帮助可视化日志的简单 Rust 工具](https://github.com/todoesverso/logss)
+
+(`是也乎`:
+
+![HN：Logss](https://ipic.zoomquiet.top/2023-05-08-zshot%202023-05-08%2010.26.37.jpg)
+
+TUI ~ rusty 传统艺能区...
+
+)
+
+- [Arroyo 0.2 发布 - Rust 流处理引擎，现可跑在 Kubernetes 上](https://github.com/ArroyoSystems/arroyo/releases/tag/release-0.2.0)
+
+
+
+
+
+-----------------------------------------
+## 好物/妙品/...
+> projects
+
+
+
+- [Git 的惯用、精简、快速和安全的纯 Rust 实现](https://github.com/Byron/gitoxide)
+    + [258 评注 in 3 讨论s](https://discu.eu/q/https://github.com/Byron/gitoxide)
+
+(`是也乎:`
+
+sudo 已经重写了, git 当然也值得重写,
+不过, 重写后的 gix 以往针对 git 的拓展就无法使用了吧...
+
+)
+
+- [除了大声说出这有多酷, 建议您花点时间考虑一下它的存在, 这里没有什么要说的;尤其是如果您是 FP 爱好者。](https://github.com/HigherOrderCO/HVM)
+    + [57 评注 in 2 讨论s](https://discu.eu/q/https://github.com/HigherOrderCO/HVM)
+
+(`是也乎:`
+
+> 高阶虚拟机 (HVM)
+
+![HVM](https://ipic.zoomquiet.top/2023-05-08-zshot%202023-05-08%2009.45.24.jpg)
+
+用 rust 实际, 但是, 可以自然的分布式大规模并行计算...
+
+)
+
+- [一个用 Rust 编写的 Go 编译器 (2016)](https://github.com/yberreby/rgo)
+    + [43 评注 in 2 讨论s](https://discu.eu/q/https://github.com/yberreby/rgo)
+
+(`是也乎:`
+
+2015 Golang 自举后, 这个项目就放弃了...
+
+)
+
+- [存储提案的状态如何？](https://github.com/matthieu-m/storage-poc)
+    + [39 评注 in 2 讨论s](https://discu.eu/q/https://github.com/matthieu-m/storage-poc)
+- [叕一 ASCII 游戏引擎发布](https://crates.io/crates/mage-core)
+    + [35 评注 in 1 讨论](https://discu.eu/q/https://crates.io/crates/mage-core)
+
+(`是也乎`:
+
+![mage](https://ipic.zoomquiet.top/2023-05-08-zshot%202023-05-08%2009.40.29.jpg)
+
+)
+
+- [proc 宏初体验：实现三元运算符](https://github.com/KaitlynEthylia/terny)
+    + [34 评注 in 1 讨论](https://discu.eu/q/https://github.com/KaitlynEthylia/terny)
+
+(`是也乎:`
+
+宏就是语言的语言, 不过, 这么乱塞新语法就比较囧了,
+练习可以...
+
+)
+
+- [通过临时 WiFi 直接传输文件: Linux/macOS/Windows 版本用 Tauri 已用 Rust 重写。还提供 Android 和 iOS 版本。](https://github.com/spieglt/FlyingCarpet)
+    + [30 评注 in 4 讨论s](https://discu.eu/q/https://github.com/spieglt/FlyingCarpet)
+- [Golang 规范的另一种实现，用 Rust 编写](https://github.com/oxfeeefeee/goscript)
+    + [26 评注 in 3 讨论s](https://discu.eu/q/https://github.com/oxfeeefeee/goscript)
+- [资深 C++ 程序员，第一次用 Rust 做东西, 得说喜欢所看到的！](https://crates.io/crates/dense-heap)
+    + [22 评注 in 1 讨论](https://discu.eu/q/https://crates.io/crates/dense-heap)
+
+(`是也乎:`
+
+资深 C++ 程序员 用任何其它语言都有这种感觉的吧...
+)
+
+
+- [borrowme 0.0.10 - Rust 缺少的复合借用, 来了](https://docs.rs/borrowme)
+    + [18 评注 in 1 讨论](https://discu.eu/q/https://docs.rs/borrowme)
+
+
+-----------------------------------------
+## 视频
+> Videos
+
+- [Rust 教程：std::collections \[视频\]](https://youtu.be/EF3Z4jdD1EQ)
+    + [25 评注 in 1 讨论](https://discu.eu/q/https://youtu.be/EF3Z4jdD1EQ)
+- [Rust 中派生宏的实用介绍](https://youtu.be/XY0yR6IPbhw)
+
+
+
+
+
+-----------------------------------------
+## DAMA
+> ❤️ Happy Pythonic ;-(`大妈私人无责任播报`)
+
+
+
+- [Zoom\.Quiet’s Chaos42 \| Substack](https://zoomquiet.substack.com/)
+    + 古早:新闻组式写作
+    + 欢迎订阅, 包含当前周刊
+- [LDS❤️💀🤖](LDS42.PODCAST.XYZ)
+    + 播客:小宇宙
+    + 收集各种嗯哼...
+- [Chaos42 - YouTube](https://www.youtube.com/watch?v=fPQ6piLqMXE&list=PLToFpvpg6EgRo6naYOp-BX4So-DxOCne8&index=1)
+    + VLog
+    + 恢复各种嗯哼...
+
+
+
+
+```
+           _~-&^~_
+       \) /  * *  \ \/
+         '_   𝟂   _'
+         > '--⌄--' )
+
+...act by ferris-actor v0.2.4 (built on 23.0303.201916)
+```
+
+
+-----------------------------------------
+# PS:
+
+- 首发: [Rust概览 18/2023 ~ 锈览上周主要 ;-)](https://weekly.rs.101.so/2023/RR23W18.html)
+- 修订: [RR23W18.md](https://github.com/zhrust/weekly/tree/main/docs/2023/RR23W18.md)
+
+
+## PPS:
+不觉中[~ 蠎周刊 ~ 汇集全球蠎事儿 ;-)](https://weekly.pychina.org/)快译已经到了第11个年头
+
+Rustaceans 世界当然也有相似周刊, 那就一起呗;
+问为什么:
+
+    [皱眉]每周新闻资讯 怎么能错过 
+    看看有什么新东西 
+    当有新的发现时：
+        what f**k 还能这样玩？ 还有这东西？
+        每周开彩蛋[吃瓜]
+
+`无法同意更多`...
+很多社区贡献看起来辛苦,
+其实受益最多的,
+就是主动承担者也.
+
+-------------
+
+好文笔,感叹号年度配额: **2/3**
+
+投稿/反馈邮箱:
+
+    askdama@googlegroups.com
+
+(邮件列表地址, 
+当成正常邮件发送邮件就好, 不用注册, 不用翻越...)
+
+
+-------------
+
+ZoomQuiet/**[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g)**
+
+就是四处 `是也乎,(￣▽￣)` 的那个[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g):
+
+
+
+```python
+
+公开社群: 蟒营 (订阅号: Mainium)
+历史吐糟: Chaos42 (订阅号 PythoniCamp)
+
+as 创始组织者:
+    CPyUG (mailling-list: python-cn@googlegroups.com)
+    PyChina (订阅号: PyChinaOrg)
+    本地社区: 
+        GDG珠海 (订阅号: GDG-ZhuHai)
+        TFUG珠海 (订阅号: ZH_TFUG)
+```
+
+-------------
+]]></content:encoded></item><item><title>NN5098.md</title><link>https://weekly.rs.101.so//dama/2023/NN5098</link><pubDate>Fri, 05 May 2023 09:30:52 +0800</pubDate><content:encoded><![CDATA[# [周看]NN 5098
 > 每周值得瞅瞅的...
 
 -----------------------------------------
@@ -645,350 +938,4 @@ as 创始组织者:
 
 
 
-]]></content:encoded></item><item><title>RR23W16.md</title><link>https://weekly.rs.101.so//2023/RR23W16</link><pubDate>Mon, 24 Apr 2023 11:00:38 +0800</pubDate><content:encoded><![CDATA[# Rust概览 16/2023
-
-原文: [Rust recap for week 16/2023](https://discu.eu/weekly/rust/2023/16/)
-
-
-- 230424 [Zoom.Quiet](http://zoomquiet.io/)(大妈) 用时 17 分钟 完成格式转抄
-- 230424 [Zoom.Quiet](http://zoomquiet.io/)(大妈) 用时 42 分钟 完成快译
-
-
-
------------------------------------------
-## 文章/嗯哼...
-> Articles
-
-
-- [Rust 基金会 - Rust 商标政策修订草案——后续步骤](https://foundation.rust-lang.org/news/rust-trademark-policy-draft-revision-next-steps/)
-    - [368 评注 in 2 讨论s](https://discu.eu/q/https://foundation.rust-lang.org/news/rust-trademark-policy-draft-revision-next-steps/)
-
-(`是也乎`:
-
-很可能是社区历史上一大倒退...
-
-)
-
-- [宣布 Rust 1.69.0](https://blog.rust-lang.org/2023/04/20/Rust-1.69.0.html)
-    - [367 评注 in 3 讨论s](https://discu.eu/q/https://blog.rust-lang.org/2023/04/20/Rust-1.69.0.html)
-- [关于 reddit 的 API 锁定，有一个用 rust 编写的开源、联合的 Reddit 替代方案，称为 Lemmy.](https://join-lemmy.org/)
-    - [281 评注 in 4 讨论s](https://discu.eu/q/https://join-lemmy.org/)
-- [IronBoy: 用 Rust 编写的高精度 GameBoy 模拟器，可通过 WASM 在浏览器中使用](https://nicolas-siplis.com/ironboy/)
-    - [203 评注 in 3 讨论s](https://discu.eu/q/https://nicolas-siplis.com/ironboy/)
-
-(`是也乎:`
-
-GameBoy 永远的童年记忆...
-当然, 俺没有...小时穷, 看看街机都得编理由...
-
-)
-
-- [Rust 能否在 2023 年击败 JavaScript?](https://joshmo.hashnode.dev/can-rust-beat-javascript-in-2023)
-    - [84 评注 in 1 讨论](https://discu.eu/q/https://joshmo.hashnode.dev/can-rust-beat-javascript-in-2023)
-
-(`是也乎:`
-
-就看 Chromium 是否内置上 Rust 引擎了?
-
-)
-
-
-- [Canonical 招聘 Rust 工具链开发人员](https://canonical.com/careers/4383713)
-    - [74 评注 in 1 讨论](https://discu.eu/q/https://canonical.com/careers/4383713)
-
-(`是也乎:`
-
-Mozilla 之后, 又一个愿意供养全职 Rust 的大厂
-
-)
-
-
-- [用 Rust 编写 2KB 的第一人称游戏](https://grantshandy.github.io/posts/raycasting/)
-    - [62 评注 in 4 讨论s](https://discu.eu/q/https://grantshandy.github.io/posts/raycasting/)
-
-(`是也乎:`
-
-在各种渠道中反复推荐过了,
-复刻 DOS 时代的经典系统, 
-也是学习 Rust 的关键技巧...
-关键是自带流量哪...
-
-另外, 证明, 技术方面, 这几十年变化其实不大...
-
-)
-
-
-- [1.69.0 预发布测试中](https://blog.rust-lang.org/inside-rust/2023/04/17/1.69.0-prerelease.html)
-    - [57 评注 in 1 讨论](https://discu.eu/q/https://blog.rust-lang.org/inside-rust/2023/04/17/1.69.0-prerelease.html)
-- [`|` 运算符在模式匹配中的威力](https://doc.rust-lang.org/reference/patterns.html#or-patterns)
-    - [52 评注 in 1 讨论](https://discu.eu/q/https://doc.rust-lang.org/reference/patterns.html%23or-patterns)
-
-(`是也乎:`
-
-管道才是真正的魔法棒...
-
-)
-
-
-- [宣布 async-winit，一种将 winit 用作异步运行时的新方法](https://notgull.github.io/async-winit/)
-    - [29 评注 in 1 讨论](https://discu.eu/q/https://notgull.github.io/async-winit/)
-- [Survey: 嵌入式系统的 Rust](https://purdue.ca1.qualtrics.com/jfe/form/SV_3EPvSqpOnoPMX7U)
-    - [24 评注 in 1 讨论](https://discu.eu/q/https://purdue.ca1.qualtrics.com/jfe/form/SV_3EPvSqpOnoPMX7U)
-
-(`是也乎:`
-
-公开调查表, 有兴趣的及时表明态度...
-
-)
-
-- [Rust 中的 Kubernetes 操作员](https://thetechtrailblazer.blog/2023/04/18/a-kubernetes-operator-in-rust/)
-    - [20 评注 in 2 讨论s](https://discu.eu/q/https://thetechtrailblazer.blog/2023/04/18/a-kubernetes-operator-in-rust/)
-
-(`是也乎:`
-
-go 是云时代的 C,
-那么, Rust 就是 AI 时代的 go ?
-
-)
-
-- [将运行时检查带入编译时](https://ktkaufman03.github.io/blog/2023/04/20/rust-compile-time-checks/)
-    - [18 评注 in 1 讨论](https://discu.eu/q/https://ktkaufman03.github.io/blog/2023/04/20/rust-compile-time-checks/)
-
-(`是也乎:`
-
-所以, Rust 的 JVM 也在路上了?
-
-)
-
-- [Felix Blog - Traits 不仅仅是接口](https://felix-knorr.net/posts/2023-04-17-traits.html)
-    - [15 评注 in 1 讨论](https://discu.eu/q/https://felix-knorr.net/posts/2023-04-17-traits.html)
-
-(`是也乎:`
-
-看起来有点儿玄,
-应该说只要经历过 C++ 开发,
-都能从各种现代语言中感受到赋能吧...
-
-)
-
-- [关于 File::read_to_end 的性能](https://stackoverflow.com/questions/76055481/why-does-fileread-to-end-get-slower-the-larger-the-buffer-capacity)
-    - [13 评注 in 1 讨论](https://discu.eu/q/https://stackoverflow.com/questions/76055481/why-does-fileread-to-end-get-slower-the-larger-the-buffer-capacity)
-
------------------------------------------
-## 发布/版本...
-> Releases
-
-
-- [faer 0.8.0 发布](https://github.com/sarah-ek/faer-rs)
-    - [131 评注 in 6 讨论s](https://discu.eu/q/https://github.com/sarah-ek/faer-rs)
-- [regex 1.8.0 发布 （允许无操作转义，添加 (?<name>re) 语法）](https://github.com/rust-lang/regex/blob/master/CHANGELOG.md#180-2023-04-20)
-    - [58 评注 in 2 讨论s](https://discu.eu/q/https://github.com/rust-lang/regex/blob/master/CHANGELOG.md%23180-2023-04-20)
-- [Fedora 38 随 RPM 一起发布，现在使用 Sequoia-PGP（用 Rust 编写）](https://fedoraproject.org/wiki/Changes/RpmSequoia)
-    - [18 评注 in 1 讨论](https://discu.eu/q/https://fedoraproject.org/wiki/Changes/RpmSequoia)
-- [Wasmer 3.2.0 发布, 支持 RISC-V](https://wasmer.io/posts/wasmer-3.2)
-    - [11 评注 in 2 讨论s](https://discu.eu/q/https://wasmer.io/posts/wasmer-3.2)
-- [Sniffnet v1.1.4 刚刚发布](https://github.com/GyulyVGC/sniffnet/releases/tag/v1.1.4)
-    - [6 评注 in 1 讨论](https://discu.eu/q/https://github.com/GyulyVGC/sniffnet/releases/tag/v1.1.4)
-
-
------------------------------------------
-## 好物/妙品/...
-> projects
-
-
-- [以 fungus 命名的语言的 (Rust) 社区分支](https://github.com/crablang/crab)
-    - [129 评注 in 3 讨论s](https://discu.eu/q/https://github.com/crablang/crab)
-- [Huak – 一个用 Rust 编写的 Python 包管理器。 Python 的货物](https://github.com/cnpryer/huak)
-    - [52 评注 in 2 讨论s](https://discu.eu/q/https://github.com/cnpryer/huak)
-
-(`是也乎:`
-
-没毛病 pip 太多坑了...
-cargo 兼容可管理 pip 包更加赞.
-
-)
-
-
-- [CondType: 通过布尔条件选择类型](https://github.com/nvzqz/condtype)
-    - [21 评注 in 2 讨论s](https://discu.eu/q/https://github.com/nvzqz/condtype)
-
-
-
-- [blend 0.8 - Blender 的 .blend 文件的解析器和运行时](https://crates.io/crates/blend)
-    - [12 评注 in 1 讨论](https://discu.eu/q/https://crates.io/crates/blend)
-
-(`是也乎:`
-
-Blender 的生态是真的活跃...
-
-)
-
-- [rustc-plugin: 用于编写与 Rust 编译器集成的插件的框架](https://github.com/cognitive-engineering-lab/rustc-plugin)
-    - [10 评注 in 1 讨论](https://discu.eu/q/https://github.com/cognitive-engineering-lab/rustc-plugin)
-
-(`是也乎:`
-
-嗯哼? 这等于是将当年 GCC 魔法空间给标准化了...
-大家都可以通过定制编译器来完成自己业务领域的专用魔法...
-
-)
-
-- [`lox` - 一个快速的多边形网格库，具有不同的网格数据结构和特征来抽象这些](https://github.com/LukasKalbertodt/lox)
-    - [10 评注 in 1 讨论](https://discu.eu/q/https://github.com/LukasKalbertodt/lox)
-- [`nom-derive` 从结构定义派生解析器](https://crates.io/crates/nom-derive)
-    - [9 评注 in 1 讨论](https://discu.eu/q/https://crates.io/crates/nom-derive)
-- [正在用 Rust 写一个元搜索引擎](https://gitlab.com/NEON-MMD/websurfx)
-    - [9 评注 in 1 讨论](https://discu.eu/q/https://gitlab.com/NEON-MMD/websurfx)
-
-(`是也乎:`
-
-这不巧了, GPT 们正在自动生成这种引擎...
-)
-
-- [我在 youtube 视频的一个问题上看到了这个……“给定一定数量的马匹，每匹马都有自己独特的速度，找到 3 匹最快的”](https://github.com/adamkali/RustKatasForAlgorithms)
-    - [9 评注 in 1 讨论](https://discu.eu/q/https://github.com/adamkali/RustKatasForAlgorithms)
-- [介绍 Valu3 - 一个强大的 Rust 数据操作库!](https://github.com/purp-lang/valu3)
-    - [8 评注 in 1 讨论](https://discu.eu/q/https://github.com/purp-lang/valu3)
-
-(`是也乎:`
-
-值得期待, 等发布 1.0 再用吧...
-
-)
-
------------------------------------------
-## 视频
-> Videos
-
-- [没有 OOP 的 Rust 数据建模](https://youtu.be/z-0-bbc80JM)
-    - [100 评注 in 1 讨论](https://discu.eu/q/https://youtu.be/z-0-bbc80JM)
-
-(`是也乎:`
-
-去OOP 简直是政治正确了...
-
-)
-
-- [AI 学会玩 flappy bird（代码见评论）](https://www.youtube.com/watch?v=Ea_N1CJwMR8)
-    - [10 评注 in 2 讨论s](https://discu.eu/q/https://www.youtube.com/watch?v=Ea_N1CJwMR8)
-
-(`是也乎:`
-
-简直变成基准训练场景了...
-
-)
-
-- [Oxide and Friends 4/17/2023 -- Rust 商标：Argle-bargle 还是 Foofaraw?](https://www.youtube.com/watch?v=N-ADQ5n7HoY)
-    - [3 评注 in 1 讨论](https://discu.eu/q/https://www.youtube.com/watch?v=N-ADQ5n7HoY)
-- [这是我使用 Rust 和 Bevy 构建的大规模生态系统模拟](https://www.youtube.com/watch?v=zvQyVSm8Oh4)
-    - [3 评注 in 1 讨论](https://discu.eu/q/https://www.youtube.com/watch?v=zvQyVSm8Oh4)
-
-(`是也乎`:
-
-叕一个类 西部世界 的模拟...
-
-)
-
-- [[视频] [实时编码] 等等，为什么 (??) | Rust Wrocław Meetup #33, 13.04.2023](https://youtu.be/8Q3xKQGEDKA?t=3925)
-
-(`是也乎`:
-
-又是两个多小时的现场编程...
-一般能学到的就是 shell 配置和字体...
-
-![Live](https://ipic.zoomquiet.top/2023-04-24-zshot%202023-04-24%2009.29.05.jpg)
-
-)
-
-- [Rust 中声明性宏的实用介绍](https://youtu.be/dHv8FhcAl5U)
-
-
------------------------------------------
-## DAMA
-> ❤️ Happy Pythonic ;-(`大妈私人无责任播报`)
-
-
-
-- [Zoom\.Quiet’s Chaos42 \| Substack](https://zoomquiet.substack.com/)
-    + 古早:新闻组式写作
-    + 欢迎订阅, 包含当前周刊
-- [LDS❤️💀🤖](LDS42.PODCAST.XYZ)
-    + 播客:小宇宙
-    + 收集各种嗯哼...
-- [Chaos42 - YouTube](https://www.youtube.com/watch?v=fPQ6piLqMXE&list=PLToFpvpg6EgRo6naYOp-BX4So-DxOCne8&index=1)
-    + VLog
-    + 恢复各种嗯哼...
-
-
-
-
-
-```
-           _~^~^~_
-       () /  ♡ ←  \ \/
-         '_   𝟂   _'
-         / '--⌄--' |
-
-...act by ferris-actor v0.2.4 (built on 23.0303.201916)
-```
-
-
------------------------------------------
-# PS:
-
-- 首发: [Rust概览 16/2023 ~ 锈览上周主要 ;-)](https://weekly.rs.101.so/2023/RR23W16.html)
-- 修订: [RR23W16.md](https://github.com/zhrust/weekly/tree/main/docs/2023/RR23W16.md)
-
-
-## PPS:
-不觉中[~ 蠎周刊 ~ 汇集全球蠎事儿 ;-)](https://weekly.pychina.org/)快译已经到了第11个年头
-
-Rustaceans 世界当然也有相似周刊, 那就一起呗;
-问为什么:
-
-    [皱眉]每周新闻资讯 怎么能错过 
-    看看有什么新东西 
-    当有新的发现时：
-        what f**k 还能这样玩？ 还有这东西？
-        每周开彩蛋[吃瓜]
-
-`无法同意更多`...
-很多社区贡献看起来辛苦,
-其实受益最多的,
-就是主动承担者也.
-
--------------
-
-好文笔,感叹号年度配额: **2/3**
-
-投稿/反馈邮箱:
-
-    askdama@googlegroups.com
-
-(邮件列表地址, 
-当成正常邮件发送邮件就好, 不用注册, 不用翻越...)
-
-
--------------
-
-ZoomQuiet/**[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g)**
-
-就是四处 `是也乎,(￣▽￣)` 的那个[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g):
-
-
-
-```python
-
-公开社群: 蟒营 (订阅号: Mainium)
-历史吐糟: Chaos42 (订阅号 PythoniCamp)
-
-as 创始组织者:
-    CPyUG (mailling-list: python-cn@googlegroups.com)
-    PyChina (订阅号: PyChinaOrg)
-    本地社区: 
-        GDG珠海 (订阅号: GDG-ZhuHai)
-        TFUG珠海 (订阅号: ZH_TFUG)
-```
-
--------------
 ]]></content:encoded></item></channel></rss>
