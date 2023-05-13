@@ -1,4 +1,120 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR23W18.md</title><link>https://weekly.rs.101.so//2023/RR23W18</link><pubDate>Mon, 08 May 2023 10:44:51 +0800</pubDate><content:encoded><![CDATA[# Rust概览 18/2023
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>NN5104.md</title><link>https://weekly.rs.101.so//dama/2023/NN5104</link><pubDate>Sat, 13 May 2023 17:19:05 +0800</pubDate><content:encoded><![CDATA[# [周看]NN 5004
+> 每周值得瞅瞅的...
+
+-----------------------------------------
+## Weekly
+> 定期领域消息
+
+- [RR23W18 - 锈周刊 -> Weekly :: China<Rustaceans>](https://weekly.rs.101.so/2023/RR23W18.html#%E6%96%87%E7%AB%A0%E5%97%AF%E5%93%BC)
+- [蠎周刊(PyCoder)576 ~蠎周刊 ~汇集全球蠎事儿 ;-)](https://weekly.pychina.org/issue/issue-576.html)
+
+-----------------------------------------
+## Digging
+> 那种忍不住就想跳的坑...
+
+
+- [Hypermodern Python Cookiecutter documentation](https://cookiecutter-hypermodern-python.readthedocs.io/en/2022.6.3.post1/)...17年看到过, 现在已经升级到 2022.6.3 
+
+
+-----------------------------------------
+## Reading
+> 值得收藏, 反复读或是吐糟的..
+
+- [Postmortem Analysis in Cargo \| Inside Rust Blog \-\-\- 事后分析 \|走进 Rust 博客](https://blog.rust-lang.org/inside-rust/2023/05/01/cargo-postmortem.html) ... 一个基础工具的问题将引发多大的影响? Five Whys 丰田的5个为什么, 早已变成了共识...
+- [Chess.com: Bootstrapping a Community to $50M/Year --- Chess.com：引导社区达到每年 5000 万美元](https://www.the5to9.xyz/p/chesscom-bootstrapping-community-50myear) ... 域名和兴趣同样重要, 问题是在校期间谁能随便花 5.5万刀买下域名? 这么多年, 每年续费也不少了...
+
+
+-----------------------------------------
+## Logging
+> Video 以及 Podcast...
+
+- [ABC/学习算法vs算法学习](https://open.substack.com/pub/zoomquiet/p/abcvs?r=12aj2e&utm_campaign=post&utm_medium=web)
+
+-----------------------------------------
+## MurMur
+> 其它呢喃...
+
+- [Amazon 的 Prime Video 的某个项目弃用 AWS 的 serverless 架构，节省 90% 费用；这算自家产品的高级黑吗](https://www.primevideotech.com/video-streaming/scaling-up-the-prime-video-audio-video-monitoring-service-and-reducing-costs-by-90) ... 这才是用真心了哪...
+- [5000多名旧金山的教师无法正常领到工资，因为支付工资的软件系统有太多 bug 了；这是一个新的系统，于2019年以$950万美元外包给 Infosys 开发，项目一再延期，直到2022年才上线，期间 Infosys 又加价 $700万；后来 bug 太多了，又花了 $1300 多万找另一家公司来修复；三年时间花了近 $3000万美金做了个 CRUD app，科技之都旧金山真是太棒了](https://www.sfchronicle.com/opinion/openforum/article/sfusd-teacher-payroll-san-francisco-bureaucracy-18000777.php) ... 湾区吐糟...
+
+
+-----------------------------------------
+## DAMA
+> ❤️ Happy Pythonic ;-(`大妈私人无责任播报`)
+
+
+
+- [Zoom\.Quiet’s Chaos42 \| Substack](https://zoomquiet.substack.com/)
+    + 古早:新闻组式写作
+    + 欢迎订阅, 包含当前周刊
+- [LDS❤️💀🤖](LDS42.PODCAST.XYZ)
+    + 播客:小宇宙
+    + 收集各种嗯哼...
+- [Chaos42 - YouTube](https://www.youtube.com/watch?v=fPQ6piLqMXE&list=PLToFpvpg6EgRo6naYOp-BX4So-DxOCne8&index=1)
+    + VLog
+    + 恢复各种嗯哼...
+
+
+
+
+```
+        _~`&^~_
+    \) /  ♡ ☉  \ (/
+      '_   ⎵   _'
+      / '--+--' <
+
+...act by ferris-actor v0.2.4 (built on 23.0303.201916)
+```
+
+
+-----------------------------------------
+# PS:
+
+标题中时间戳使用工具 nnera - crates.io: Rust Package Registry 自动生成,
+
+这叕是一个程序猿才有的梗...
+
+
+-------------
+
+好文笔,感叹号年度配额: **2/3**
+
+投稿/反馈邮箱:
+
+    askdama@googlegroups.com
+
+(邮件列表地址, 
+当成正常邮件发送邮件就好, 不用注册, 不用翻越...)
+
+
+-------------
+
+ZoomQuiet/**[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g)**
+
+就是四处 `是也乎,(￣▽￣)` 的那个[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g):
+
+
+
+```python
+
+公开社群: 蟒营 (订阅号: Mainium)
+历史吐糟: Chaos42 (订阅号 PythoniCamp)
+
+as 创始组织者:
+    CPyUG (mailling-list: python-cn@googlegroups.com)
+    PyChina (订阅号: PyChinaOrg)
+    本地社区: 
+        GDG珠海 (订阅号: GDG-ZhuHai)
+        TFUG珠海 (订阅号: ZH_TFUG)
+```
+
+-------------
+
+
+
+
+
+]]></content:encoded></item><item><title>RR23W18.md</title><link>https://weekly.rs.101.so//2023/RR23W18</link><pubDate>Mon, 08 May 2023 10:44:51 +0800</pubDate><content:encoded><![CDATA[# Rust概览 18/2023
 
 原文: [Rust recap for week 18/2023](https://discu.eu/weekly/rust/2023/18/)
 
@@ -812,130 +928,4 @@ as 创始组织者:
 ```
 
 -------------
-]]></content:encoded></item><item><title>NN5091.md</title><link>https://weekly.rs.101.so//dama/2023/NN5091</link><pubDate>Fri, 28 Apr 2023 21:50:59 +0800</pubDate><content:encoded><![CDATA[# [周看]NN 5091
-> 每周值得瞅瞅的...
-
------------------------------------------
-## Weekly
-> 定期领域消息
-
-- [RR23W16 - 锈周刊 -> Weekly :: China<Rustaceans>](https://weekly.rs.101.so/2023/RR23W16.html#pps)
-- [蠎周刊(PyCoder)574 ~蠎周刊 ~汇集全球蠎事儿 ;-)](https://weekly.pychina.org/issue/issue-574.html)
-
------------------------------------------
-## Digging
-> 那种忍不住就想跳的坑...
-
-
-- [仅剩1位73岁开发者苦撑！能求解超复杂物理方程式的计算程序，要没人维护了](https://mp.weixin.qq.com/s/S4KDsiwK7FChShUkgjZzjg) ... 类似的场景在各种开源库中都存在, 谁担当起来就有创业基础了吧?
-- [Improve your Django Code with pre-commit --- 通过预提交改进您的 Django 代码](https://builtwithdjango.com/blog/improve-your-code-with-pre-commit) ... 叒一组号称能提升代码质量的工具, 其实, 都是为了形成肌肉记忆来的...
-
-
------------------------------------------
-## Reading
-> 值得收藏, 反复读或是吐糟的..
-
-- [What do internal engineering tools look like? - by Justin](https://technically.substack.com/p/what-do-internal-engineering-tools) .. 如何构建内部工具? 这方向的故事太多了, 最关键的和你的用户坐在一起...
-- [与柏拉图讨论GPT：我们兜兜转转两千多年，不就是为了回到雅典？](https://mp.weixin.qq.com/s/6otudrh1ElSSETmgdkFSsQ) ... 和 奇绩 分析的思路相同, 回到历史中找到规律...所以, GPT 之后, 拼的真的是 DNA 了...
-
-
-
------------------------------------------
-## Logging
-> Video 以及 Podcast...
-
-- [这个连学13000小时的女孩，是1200万网友的安慰剂。](https://mp.weixin.qq.com/s/Ad_Lip_cPfLY_tjfPUB64w) ... 是真的:
-	- [Lofi Girl - YouTube](https://www.youtube.com/feed/library) 固定三种场景的动画循环直播, 只有 BGM 变化, 可真实感受到了陪伴...真鬼才, 已经入坑先忍住不付费...
-- [ABC/树莓派用户指南4nd](https://www.xiaoyuzhoufm.com/episodes/644b39cf94d78eb3f7a55a5f)
-- ...
-
-
------------------------------------------
-## MurMur
-> 其它呢喃...
-
-- [到社区大学去讲课，让我成为一个更好的软件工程师：对不太懂技术的电脑用户更有同理心，对自己语言沟通能力的培养](https://timozander.de/blog/why-you-should-teach/)
-    - 本质上就是跳出当前黑话领域, 逼你重新思考掌握的知识是什么...
-    - 不过, 在中国这是非法行为哪...
-- [Midjourney：伟大的公司只需要十一人](https://mp.weixin.qq.com/s/Eo4WS_z2yenPJ-rA7B1PUw) .. 标题切中了一切热点...
-    - 伟大和人数并无直接关系...
-
-
------------------------------------------
-## DAMA
-> ❤️ Happy Pythonic ;-(`大妈私人无责任播报`)
-
-
-
-- [Zoom\.Quiet’s Chaos42 \| Substack](https://zoomquiet.substack.com/)
-    + 古早:新闻组式写作
-    + 欢迎订阅, 包含当前周刊
-- [LDS❤️💀🤖](LDS42.PODCAST.XYZ)
-    + 播客:小宇宙
-    + 收集各种嗯哼...
-- [Chaos42 - YouTube](https://www.youtube.com/watch?v=fPQ6piLqMXE&list=PLToFpvpg6EgRo6naYOp-BX4So-DxOCne8&index=1)
-    + VLog
-    + 恢复各种嗯哼...
-
-
-
-
-
-```
-     _~-+~~_
- () /  ♡ ◶  \ ()
-   '_   ♢   _'
-   \ '--.--' |
-
-...act by ferris-actor v0.2.4 (built on 23.0303.201916)
-```
-
-
------------------------------------------
-# PS:
-
-标题中时间戳使用工具 nnera - crates.io: Rust Package Registry 自动生成,
-
-这叕是一个程序猿才有的梗...
-
-
--------------
-
-好文笔,感叹号年度配额: **2/3**
-
-投稿/反馈邮箱:
-
-    askdama@googlegroups.com
-
-(邮件列表地址, 
-当成正常邮件发送邮件就好, 不用注册, 不用翻越...)
-
-
--------------
-
-ZoomQuiet/**[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g)**
-
-就是四处 `是也乎,(￣▽￣)` 的那个[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g):
-
-
-
-```python
-
-公开社群: 蟒营 (订阅号: Mainium)
-历史吐糟: Chaos42 (订阅号 PythoniCamp)
-
-as 创始组织者:
-    CPyUG (mailling-list: python-cn@googlegroups.com)
-    PyChina (订阅号: PyChinaOrg)
-    本地社区: 
-        GDG珠海 (订阅号: GDG-ZhuHai)
-        TFUG珠海 (订阅号: ZH_TFUG)
-```
-
--------------
-
-
-
-
-
 ]]></content:encoded></item></channel></rss>
