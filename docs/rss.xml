@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR23W22.md</title><link>https://weekly.rs.101.so//2023/RR23W22</link><pubDate>Mon, 05 Jun 2023 11:05:17 +0800</pubDate><content:encoded><![CDATA[# Rust概览 22/2023
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR23W22.md</title><link>https://weekly.rs.101.so//2023/RR23W22</link><pubDate>Mon, 05 Jun 2023 11:06:08 +0800</pubDate><content:encoded><![CDATA[# Rust概览 22/2023
 
 原文: [Rust recap for week 22/2023](https://discu.eu/weekly/rust/2023/22/)
 
@@ -269,13 +269,14 @@ CrabLang：一种以植物真菌命名的语言的社区分支](https://crablang
 
 
 ```
-     _~^*-~_
- \) /  - *  \ (/
-   '_   ⩌   _'
-   ( '--#--' \
+            _~`&^~_
+        \) /  ^ ◴  \ ()
+          '_   ⎕   _'
+          \ '--∽--' \
 
 ...act by ferris-actor v0.2.4 (built on 23.0303.201916)
 ```
+
 
 
 -----------------------------------------
