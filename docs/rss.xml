@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR23W25.md</title><link>https://weekly.rs.101.so//2023/RR23W25</link><pubDate>Mon, 26 Jun 2023 09:58:19 +0800</pubDate><content:encoded><![CDATA[# Rust概览 25/2023
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR23W25.md</title><link>https://weekly.rs.101.so//2023/RR23W25</link><pubDate>Mon, 26 Jun 2023 09:59:28 +0800</pubDate><content:encoded><![CDATA[# Rust概览 25/2023
 
 原文: [Rust recap for week 25/2023](https://discu.eu/weekly/rust/2023/25/)
 
@@ -252,16 +252,14 @@ Vim 模式....这简直是现代 IDE 必备功能了...
 
 
 
-
 ```
-      _~`&∽~_
-  \/ /  O ←  \ ()
-    '_   △   _'
-    / '--#--' /
+            _~--`~_
+        \/ /  ♡ ◕  \ ()
+          '_   ∧   _'
+          / '--.--' )
 
 ...act by ferris-actor v0.2.4 (built on 23.0303.201916)
 ```
-
 
 
 -----------------------------------------
