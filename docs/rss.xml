@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR23W30.md</title><link>https://weekly.rs.101.so//2023/RR23W30</link><pubDate>Mon, 31 Jul 2023 10:46:44 +0800</pubDate><content:encoded><![CDATA[# Rust概览 30/2023
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR23W30.md</title><link>https://weekly.rs.101.so//2023/RR23W30</link><pubDate>Mon, 31 Jul 2023 10:53:58 +0800</pubDate><content:encoded><![CDATA[# Rust概览 30/2023
 
 原文: [Rust recap for week 30/2023 \- discu\.eu](https://discu.eu/weekly/rust/2023/30/)
 
@@ -314,7 +314,7 @@ as 创始组织者:
     PyChina (订阅号: PyChinaOrg)
     本地社区: 
         GDG珠海 (订阅号: GDG-ZhuHai)
-        TFUG珠海 (订阅号: ZH_TFUG)
+        AIGC珠海 
 ```
 
 -------------
