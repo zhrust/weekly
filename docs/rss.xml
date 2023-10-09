@@ -1,4 +1,325 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR23W39.md</title><link>https://weekly.rs.101.so//2023/RR23W39</link><pubDate>Mon, 02 Oct 2023 10:30:08 +0800</pubDate><content:encoded><![CDATA[# Rust概览 39/2023
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR23W40.md</title><link>https://weekly.rs.101.so//2023/RR23W40</link><pubDate>Mon, 09 Oct 2023 15:33:16 +0800</pubDate><content:encoded><![CDATA[# Rust概览 40/2023
+
+原文: [Rust recap for week 40/2023 \- discu\.eu](https://discu.eu/weekly/rust/2023/40/)
+
+
+- 2301009 [Zoom.Quiet](http://zoomquiet.io/)(大妈) 用时 17 分钟 完成格式转抄
+- 2301009 [Zoom.Quiet](http://zoomquiet.io/)(大妈) 用时 42 分钟 完成快译
+
+
+
+-----------------------------------------
+## 文章/嗯哼...
+> Articles
+
+
+- [强静态类型，我愿意死在一座山上......](https://www.svix.com/blog/strong-typing-hill-to-die-on/)
+    + [1745 评注 in 4 讨论s](https://discu.eu/q/https://www.svix.com/blog/strong-typing-hill-to-die-on/)
+
+(`是也乎:`
+
+叕一则对 "强静态类型" 的赞歌,
+不过 Python 也是呢...
+
+)
+
+- [安全与性能。 C、C++ 和 Rust 排序实现的案例研究](https://github.com/Voultapher/sort-research-rs/blob/main/writeup/sort_safety/text.md)
+    + [402 评注 in 6 讨论s](https://discu.eu/q/https://github.com/Voultapher/sort-research-rs/blob/main/writeup/sort_safety/text.md)
+- [Thread-per-core （工作窃取与不共享）](https://without.boats/blog/thread-per-core/)
+    + [255 评注 in 2 讨论s](https://discu.eu/q/https://without.boats/blog/thread-per-core/)
+- [async fn 是一个错误吗？](https://seanmonstar.com/post/66832922686/was-async-fn-a-mistake)
+    + [163 评注 in 4 讨论s](https://discu.eu/q/https://seanmonstar.com/post/66832922686/was-async-fn-a-mistake)
+- [Divan: 快速简单的 Rust 基准测试](https://nikolaivazquez.com/blog/divan/)
+    + [73 评注 in 3 讨论s](https://discu.eu/q/https://nikolaivazquez.com/blog/divan/)
+- [我被 Squatted 吗？ – 检查您的域名是否已被误植](https://www.haveibeensquatted.com/)
+    + [73 评注 in 4 讨论s](https://discu.eu/q/https://www.haveibeensquatted.com/)
+- [pg_bm25: Postgres 内部的弹性质量全文搜索](https://docs.paradedb.com/blog/introducing_bm25)
+    + [66 评注 in 3 讨论s](https://discu.eu/q/https://docs.paradedb.com/blog/introducing_bm25)
+- [赞美 Rust，因为借用检查器是人类的福祉。](https://github.com/Fabricators-of-Create/Porting-Lib/pull/63/files)
+    + [58 评注 in 1 讨论](https://discu.eu/q/https://github.com/Fabricators-of-Create/Porting-Lib/pull/63/files)
+- [从 Python 调用 Rust](https://blog.frankel.ch/rust-from-python/)
+    + [56 评注 in 4 讨论s](https://discu.eu/q/https://blog.frankel.ch/rust-from-python/)
+
+(`是也乎:`
+
+哈, 通过 HTTP 消息是最简单的...
+
+)
+
+
+- [如果你不喜欢特质，Rust 就不适合你](https://github.com/marshallpierce/rust-base64/issues/213)
+    + [50 评注 in 1 讨论](https://discu.eu/q/https://github.com/marshallpierce/rust-base64/issues/213)
+
+(`是也乎:`
+
+不止, 如果无法接受可能是无限的内在规约...
+应该无法适应rust 的严格世界
+
+
+)
+
+- [修改 Rust 编译器以瞄准 .NET 运行时的旅程 - 第 2 部分：泛型、迭代器、枚举和重构](https://fractalfir.github.io/generated_html/rustc_codegen_clr_v0_0_3.html)
+    + [49 评注 in 3 讨论s](https://discu.eu/q/https://fractalfir.github.io/generated_html/rustc_codegen_clr_v0_0_3.html)
+- [Show HN: Elara- 使用 Rust 和 WebAssembly 构建的免费开源编码游戏](https://elaragame.com/)
+    + [44 评注 in 3 讨论s](https://discu.eu/q/https://elaragame.com/)
+
+(`是也乎:`
+
+
+![Elara](https://ipic.zoomquiet.top/2023-10-09-zshot%202023-10-09%2015.26.57.jpg)
+
+
+叕一种 "坦克大战", 之前 JAVA 平台上有个著名的手工 AI 对战游戏,
+这个是类似 logo 的网页版本编程学习游戏;
+
+)
+
+- [我无法理解的矛盾点](https://doc.rust-lang.org/nomicon/subtyping.html#variance)
+    + [39 评注 in 3 讨论s](https://discu.eu/q/https://doc.rust-lang.org/nomicon/subtyping.html%23variance)
+
+(`是也乎:`
+
+> ...The Dark Arts of Unsafe Rust
+
+"The Rustonomicon" 这本开源书的更新部分...
+
+)
+
+- [Redox OS 开发重点](https://redox-os.org/news/development-priorities-2023-09/)
+    + [38 评注 in 3 讨论s](https://discu.eu/q/https://redox-os.org/news/development-priorities-2023-09/)
+- [中断是线程](https://onevariable.com/blog/interrupts-is-threads/)
+    + [35 评注 in 2 讨论s](https://discu.eu/q/https://onevariable.com/blog/interrupts-is-threads/)
+
+
+
+
+
+-----------------------------------------
+## 发布/版本...
+> Releases
+
+- [开源 Ferrocene](https://ferrous-systems.com/blog/ferrocene-open-source/)
+    + [86 评注 in 5 讨论s](https://discu.eu/q/https://ferrous-systems.com/blog/ferrocene-open-source/)
+
+
+(`是也乎:`
+
+开源变成政治正确的首选了?
+
+)
+
+- [Rust 1.73.0](https://blog.rust-lang.org/2023/10/05/Rust-1.73.0.html)
+    - [86 评注 in 3 讨论s](https://discu.eu/q/https://blog.rust-lang.org/2023/10/05/Rust-1.73.0.html)
+- [InfluxDB 3.0开源计划](https://www.influxdata.com/blog/the-plan-for-influxdb-3-0-open-source/)
+    + [35 评注 in 3 讨论s](https://discu.eu/q/https://www.influxdata.com/blog/the-plan-for-influxdb-3-0-open-source/)
+
+- [wTransport (Rust Webtransport 实现）版本0.1.6发布](https://github.com/BiagioFesta/wtransport/tree/master)
+    + [2 评注 in 1 讨论](https://discu.eu/q/https://github.com/BiagioFesta/wtransport/tree/master)
+- [v0.2.0 of Vegemite 发布（http框架）](https://github.com/Kay-Conte/vegemite-rs/blob/main/examples/middleware.rs)
+    + [2 评注 in 1 讨论](https://discu.eu/q/https://github.com/Kay-Conte/vegemite-rs/blob/main/examples/middleware.rs)
+- [新版本 Parseable \[用 Rust 编写的日志分析系统\] 现已推出](https://github.com/parseablehq/parseable/releases/tag/v0.7.0)
+
+
+
+-----------------------------------------
+## 好物/妙品/...
+> projects
+
+
+- [C#、Rust、Zig、Go、Java 进行数据处理](https://github.com/jinyus/related_post_gen)
+    + [233 评注 in 8 讨论s](https://discu.eu/q/https://github.com/jinyus/related_post_gen)
+
+
+
+- [daktilo — Turn your keyboard into a typewriter
+daktilo — 将你的键盘变成打字机](https://github.com/orhun/daktilo)
+    + [80 评注 in 3 讨论s](https://discu.eu/q/https://github.com/orhun/daktilo)
+
+(`是也乎:`
+
+![daktilo](https://ipic.zoomquiet.top/2023-10-09-zshot%202023-10-09%2015.07.24.jpg)
+
+一个简单的配音小工具;
+可惜安装失败:
+
+![err](https://ipic.zoomquiet.top/2023-10-09-zshot%202023-10-09%2015.19.57.jpg)
+
+)
+
+- [Comfy:一个用 Rust 构建的有趣的 2D 游戏引擎](https://github.com/darthdeus/comfy)
+    + [54 评注 in 2 讨论s]()
+- [Show HN: 星际争霸 2 协议重放格式的名词解析器](https://github.com/sebosp/s2protocol-rs)
+    + [53 评注 in 1 讨论](https://discu.eu/q/https://github.com/sebosp/s2protocol-rs)
+- [Sigma: 构建现代 SQL 替代方案的实验项目](https://github.com/huachaohuang/sigma)
+    + [20 评注 in 1 讨论](https://discu.eu/q/https://github.com/huachaohuang/sigma)
+
+(`是也乎:`
+
+SQL 的成功是靠谱教育深度纠缠积累几十年而形成的认知壁垒...
+当然, 最开始也是用数学证明了自己,然后才是市场发力;
+现在想用其它开发体验优先的方案替代, 已经几乎不可能了, 
+而且也没必要了, 当 AGI 可以将自然语言生成 SQL 后.
+
+)
+
+- [Loole: 安全的同步/异步多生产者、多消费者通道](https://github.com/mahdi-shojaee/loole)
+    + [7 评注 in 1 讨论](https://discu.eu/q/https://github.com/mahdi-shojaee/loole)
+- [使 SDL2 窗口保持在顶部。](https://github.com/anantnrg/scrkey.rs)
+    + [6 评注 in 1 讨论](https://discu.eu/q/https://github.com/anantnrg/scrkey.rs)
+- [VectorVisor --- 使用 GPU 加速（大部分）未修改的 WebAssembly 程序（用 Rust 制作）](https://github.com/SamGinzburg/VectorVisor)
+    + [6 评注 in 1 讨论](https://discu.eu/q/https://github.com/SamGinzburg/VectorVisor)
+- [cargo 归属 - 归功于您的依赖](https://crates.io/crates/cargo-attribution)
+    + [4 评注 in 1 讨论](https://discu.eu/q/https://crates.io/crates/cargo-attribution)
+- [readable 宣布 0.10.0 - 堆栈分配的人类可读字符串](https://github.com/hinto-janai/readable)
+    + [4 评注 in 1 讨论](https://discu.eu/q/https://github.com/hinto-janai/readable)
+
+
+
+
+
+
+-----------------------------------------
+## 视频
+> Videos
+
+
+
+
+- [Evan Czaplicki 的《编程语言经济学》（Strange Loop 2023）](https://www.youtube.com/watch?v=XZ3w_jec1v8)
+    + [174 评注 in 5 讨论s](https://discu.eu/q/https://www.youtube.com/watch?v=XZ3w_jec1v8)
+
+(`是也乎:`
+
+WoW 这简直了...
+
+)
+
+
+- [Darkness of Titan - Rust 游戏开发之旅 - 开发日志 #1](https://youtu.be/GKbDtAP74HM)
+    + [3 评注 in 1 讨论](https://discu.eu/q/https://youtu.be/GKbDtAP74HM)
+
+(`是也乎:`
+
+![Titan](https://ipic.zoomquiet.top/2023-10-09-zshot%202023-10-09%2014.59.33.jpg)
+
+相比成功后的演示,
+这种定期的自我汇报, 是小团队证明自己认真程度的形式之一...
+
+)
+
+- [用 Apache Arrow、DataFusion 和 Rust“从头开始”实现 InfluxDB IOx，作者：Andrew Lamb](https://www.youtube.com/watch?v=Y5K2Ik2oo-8)
+
+
+
+- [Ambient - 在 Rust 中构建和部署多人游戏，只需几分钟](https://youtu.be/lDIA6jDyUTk?si=lNghhwBxDQm91poX)
+
+(`是也乎:`
+
+新团队, 官网: https://ambient.run 
+
+WASM+WebGPU..
+
+)
+
+- [进行动态调度的两种方法: Logan Smith](https://www.youtube.com/watch?v=wU8hQvU8aKM)
+- [与古代文明一起进行太空即时战略！ - 我在 youtube 上找到了这个开发日志。这是一款处于早期开发阶段的太空 RTS 游戏，以古代文明为背景。你怎么认为？](https://www.youtube.com/watch?v=0qJ9Sk6h_GQ)
+
+(`是也乎:`
+
+还是规划以 Bevy 开始...
+
+)
+
+
+
+-----------------------------------------
+## DAMA
+> ❤️ Happy Pythonic ;-(`大妈私人无责任播报`)
+
+
+- [@Chaos42DAMA - YouTube](https://www.youtube.com/@Chaos42DAMA)
+    + VLog
+    + 大妈的多重宇宙...
+- [Zoom\.Quiet’s Chaos42 \| Substack](https://zoomquiet.substack.com/)
+    + 古早:新闻组式写作
+    + 欢迎订阅, 包含当前周刊
+- [LDS❤️💀🤖](LDS42.PODCAST.XYZ)
+    + 播客:小宇宙
+    + 收集各种嗯哼...
+
+
+
+
+
+```
+       _~∽|-~_
+   \) /  ◵ +  \ \/
+     '_   ⏝   _'
+     / '--.--' |
+
+...act by ferris-actor v0.2.4 (built on 23.0303.201916)
+```
+
+-----------------------------------------
+# PS:
+
+- 首发: [Rust概览 40/2023 ~ 锈览上周主要 ;-)](https://weekly.rs.101.so/2023/RR23W40.html)
+- 修订: [RR23W40.md](https://github.com/zhrust/weekly/tree/main/docs/2023/RR23W40.md)
+
+
+## PPS:
+不觉中[~ 蠎周刊 ~ 汇集全球蠎事儿 ;-)](https://weekly.pychina.org/)快译已经到了第11个年头
+
+Rustaceans 世界当然也有相似周刊, 那就一起呗;
+问为什么:
+
+    [皱眉]每周新闻资讯 怎么能错过 
+    看看有什么新东西 
+    当有新的发现时：
+        what f**k 还能这样玩？ 还有这东西？
+        每周开彩蛋[吃瓜]
+
+`无法同意更多`...
+很多社区贡献看起来辛苦,
+其实受益最多的,
+就是主动承担者也.
+
+-------------
+
+好文笔,感叹号年度配额: **2/3**
+
+投稿/反馈邮箱:
+
+    askdama@googlegroups.com
+
+(邮件列表地址, 
+当成正常邮件发送邮件就好, 不用注册, 不用翻越...)
+
+
+-------------
+
+ZoomQuiet/**[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g)**
+
+就是四处 `是也乎,(￣▽￣)` 的那个[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g):
+
+
+
+```python
+全职嗯哼: 大妈的多重宇宙 - https://www.youtube.com/@Chaos42DAMA
+
+私自嗯哼: ZoomQuiet (订阅号: ZoomQuiet42)
+公开社群: 蟒营 (订阅号: Mainium)
+as 创始组织者:
+    CPyUG (mailling-list: python-cn@googlegroups.com)
+    PyChina (订阅号: PyChinaOrg)
+    本地社区: 
+        GDG珠海 (订阅号: GDG-ZhuHai)
+        AIGC珠海 
+
+```
+
+-------------
+]]></content:encoded></item><item><title>RR23W39.md</title><link>https://weekly.rs.101.so//2023/RR23W39</link><pubDate>Mon, 02 Oct 2023 10:30:08 +0800</pubDate><content:encoded><![CDATA[# Rust概览 39/2023
 
 原文: [Rust recap for week 39/2023 \- discu\.eu](https://discu.eu/weekly/rust/2023/39/)
 
@@ -781,234 +1102,6 @@ ShareImage：动态生成社交媒体预览图像的库](https://github.com/regr
 
 - 首发: [Rust概览 37/2023 ~ 锈览上周主要 ;-)](https://weekly.rs.101.so/2023/RR23W37.html)
 - 修订: [RR23W37.md](https://github.com/zhrust/weekly/tree/main/docs/2023/RR23W37.md)
-
-
-## PPS:
-不觉中[~ 蠎周刊 ~ 汇集全球蠎事儿 ;-)](https://weekly.pychina.org/)快译已经到了第11个年头
-
-Rustaceans 世界当然也有相似周刊, 那就一起呗;
-问为什么:
-
-    [皱眉]每周新闻资讯 怎么能错过 
-    看看有什么新东西 
-    当有新的发现时：
-        what f**k 还能这样玩？ 还有这东西？
-        每周开彩蛋[吃瓜]
-
-`无法同意更多`...
-很多社区贡献看起来辛苦,
-其实受益最多的,
-就是主动承担者也.
-
--------------
-
-好文笔,感叹号年度配额: **2/3**
-
-投稿/反馈邮箱:
-
-    askdama@googlegroups.com
-
-(邮件列表地址, 
-当成正常邮件发送邮件就好, 不用注册, 不用翻越...)
-
-
--------------
-
-ZoomQuiet/**[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g)**
-
-就是四处 `是也乎,(￣▽￣)` 的那个[大妈](https://mp.weixin.qq.com/s/N5TuRRbF558D4Q90XdDA7g):
-
-
-
-```python
-全职嗯哼: 大妈的多重宇宙 - https://www.youtube.com/@Chaos42DAMA
-
-私自嗯哼: ZoomQuiet (订阅号: ZoomQuiet42)
-公开社群: 蟒营 (订阅号: Mainium)
-as 创始组织者:
-    CPyUG (mailling-list: python-cn@googlegroups.com)
-    PyChina (订阅号: PyChinaOrg)
-    本地社区: 
-        GDG珠海 (订阅号: GDG-ZhuHai)
-        AIGC珠海 
-
-```
-
--------------
-]]></content:encoded></item><item><title>RR23W36.md</title><link>https://weekly.rs.101.so//2023/RR23W36</link><pubDate>Mon, 11 Sep 2023 20:33:36 +0800</pubDate><content:encoded><![CDATA[# Rust概览 36/2023
-
-原文: [Rust recap for week 36/2023 \- discu\.eu](https://discu.eu/weekly/rust/2023/36/)
-
-
-- 230911 [Zoom.Quiet](http://zoomquiet.io/)(大妈) 用时 17 分钟 完成格式转抄
-- 230911 [Zoom.Quiet](http://zoomquiet.io/)(大妈) 用时 42 分钟 完成快译
-
-
-
------------------------------------------
-## 文章/嗯哼...
-> Articles
-
-
-- [异步 Rust 是一种糟糕的语言](https://bitbashing.io/async-rust.html)
-    + [771 评注 in 3 讨论s](https://discu.eu/q/https://bitbashing.io/async-rust.html)
-
-(`是也乎:`
-
-异步有太多不可知性了...想运行前都控制起来太难...
-
-)
-
-- [我的 Node.js 有点 Rusty：通过使用 napi.rs 将 Node.js 模块重写为 Rust，性能提升了 25 倍](https://gal.hagever.com/posts/my-node-js-is-a-bit-rusty)
-    + [221 评注 in 2 讨论s](https://discu.eu/q/https://gal.hagever.com/posts/my-node-js-is-a-bit-rusty)
-- [在 Rust 中存储类型](https://raytracing.github.io/books/RayTracingInOneWeekend.html)
-    + [209 评注 in 8 讨论s](https://discu.eu/q/https://raytracing.github.io/books/RayTracingInOneWeekend.html)
-- [为什么您可能实际上希望在项目中使用异步](https://notgull.net/why-you-want-async/)
-    + [197 评注 in 2 讨论s](https://discu.eu/q/https://notgull.net/why-you-want-async/)
-- [Semver 违规很常见，更好的工具就是答案](https://predr.ag/blog/semver-violations-are-common-better-tooling-is-the-answer/)
-    + [175 评注 in 3 讨论s](https://discu.eu/q/https://predr.ag/blog/semver-violations-are-common-better-tooling-is-the-answer/)
-- [Dtolnay 回应 Re: Rustconf](https://gist.github.com/dtolnay/7f5da4bf057b7c6d0d00c6bed3060b96)
-    + [136 评注 in 2 讨论s](https://discu.eu/q/https://gist.github.com/dtolnay/7f5da4bf057b7c6d0d00c6bed3060b96)
-- [异步 Rust GUI 框架的提案](https://notgull.github.io/async-gui/)
-    + [103 评注 in 3 讨论s](https://discu.eu/q/https://notgull.github.io/async-gui/)
-- [Liquid/液态类型](https://goto.ucsd.edu/~ucsdpl-blog/liquidtypes/2015/09/19/liquid-types/)
-    - [102 评注 in 2 讨论s](https://discu.eu/q/https://goto.ucsd.edu/~ucsdpl-blog/liquidtypes/2015/09/19/liquid-types/)
-- [写了一个字符串类型](https://mcyoung.xyz/2023/08/09/yarns/)
-    + [84 评注 in 3 讨论s](https://discu.eu/q/https://mcyoung.xyz/2023/08/09/yarns/)
-- [质疑 ThePhD 在 RustConf 戏剧中的角色。](https://cohost.org/ThePhD/post/2719823-so-about-that)
-    + [72 评注 in 1 讨论](https://discu.eu/q/https://cohost.org/ThePhD/post/2719823-so-about-that)
-
-(`是也乎:`
-
-应该说是闹剧了...
-
-)
-
-- [当 URL 解析器不一致时（rsvg 中的漏洞）](https://www.canva.dev/blog/engineering/when-url-parsers-disagree-cve-2023-38633/)
-    + [66 评注 in 4 讨论s](https://discu.eu/q/https://www.canva.dev/blog/engineering/when-url-parsers-disagree-cve-2023-38633/)
-- [从 \[Rust\] 项目中删除我的名字](https://github.com/rust-lang/team/pull/1071)
-    + [35 评注 in 1 讨论](https://discu.eu/q/https://github.com/rust-lang/team/pull/1071)
-
-(`是也乎:`
-
-git 就像区块链, 本质上是不可改变的,
-当然, 有工具可以重构整个儿历史, 但是, 对于 rust 这种大型项目就很难搞了...
-
-)
-
-- [Napi: 在 Rust 中构建已编译的 Node.js 插件](https://napi.rs/)
-    + [27 评注 in 2 讨论s]()
-- [跳弹机器人解算器](https://kevincox.ca/2023/09/02/ricochet-robots-solver/)
-    + [21 评注 in 2 讨论s](https://discu.eu/q/https://kevincox.ca/2023/09/02/ricochet-robots-solver/)
-- [The 项目即将加入 Linux 欧洲基金会](https://www.igalia.com/2023/09/07/The-Servo-project-is-joining-Linux-Foundation-Europe.html)
-    + [17 评注 in 2 讨论s](https://discu.eu/q/https://www.igalia.com/2023/09/07/The-Servo-project-is-joining-Linux-Foundation-Europe.html)
-
-
-
-
------------------------------------------
-## 发布/版本...
-> Releases
-
-
-- [justly-0.1.0:寻求关于我的第一个 Rust 项目的早期版本的想法](https://crates.io/crates/justly)
-    + [4 评注 in 1 讨论](https://discu.eu/q/https://crates.io/crates/justly)
-- [cargo-audit v0.18发布，性能大幅提升](https://blog.rust-lang.org/inside-rust/2023/09/04/keeping-secure-with-cargo-audit-0.18.html)
-    + [3 评注 in 1 讨论](https://discu.eu/q/https://blog.rust-lang.org/inside-rust/2023/09/04/keeping-secure-with-cargo-audit-0.18.html)
-- [Dyon v0.49 发布！](https://twitter.com/PistonDeveloper/status/1700877705040789828)
-    + [2 评注 in 1 讨论](https://discu.eu/q/https://twitter.com/PistonDeveloper/status/1700877705040789828)
-- [Slint UI 1.2 发布，增强了平台抽象](https://slint.dev/blog/slint-1.2-released)
-
-
-
------------------------------------------
-## 好物/妙品/...
-> projects
-
-  - [GitQL 0.6.0 条件聚合、改进类型系统、案例表达式等等](https://github.com/AmrDeveloper/GQL)
-    + [129 评注 in 10 讨论s](https://discu.eu/q/https://github.com/AmrDeveloper/GQL)
-- [rustic -用 Rust 进行快速、加密和重复数据删除的备份](https://github.com/rustic-rs/rustic)
-    + [124 评注 in 2 讨论s](https://discu.eu/q/https://github.com/rustic-rs/rustic)
-- [rxv64 操作系统：MIT 的 xv6，采用 Rust 语言，适用于 SMP x86_64 机器](https://github.com/dancrossnyc/rxv64)
-    + [51 评注 in 1 讨论](https://discu.eu/q/https://github.com/dancrossnyc/rxv64)
-- [Railwind: 用 Rust 重写的 Tailwind 编译器](https://github.com/pintariching/railwind)
-    + [47 评注 in 2 讨论s](https://discu.eu/q/https://github.com/pintariching/railwind)
-- [Broot: 一种查看用 Rust 编写的文件管理的新方法](https://github.com/Canop/broot)
-    + [37 评注 in 6 讨论s](https://discu.eu/q/https://github.com/Canop/broot)
-- [Rust crate rg 误植/重定向到 ripgrep](https://github.com/BurntSushi/rg-cratesio-typosquat)
-    + [34 评注 in 1 讨论](https://discu.eu/q/https://github.com/BurntSushi/rg-cratesio-typosquat)
-- [非常快的基于 hyper 和 Rust 的 HTTP 框架（比 Actix 和其他 Web 框架快得多）](https://github.com/hyper-fast/hyper-fast)
-    + [34 评注 in 1 讨论](https://discu.eu/q/https://github.com/hyper-fast/hyper-fast)
-- [qcd - 在命令行上快速更改目录的 Linux 工具](https://github.com/ClaasBontus/qcd_rs)
-    + [21 评注 in 2 讨论s](https://discu.eu/q/https://github.com/ClaasBontus/qcd_rs)
-- [侵入式链表的不安全实现](https://github.com/GumGun-rust/LinkedList_intrusive)
-    + [15 评注 in 1 讨论](https://discu.eu/q/https://github.com/GumGun-rust/LinkedList_intrusive)
-- [想制作一个简单的图像编辑器，不知道要使用什么 GUI crates。](https://github.com/AustinJ235/basalt)
-    + [14 评注 in 1 讨论](https://discu.eu/q/https://github.com/AustinJ235/basalt)
-
-
-
-
-
-
------------------------------------------
-## 视频
-> Videos
-
-
-- [让我们实现（基于 AST 的）虚拟机！ \[1 小时，实时编码，中级~高级 Rust\]](https://www.youtube.com/watch?t=110s&v=ryrOZS-CLyo)
-    + [4 评注 in 1 讨论](https://discu.eu/q/https://www.youtube.com/watch?t=110s&v=ryrOZS-CLyo)
-- [从 Python 到 Rust](https://www.youtube.com/playlist?list=PLEIv4NBmh-GsWGE9mY3sF9c5lgh5Z_jLr)
-
-
-(`是也乎:`
-44个视频的教学列表...
-
-)
-
-- [Rust 游戏开发之旅 - 开发日志 #0](https://youtube.com/watch?si=f50eqR8xYIocPQ34&v=d1kPG1061LQ)
-- [Makepad: 用 Rust 设计现代 UI - Rik Arends - RustNL 2023](https://www.youtube.com/watch?v=rC4FCS-oMpg)
-- [基于特质/trait 的代码可移植性而不是#\[cfg(unix)\]](https://youtu.be/OuSiuySr6_Q?si=iC5owuu834sMJzzq&t=2826)
-
-
-
-
-
------------------------------------------
-## DAMA
-> ❤️ Happy Pythonic ;-(`大妈私人无责任播报`)
-
-
-- [@Chaos42DAMA - YouTube](https://www.youtube.com/@Chaos42DAMA)
-    + VLog
-    + 大妈的多重宇宙...
-- [Zoom\.Quiet’s Chaos42 \| Substack](https://zoomquiet.substack.com/)
-    + 古早:新闻组式写作
-    + 欢迎订阅, 包含当前周刊
-- [LDS❤️💀🤖](LDS42.PODCAST.XYZ)
-    + 播客:小宇宙
-    + 收集各种嗯哼...
-
-
-
-
-
-```
-        _~~+∽~_
-    () /  # *  \ ()
-      '_   v   _'
-      | '-----' |
-
-...act by ferris-actor v0.2.4 (built on 23.0303.201916)
-```
-
-
-
------------------------------------------
-# PS:
-
-- 首发: [Rust概览 36/2023 ~ 锈览上周主要 ;-)](https://weekly.rs.101.so/2023/RR23W36.html)
-- 修订: [RR23W36.md](https://github.com/zhrust/weekly/tree/main/docs/2023/RR23W36.md)
 
 
 ## PPS:
