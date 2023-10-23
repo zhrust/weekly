@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR23W42.md</title><link>https://weekly.rs.101.so//2023/RR23W42</link><pubDate>Mon, 23 Oct 2023 11:19:13 +0800</pubDate><content:encoded><![CDATA[# Rust概览 42/2023
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR23W42.md</title><link>https://weekly.rs.101.so//2023/RR23W42</link><pubDate>Mon, 23 Oct 2023 16:47:59 +0800</pubDate><content:encoded><![CDATA[# Rust概览 42/2023
 
 原文: [Rust recap for week 42/2023 \- discu\.eu](https://discu.eu/weekly/rust/2023/42/)
 
 
-- 2301009 [Zoom.Quiet](http://zoomquiet.io/)(大妈) 用时 17 分钟 完成格式转抄
-- 2301009 [Zoom.Quiet](http://zoomquiet.io/)(大妈) 用时 42 分钟 完成快译
+- 2301023 [Zoom.Quiet](http://zoomquiet.io/)(大妈) 用时 17 分钟 完成格式转抄
+- 2301023 [Zoom.Quiet](http://zoomquiet.io/)(大妈) 用时 42 分钟 完成快译
 
 
 
