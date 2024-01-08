@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR24W01.md</title><link>https://weekly.rs.101.so//2024/RR24W01</link><pubDate>Mon, 08 Jan 2024 09:30:43 +0800</pubDate><content:encoded><![CDATA[# Rust概览 2024/02
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>锈周刊 -&gt; Weekly :: China&lt;Rustaceans&gt;</title><link>https://weekly.rs.101.so</link><description>~ 汇集上周全球锈事儿, 由 大妈/Zoom.Quiet 根据 &lt;Rust recap for week&gt; 快译++吐槽而得, 共同定期追踪值得oxygenation/氧化之事儿...</description><generator>my_rss_generator</generator><item><title>RR24W01.md</title><link>https://weekly.rs.101.so//2024/RR24W01</link><pubDate>Mon, 08 Jan 2024 17:49:30 +0800</pubDate><content:encoded><![CDATA[# Rust概览 2024/1
 
-原文: [Rust recap for week 2024/02 \- discu\.eu](https://discu.eu/weekly/rust/2024/02/)
+原文: [Rust recap for week 2024/1 \- discu\.eu](https://discu.eu/weekly/rust/2024/1/)
 
 
 - 240108 [Zoom.Quiet](http://zoomquiet.io/)(大妈) 用时 17 分钟 完成格式转抄
@@ -279,8 +279,8 @@ RMS 表示: 就看你们折腾到哪儿...
 -----------------------------------------
 # PS:
 
-- 首发: [Rust概览 2024/02 ~ 锈览上周主要 ;-)](https://weekly.rs.101.so/2023/RR24W01.html)
-- 修订: [RR24W01.md](https://github.com/zhrust/weekly/tree/main/docs/2023/RR24W01.md)
+- 首发: [Rust概览 2024/1 ~ 锈览上周主要 ;-)](https://weekly.rs.101.so/2024/RR24W01.html)
+- 修订: [RR24W01.md](https://github.com/zhrust/weekly/tree/main/docs/2024/RR24W01.md)
 
 
 ## PPS:
